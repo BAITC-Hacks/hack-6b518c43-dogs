@@ -1,0 +1,47 @@
+=== Результат команды: local ===
+Статус: PASS
+Baseline ARPU (без кампаний):      150,641,084
+Прирост ARPU (gross):                2,758,548
+Затраты на коммуникацию:               100,000
+ЧИСТЫЙ РЕЗУЛЬТАТ (net):              2,658,548   (+1.765% к baseline)
+ARPU после кампаний:               153,299,633
+
+Кампаний: 27  |  контактов: 10,988  |  уникальных абонентов: 7,229 (30.8%)
+Средний чистый прирост на абонента: 367.8
+ROI (gross lift / затраты): 27.59
+Risk score (% абонентов с отрицательным эффектом): 44.3%
+Бюджет: 100,000 из 100,000 у.е. (100.0%)
+
+По кампаниям (gross, до дедупликации между кампаниями):
+  - pilot_1 [digital_ads]: контактов=100  cost=2,200  gross_lift=107,722  negative=0
+  - pilot_2 [digital_ads]: контактов=100  cost=2,200  gross_lift=120,530  negative=0
+  - pilot_3 [call]: контактов=40  cost=6,400  gross_lift=52,575  negative=0
+  - pilot_4 [digital_ads]: контактов=100  cost=2,200  gross_lift=-13,910  negative=100
+  - pilot_5 [sms]: контактов=180  cost=720  gross_lift=141,711  negative=0
+  - pilot_6 [sms]: контактов=180  cost=720  gross_lift=152,278  negative=0
+  - pilot_7 [digital_ads]: контактов=40  cost=880  gross_lift=6,553  negative=0
+  - pilot_8 [digital_ads]: контактов=100  cost=2,200  gross_lift=-398  negative=100
+  - pilot_9 [sms]: контактов=180  cost=720  gross_lift=-566  negative=180
+  - pilot_10 [digital_ads]: контактов=40  cost=880  gross_lift=-1,602  negative=40
+  - pilot_11 [digital_ads]: контактов=40  cost=880  gross_lift=-990  negative=40
+  - pilot_12 [push]: контактов=180  cost=0  gross_lift=-24,249  negative=180
+  - pilot_13 [push]: контактов=100  cost=0  gross_lift=-3,192  negative=100
+  - pilot_14 [push]: контактов=100  cost=0  gross_lift=-3,927  negative=100
+  - pilot_15 [push]: контактов=100  cost=0  gross_lift=-4,054  negative=100
+  - pilot_16 [push]: контактов=100  cost=0  gross_lift=7,257  negative=0
+  - pilot_17 [push]: контактов=100  cost=0  gross_lift=-3,895  negative=100
+  - pilot_18 [push]: контактов=100  cost=0  gross_lift=-4,642  negative=100
+  - pilot_19 [push]: контактов=100  cost=0  gross_lift=-8,260  negative=100
+  - pilot_20 [push]: контактов=100  cost=0  gross_lift=-5,526  negative=100
+  - BeeAgent_01 [digital_ads]: контактов=2,950  cost=64,900  gross_lift=-200,644  negative=2950
+  - BeeAgent_02 [sms]: контактов=2,183  cost=8,732  gross_lift=1,431,497  negative=0
+  - BeeAgent_03 [sms]: контактов=1,592  cost=6,368  gross_lift=1,270,839  negative=0  [обрезано денежным бюджетом канала]
+  - BeeAgent_04 [push]: контактов=383  cost=0  gross_lift=305,517  negative=0
+  - BeeAgent_05 [push]: контактов=153  cost=0  gross_lift=76,015  negative=0
+  - BeeAgent_06 [push]: контактов=1,605  cost=0  gross_lift=986,168  negative=0
+  - BeeAgent_07 [push]: контактов=42  cost=0  gross_lift=11,575  negative=0
+
+Пилотов проведено: 20 из 20
+Осталось бюджета: 80,000 из 100,000
+Осталось охвата:  12,920 из 15,000
+CONTEST_WITHOUT_OPENAI_OR_NODE_PASS

@@ -1,0 +1,36 @@
+test_bad_tools_refs_and_numeric_claims_fail_closed (test_assistant.AssistantTests.test_bad_tools_refs_and_numeric_claims_fail_closed) ... ok
+test_cache_write_usage_and_unknown_model (test_assistant.AssistantTests.test_cache_write_usage_and_unknown_model) ... ok
+test_channel_explanation_refs_and_no_customer_rows (test_assistant.AssistantTests.test_channel_explanation_refs_and_no_customer_rows) ... ok
+test_compare_tool_and_server_only_numbers (test_assistant.AssistantTests.test_compare_tool_and_server_only_numbers) ... ok
+test_configuration_key_is_never_returned_and_concurrency_gate (test_assistant.AssistantTests.test_configuration_key_is_never_returned_and_concurrency_gate) ... ok
+test_errors_and_bounded_retry (test_assistant.AssistantTests.test_errors_and_bounded_retry) ... ok
+test_ledger_usage_persistence_budget_rate_cache_and_version (test_assistant.AssistantTests.test_ledger_usage_persistence_budget_rate_cache_and_version) ... ok
+test_manual_invalid_limits_and_data_identity (test_assistant.AssistantTests.test_manual_invalid_limits_and_data_identity) ... ok
+test_missing_key_never_constructs_sdk (test_assistant.AssistantTests.test_missing_key_never_constructs_sdk) ... ok
+test_real_engine_proposal_and_explicit_apply (test_assistant.AssistantTests.test_real_engine_proposal_and_explicit_apply) ... ok
+test_timeout_cancel_and_call_cap (test_assistant.AssistantTests.test_timeout_cancel_and_call_cap) ... ok
+test_audit_and_repair (test_engine.EngineTests.test_audit_and_repair) ... ok
+test_negative_best_and_repeated_contact_cost (test_engine.EngineTests.test_negative_best_and_repeated_contact_cost) ... ok
+test_no_forbidden_runtime_imports_or_attributes (test_engine.EngineTests.test_no_forbidden_runtime_imports_or_attributes) ... ok
+test_observations_change_decision_and_new_act_resets (test_engine.EngineTests.test_observations_change_decision_and_new_act_resets) ... ok
+test_order_money_contact_caps (test_engine.EngineTests.test_order_money_contact_caps) ... ok
+test_pilot_overlap_expectation_and_sunk_cost (test_engine.EngineTests.test_pilot_overlap_expectation_and_sunk_cost) ... ok
+test_precision_uses_actual_n_and_repeated_observations (test_engine.EngineTests.test_precision_uses_actual_n_and_repeated_observations) ... ok
+test_saturation_independent_from_linear_update (test_engine.EngineTests.test_saturation_independent_from_linear_update) ... ok
+test_snapshot_replay_and_passports (test_engine.EngineTests.test_snapshot_replay_and_passports) ... ok
+test_validation_missing_and_small_groups (test_engine.EngineTests.test_validation_missing_and_small_groups) ... ok
+test_private_atomic_key_write_preserves_limits_and_no_result_secret (test_local_config.LocalConfigTests.test_private_atomic_key_write_preserves_limits_and_no_result_secret) ... ok
+test_symlink_does_not_change_target (test_local_config.LocalConfigTests.test_symlink_does_not_change_target) ... ok
+test_default_mini_real_planning_tools_and_token_prices (test_mini.MiniTests.test_default_mini_real_planning_tools_and_token_prices) ... ok
+test_invalid_reference_can_be_corrected_once_without_new_scenario (test_mini.ReferenceRepairTests.test_invalid_reference_can_be_corrected_once_without_new_scenario) ... ok
+test_grade_cannot_hide_unobserved_or_zero_crossing_groups (test_presentation.PresentationTests.test_grade_cannot_hide_unobserved_or_zero_crossing_groups) ... ok
+test_hypotheses_do_not_double_count_channel_models_or_fake_missing_trace (test_presentation.PresentationTests.test_hypotheses_do_not_double_count_channel_models_or_fake_missing_trace) ... ok
+test_external_call_trace_distinguishes_fake_and_cached (test_stage3.Stage3Tests.test_external_call_trace_distinguishes_fake_and_cached) ... ok
+test_measurement_requires_all_identity_fields_and_exact_plan (test_stage3.Stage3Tests.test_measurement_requires_all_identity_fields_and_exact_plan) ... ok
+test_proposals_are_unmeasured_and_survive_reloading (test_stage3.Stage3Tests.test_proposals_are_unmeasured_and_survive_reloading) ... ok
+test_trace_captures_actual_update_without_claiming_gain (test_stage3.Stage3Tests.test_trace_captures_actual_update_without_claiming_gain) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 4.204s
+
+OK

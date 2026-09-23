@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-09-23T12:52:57.260767+00:00",
+  "scanned_text_files": 232,
+  "secret_pattern_files": [],
+  "forbidden_tracked_or_staged_paths": [],
+  "merge_marker_files": [],
+  "private_paths_in_current_user_docs": [],
+  "broken_links": [],
+  "pre_commit_status": " M README.md\n M STATE.md\n M requirements.txt\n?? docs/FINAL_QA.md\n?? reports/final/\n",
+  "new_features": false,
+  "agent_sha256": "54fa8cb5cd0045d2d0b8bc62a5d2f1bf6e5e6136f1668e27750aa410e2e1958a",
+  "submission_sha256": "f3935486bd54ebe001b9aa54c1773d51fff91387b585c57c9f9542658502197f",
+  "passed": true
+}

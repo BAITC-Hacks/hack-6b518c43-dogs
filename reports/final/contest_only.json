@@ -1,0 +1,37 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/Users/dudlextop/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "venv",
+        "/var/folders/2q/y8xtph2x14v9z3h4kr16t20w0000gn/T/beeagent-contest-only-m4pn1laa/venv"
+      ],
+      "exit_code": 0,
+      "seconds": 1.0098407499972382
+    },
+    {
+      "command": [
+        "/var/folders/2q/y8xtph2x14v9z3h4kr16t20w0000gn/T/beeagent-contest-only-m4pn1laa/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "exit_code": 0,
+      "seconds": 7.62462124999729
+    },
+    {
+      "command": [
+        "/var/folders/2q/y8xtph2x14v9z3h4kr16t20w0000gn/T/beeagent-contest-only-m4pn1laa/venv/bin/python",
+        "-c",
+        "import importlib.util,shutil; assert importlib.util.find_spec(\"openai\") is None; assert shutil.which(\"node\") is None; from local_eval import evaluate_agent; from agent import Agent; result=evaluate_agent(Agent(),seed=42,verbose=True); assert result is not None; print(\"CONTEST_WITHOUT_OPENAI_OR_NODE_PASS\")"
+      ],
+      "exit_code": 0,
+      "seconds": 13.026422958002513
+    }
+  ],
+  "scope": "Independent contest venv; only requirements.txt; no server packages, Node in PATH or API key",
+  "passed": true
+}

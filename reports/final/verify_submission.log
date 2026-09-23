@@ -1,0 +1,11 @@
+OK originals
+OK agent_import
+OK local_eval
+OK local_eval_10
+OK submission_11
+OK submission_937
+OK originals_after
+PASS: seed 42 2658548; 10 seeds median 2879745.5, min 2399590, positive 10/10
+Submission: 7 valid campaigns, identical fresh-process bytes; network blocked.
+SHA256 f3935486bd54ebe001b9aa54c1773d51fff91387b585c57c9f9542658502197f
+Report: /private/var/folders/2q/y8xtph2x14v9z3h4kr16t20w0000gn/T/beeagent-final-ak8z371p/app/reports/stage4/verification.json
