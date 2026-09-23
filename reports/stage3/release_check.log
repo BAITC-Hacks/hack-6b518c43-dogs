@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-23T11:11:21.427277+00:00",
+  "scanned_text_files": 148,
+  "potential_secret_files": [],
+  "originals_verified": true,
+  "originals_output": "OK: 16 organizer-provided files unchanged. agent.py is intentionally editable.",
+  "missing_required_files": [],
+  "dotenv_tracked": false,
+  "submission_sha256": "f3935486bd54ebe001b9aa54c1773d51fff91387b585c57c9f9542658502197f",
+  "reproducibility_matches": true,
+  "clean_install_passed": true,
+  "clean_install_submission_matches": true,
+  "frozen_experiment_files_unchanged": {
+    "tools/stage3_variants.py": true,
+    "tools/stage3_worlds.py": true,
+    "reports/stage3/baseline/agent.py": true,
+    "reports/stage3/baseline/submission.csv": true,
+    "original_protocol": true
+  },
+  "development_outcomes": 68,
+  "heldout_outcomes": 120,
+  "passed": true
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-23T10:44:52.769573+00:00",
+  "note": "No candidate changes after development; original parameters retained.",
+  "sha256": {
+    "tools/stage3_variants.py": "f5a9043c492efd05d7b379bdcc4db7ef6b04c5cf95536c6fbdb26cb592a047df",
+    "tools/stage3_worlds.py": "b59e865bbe2cea42c0ab1efbe746f58231ced509146525e67578b50f752eeeeb",
+    "docs/STAGE3_VALIDATION_PROTOCOL.md": "a9b9958b7a79a8e60592c81ea1f3bde9abb00b6dba7248706e797c311f9e9be5"
+  }
+}

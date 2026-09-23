@@ -2,9 +2,9 @@
 
 ## Task and status
 Continue the existing BeeAgent campaign decision product for the Beeline HackAlem case.
-Read STATE.md, docs/NUMERICAL_REVIEW.md, docs/AI_ASSISTANT.md and docs/TESTING_STAGE2.md.
+Read STATE.md, docs/NUMERICAL_STAGE3.md, docs/AI_ASSISTANT.md and docs/TESTING_STAGE3.md. Earlier numerical and testing reports are preserved as historical evidence.
 agent.py contains our deterministic working engine, not the organizer template.
-Stage 2 preserved numerical policy, changed branding and added immutable plan versions and a server assistant.
+Stage 3 selected the repeat policy under a preregistered comparison; see docs/NUMERICAL_STAGE3.md and docs/TESTING_STAGE3.md. The repeat policy improves official noise-seed checks but regresses in authored worlds within the declared tolerance. Do not claim global superiority. Preserve all experiment outcomes. The second candidate was rejected.
 The reports/baseline_* files measure the organizer template. reports/levra contains stage-1 results;
 reports/stage2 contains the stage-2 audit and validation. Historical filenames do not define the current brand.
 Preserve work and Git history; do not revert to the template or rebuild the app from scratch.

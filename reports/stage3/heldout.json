@@ -1,0 +1,5942 @@
+{
+  "protocol": "docs/STAGE3_VALIDATION_PROTOCOL.md",
+  "completed_at": "2026-09-23T10:47:13.441726+00:00",
+  "variant_sha256": "f5a9043c492efd05d7b379bdcc4db7ef6b04c5cf95536c6fbdb26cb592a047df",
+  "groups": {
+    "adverse/baseline": {
+      "n": 5,
+      "median": 440324.0,
+      "minimum": 426477.2,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 155232.12929339142,
+      "mean_forecast_error": 155232.12929339142,
+      "mean_pilot_cost": 7000.0,
+      "mean_pilot_contacts": 400.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.038431491799929066,
+      "max_seconds": 0.04615779200139514,
+      "violations": 0
+    },
+    "adverse/fixed": {
+      "n": 5,
+      "median": 385392.56000000006,
+      "minimum": 330447.02,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 403672.58656654146,
+      "mean_forecast_error": 403672.58656654146,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 1200.0,
+      "mean_pilot_count": 12.0,
+      "mean_seconds": 0.02291324159996293,
+      "max_seconds": 0.02344062500014843,
+      "violations": 0
+    },
+    "adverse/repeat": {
+      "n": 5,
+      "median": 425040.80000000005,
+      "minimum": 418676.0,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 245993.53245575418,
+      "mean_forecast_error": 245993.53245575418,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.03160881680014427,
+      "max_seconds": 0.040112082999257836,
+      "violations": 0
+    },
+    "adverse/revisit": {
+      "n": 5,
+      "median": 210160.0,
+      "minimum": 170500.0,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 278629.0428773231,
+      "mean_forecast_error": -278629.0428773231,
+      "mean_pilot_cost": 5000.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.028990849799811258,
+      "max_seconds": 0.030229707999751554,
+      "violations": 0
+    },
+    "history_correct/baseline": {
+      "n": 5,
+      "median": 663667.2000000001,
+      "minimum": 604411.2000000001,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 445071.30935398676,
+      "mean_forecast_error": 445071.30935398676,
+      "mean_pilot_cost": 7000.0,
+      "mean_pilot_contacts": 400.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.04542580860033922,
+      "max_seconds": 0.04774354200162634,
+      "violations": 0
+    },
+    "history_correct/fixed": {
+      "n": 5,
+      "median": 520223.4,
+      "minimum": 384473.30000000005,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 389817.8664573001,
+      "mean_forecast_error": 389817.8664573001,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 1200.0,
+      "mean_pilot_count": 12.0,
+      "mean_seconds": 0.020521299800020643,
+      "max_seconds": 0.028747500000463333,
+      "violations": 0
+    },
+    "history_correct/repeat": {
+      "n": 5,
+      "median": 597304.4,
+      "minimum": 594356.0,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 522671.4880996983,
+      "mean_forecast_error": 522671.4880996983,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.039497633199789564,
+      "max_seconds": 0.04239504099859914,
+      "violations": 0
+    },
+    "history_correct/revisit": {
+      "n": 5,
+      "median": 590260.0,
+      "minimum": 436876.0,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 204564.76187848533,
+      "mean_forecast_error": 204564.76187848533,
+      "mean_pilot_cost": 5000.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.041308100200330954,
+      "max_seconds": 0.04560962499999732,
+      "violations": 0
+    },
+    "official/baseline": {
+      "n": 10,
+      "median": 2166867.8166780565,
+      "minimum": 1629316.3582151162,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 5514713.685793239,
+      "mean_forecast_error": 5514713.685793239,
+      "mean_pilot_cost": 19820.0,
+      "mean_pilot_contacts": 2950.0,
+      "mean_pilot_count": 20.0,
+      "mean_seconds": 3.4737478915998508,
+      "max_seconds": 3.7004327079994255,
+      "violations": 0
+    },
+    "official/fixed": {
+      "n": 10,
+      "median": 4532276.782180643,
+      "minimum": 3049248.6507879123,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 2710996.1699409937,
+      "mean_forecast_error": 2452384.875965357,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 1200.0,
+      "mean_pilot_count": 12.0,
+      "mean_seconds": 0.5786511499996777,
+      "max_seconds": 0.6754249170007824,
+      "violations": 0
+    },
+    "official/repeat": {
+      "n": 10,
+      "median": 2835491.6366071007,
+      "minimum": 2459243.5221631033,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 2382804.942918806,
+      "mean_forecast_error": 2382804.942918806,
+      "mean_pilot_cost": 19964.0,
+      "mean_pilot_contacts": 2124.0,
+      "mean_pilot_count": 20.0,
+      "mean_seconds": 4.550495045800199,
+      "max_seconds": 5.333170208999945,
+      "violations": 0
+    },
+    "official/revisit": {
+      "n": 10,
+      "median": 2950879.7246615556,
+      "minimum": 2025050.2357509881,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 2437566.5198621484,
+      "mean_forecast_error": 2308833.1621885933,
+      "mean_pilot_cost": 19998.0,
+      "mean_pilot_contacts": 1982.1,
+      "mean_pilot_count": 20.0,
+      "mean_seconds": 5.183781704199828,
+      "max_seconds": 5.961441041999933,
+      "violations": 0
+    },
+    "shifted/baseline": {
+      "n": 5,
+      "median": -111655.872,
+      "minimum": -125075.008,
+      "negative_fraction": 1.0,
+      "mean_absolute_error": 792341.2263133732,
+      "mean_forecast_error": 792341.2263133732,
+      "mean_pilot_cost": 7000.0,
+      "mean_pilot_contacts": 400.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.0375612749998254,
+      "max_seconds": 0.04722749999928055,
+      "violations": 0
+    },
+    "shifted/fixed": {
+      "n": 5,
+      "median": 795036.3840000001,
+      "minimum": 467659.8320000001,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 200835.65512087152,
+      "mean_forecast_error": 13739.798276915088,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 1200.0,
+      "mean_pilot_count": 12.0,
+      "mean_seconds": 0.019079641600183096,
+      "max_seconds": 0.026323624999349704,
+      "violations": 0
+    },
+    "shifted/repeat": {
+      "n": 5,
+      "median": -118929.28000000001,
+      "minimum": -127710.97600000001,
+      "negative_fraction": 1.0,
+      "mean_absolute_error": 908307.0113621557,
+      "mean_forecast_error": 908307.0113621557,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.03441763359951437,
+      "max_seconds": 0.037276625000231434,
+      "violations": 0
+    },
+    "shifted/revisit": {
+      "n": 5,
+      "median": -66636.8,
+      "minimum": -87924.8,
+      "negative_fraction": 1.0,
+      "mean_absolute_error": 277808.3498954518,
+      "mean_forecast_error": 277808.3498954518,
+      "mean_pilot_cost": 5000.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.03145927519981342,
+      "max_seconds": 0.03615091699975892,
+      "violations": 0
+    },
+    "weakened/baseline": {
+      "n": 5,
+      "median": 7637.216000000008,
+      "minimum": 512.9600000000064,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 763097.4198801911,
+      "mean_forecast_error": 763097.4198801911,
+      "mean_pilot_cost": 7000.0,
+      "mean_pilot_contacts": 400.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.044136841599902256,
+      "max_seconds": 0.0480760829996143,
+      "violations": 0
+    },
+    "weakened/fixed": {
+      "n": 5,
+      "median": -1745.5935999999929,
+      "minimum": -10364.238399999995,
+      "negative_fraction": 1.0,
+      "mean_absolute_error": 847058.469231718,
+      "mean_forecast_error": 847058.469231718,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 1200.0,
+      "mean_pilot_count": 12.0,
+      "mean_seconds": 0.023380133399768965,
+      "max_seconds": 0.023758916999213398,
+      "violations": 0
+    },
+    "weakened/repeat": {
+      "n": 5,
+      "median": 6664.352000000006,
+      "minimum": 4182.080000000002,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 866748.087090057,
+      "mean_forecast_error": 866748.087090057,
+      "mean_pilot_cost": 4800.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.03682218339963583,
+      "max_seconds": 0.03804258399941318,
+      "violations": 0
+    },
+    "weakened/revisit": {
+      "n": 5,
+      "median": 13886.080000000002,
+      "minimum": 1496.5120000000006,
+      "negative_fraction": 0.0,
+      "mean_absolute_error": 314967.6232279382,
+      "mean_forecast_error": 314967.6232279382,
+      "mean_pilot_cost": 5000.0,
+      "mean_pilot_contacts": 350.0,
+      "mean_pilot_count": 4.0,
+      "mean_seconds": 0.0350057834006293,
+      "max_seconds": 0.03843104199950176,
+      "violations": 0
+    }
+  },
+  "results": [
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 100,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2761424.469660028,
+      "forecast_net": 6286143.491266658,
+      "cost": 100000.0,
+      "contacts": 9833,
+      "pilot_cost": 19920.0,
+      "pilot_contacts": 2520,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_19",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.3449647500001447
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 100,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4334848.850526656,
+      "forecast_net": 6025774.478878147,
+      "cost": 99994.0,
+      "contacts": 13343,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_16;tariff_4;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.5426118750001478
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 100,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2620853.4199986197,
+      "forecast_net": 5978018.111409729,
+      "cost": 100000.0,
+      "contacts": 11686,
+      "pilot_cost": 19960.0,
+      "pilot_contacts": 2200,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_3",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 4,
+      "seconds": 4.265240374999848
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 100,
+      "policy": "revisit",
+      "violations": [],
+      "net": 2025050.2357509881,
+      "forecast_net": 5352172.476521611,
+      "cost": 99984.0,
+      "contacts": 8414,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2110,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_16",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_13",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_current_tariff": "tariff_16",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_09"
+        }
+      ],
+      "repeat_count": 4,
+      "seconds": 5.023396042000968
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 101,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2165776.7320577027,
+      "forecast_net": 8279592.232053802,
+      "cost": 99998.0,
+      "contacts": 14795,
+      "pilot_cost": 19720.0,
+      "pilot_contacts": 2920,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_3",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_18",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.6102908329994534
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 101,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4720260.587203594,
+      "forecast_net": 5933011.354314448,
+      "cost": 99998.0,
+      "contacts": 12506,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.5458807079994585
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 101,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2883571.0679045883,
+      "forecast_net": 4416187.285309908,
+      "cost": 100000.0,
+      "contacts": 9546,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2080,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.713756541001203
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 101,
+      "policy": "revisit",
+      "violations": [],
+      "net": 2590626.4230302433,
+      "forecast_net": 8402185.075462539,
+      "cost": 99984.0,
+      "contacts": 12778,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 1610,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 2,
+      "seconds": 5.426985209000122
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 102,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2043919.3531431258,
+      "forecast_net": 9100713.175286453,
+      "cost": 99984.0,
+      "contacts": 15000,
+      "pilot_cost": 19920.0,
+      "pilot_contacts": 3000,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_19",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_6",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.262660833999689
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 102,
+      "policy": "fixed",
+      "violations": [],
+      "net": 3049248.6507879123,
+      "forecast_net": 10730849.02416505,
+      "cost": 99998.0,
+      "contacts": 14939,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_09"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.607432708999113
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 102,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2922416.072120405,
+      "forecast_net": 5282742.379210277,
+      "cost": 99990.0,
+      "contacts": 11226,
+      "pilot_cost": 19920.0,
+      "pilot_contacts": 2260,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_12",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.914658833000431
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 102,
+      "policy": "revisit",
+      "violations": [],
+      "net": 3408971.06010801,
+      "forecast_net": 4527163.145348965,
+      "cost": 99984.0,
+      "contacts": 11292,
+      "pilot_cost": 19996.0,
+      "pilot_contacts": 1979,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_5",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.5737570419987605
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 103,
+      "policy": "baseline",
+      "violations": [],
+      "net": 1633246.7880082303,
+      "forecast_net": 8675656.548340874,
+      "cost": 93892.0,
+      "contacts": 15000,
+      "pilot_cost": 19880.0,
+      "pilot_contacts": 3140,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_18",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.426230499999292
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 103,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4749096.589355181,
+      "forecast_net": 3892496.346173674,
+      "cost": 99992.0,
+      "contacts": 7502,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.5087898329984455
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 103,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2459243.5221631033,
+      "forecast_net": 4691690.072575479,
+      "cost": 99982.0,
+      "contacts": 9423,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2090,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "tariff_11;tariff_14",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 3.775355625000884
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 103,
+      "policy": "revisit",
+      "violations": [],
+      "net": 2039739.7865961203,
+      "forecast_net": 7298371.790346274,
+      "cost": 100000.0,
+      "contacts": 10538,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2186,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_20",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_5",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_16",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 5.174740208000003
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 104,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2167958.90129841,
+      "forecast_net": 8779218.760315944,
+      "cost": 100000.0,
+      "contacts": 14610,
+      "pilot_cost": 19760.0,
+      "pilot_contacts": 2740,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_18",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_6",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.4355714579996857
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 104,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4776503.581954509,
+      "forecast_net": 5104961.772308676,
+      "cost": 99994.0,
+      "contacts": 9811,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_14;tariff_16;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.5280072089990426
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 104,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2687017.3748067785,
+      "forecast_net": 6131424.432617724,
+      "cost": 100000.0,
+      "contacts": 12549,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2110,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_19",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_14",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.3602492089994485
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 104,
+      "policy": "revisit",
+      "violations": [],
+      "net": 3097069.075979077,
+      "forecast_net": 6104339.16526534,
+      "cost": 99980.0,
+      "contacts": 13242,
+      "pilot_cost": 19996.0,
+      "pilot_contacts": 1999,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_18",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 4,
+      "seconds": 4.843301333999989
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 105,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2603325.0107221347,
+      "forecast_net": 4709898.5139353,
+      "cost": 99998.0,
+      "contacts": 10848,
+      "pilot_cost": 19760.0,
+      "pilot_contacts": 3140,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_20",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.558620666999559
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 105,
+      "policy": "fixed",
+      "violations": [],
+      "net": 3130940.4278722275,
+      "forecast_net": 8422313.203321096,
+      "cost": 99998.0,
+      "contacts": 14939,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "tariff_4;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_09"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.6152037910014769
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 105,
+      "policy": "repeat",
+      "violations": [],
+      "net": 3496345.5496189184,
+      "forecast_net": 4789284.558539973,
+      "cost": 99984.0,
+      "contacts": 10208,
+      "pilot_cost": 19920.0,
+      "pilot_contacts": 2180,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 5.333170208999945
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 105,
+      "policy": "revisit",
+      "violations": [],
+      "net": 3060478.7617610944,
+      "forecast_net": 3022910.936802337,
+      "cost": 100000.0,
+      "contacts": 5563,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2030,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_13",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_11;tariff_14;tariff_16;tariff_18;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_12",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_2;tariff_5;tariff_6",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_6",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_current_tariff": "tariff_16",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_09"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.993251290999979
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 106,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2911138.843940746,
+      "forecast_net": 7287689.10355141,
+      "cost": 99980.0,
+      "contacts": 15000,
+      "pilot_cost": 19800.0,
+      "pilot_contacts": 3060,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_18",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.7004327079994255
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 106,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4984150.65255101,
+      "forecast_net": 4547694.425854335,
+      "cost": 100000.0,
+      "contacts": 9571,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_14;tariff_16",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.554919082998822
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 106,
+      "policy": "repeat",
+      "violations": [],
+      "net": 3406121.691331069,
+      "forecast_net": 4213017.6160591105,
+      "cost": 99988.0,
+      "contacts": 11358,
+      "pilot_cost": 19960.0,
+      "pilot_contacts": 2200,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_14",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.264047583999854
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 106,
+      "policy": "revisit",
+      "violations": [],
+      "net": 3402113.2620873414,
+      "forecast_net": 4306097.69119665,
+      "cost": 99988.0,
+      "contacts": 11553,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2240,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_3",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 4,
+      "seconds": 5.2089324579992535
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 107,
+      "policy": "baseline",
+      "violations": [],
+      "net": 1629316.3582151162,
+      "forecast_net": 6709401.92289529,
+      "cost": 99982.0,
+      "contacts": 15000,
+      "pilot_cost": 19720.0,
+      "pilot_contacts": 2920,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_20",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_16",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.3882590829998662
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 107,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4043847.019735208,
+      "forecast_net": 5882771.144101507,
+      "cost": 99998.0,
+      "contacts": 14061,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_13;tariff_8",
+          "target_tariff": "tariff_10",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_7",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_09"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.6670941669999593
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 107,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2522099.5209042234,
+      "forecast_net": 4912244.944357734,
+      "cost": 100000.0,
+      "contacts": 10988,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2080,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_16",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 4.482375583000248
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 107,
+      "policy": "revisit",
+      "violations": [],
+      "net": 2567484.925374082,
+      "forecast_net": 1961385.9619650638,
+      "cost": 68576.0,
+      "contacts": 4794,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2020,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_13",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_14;tariff_16;tariff_18;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_2;tariff_6",
+          "target_tariff": "tariff_13",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_2;tariff_5;tariff_6",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_15;tariff_16;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 5.4552382080000825
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 108,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2131470.0324048046,
+      "forecast_net": 10257188.869689401,
+      "cost": 100000.0,
+      "contacts": 14866,
+      "pilot_cost": 19920.0,
+      "pilot_contacts": 3000,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_5",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_6",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_08"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.5277855830008775
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 108,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4476710.009656388,
+      "forecast_net": 9237812.785321772,
+      "cost": 100000.0,
+      "contacts": 14679,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "tariff_10;tariff_4",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_14",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_09"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.6754249170007824
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 108,
+      "policy": "repeat",
+      "violations": [],
+      "net": 2787412.205309613,
+      "forecast_net": 8282498.487802809,
+      "cost": 99986.0,
+      "contacts": 14637,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 2160,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_12",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_4",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_08"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_09"
+        },
+        {
+          "filter_current_tariff": "tariff_1",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_10"
+        }
+      ],
+      "repeat_count": 5,
+      "seconds": 5.020208291000017
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 108,
+      "policy": "revisit",
+      "violations": [],
+      "net": 2841280.687562017,
+      "forecast_net": 5790613.310360486,
+      "cost": 100000.0,
+      "contacts": 10678,
+      "pilot_cost": 19988.0,
+      "pilot_contacts": 1767,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_16",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 3,
+      "seconds": 5.176774207999188
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 109,
+      "policy": "baseline",
+      "violations": [],
+      "net": 2977465.359345805,
+      "forecast_net": 8086676.089393359,
+      "cost": 99980.0,
+      "contacts": 15000,
+      "pilot_cost": 19800.0,
+      "pilot_contacts": 3060,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_17",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_18",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 3.482662500000515
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 109,
+      "policy": "fixed",
+      "violations": [],
+      "net": 4587843.554704897,
+      "forecast_net": 7599614.149562447,
+      "cost": 99998.0,
+      "contacts": 13436,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3;tariff_4",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.5411472079995292
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 109,
+      "policy": "repeat",
+      "violations": [],
+      "net": 3387593.0748521364,
+      "forecast_net": 4303615.0403147675,
+      "cost": 99982.0,
+      "contacts": 9909,
+      "pilot_cost": 19880.0,
+      "pilot_contacts": 1880,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_7",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 2,
+      "seconds": 4.375888208000106
+    },
+    {
+      "split": "heldout",
+      "family": "official",
+      "seed": 109,
+      "policy": "revisit",
+      "violations": [],
+      "net": 3485397.2009158796,
+      "forecast_net": 4841303.487781519,
+      "cost": 99992.0,
+      "contacts": 11221,
+      "pilot_cost": 20000.0,
+      "pilot_contacts": 1880,
+      "pilot_count": 20,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+          "target_tariff": "tariff_8",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "tariff_5",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_13",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+          "target_tariff": "tariff_13",
+          "channel": "push",
+          "campaign_name": "BeeAgent_05"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+          "target_tariff": "tariff_8",
+          "channel": "push",
+          "campaign_name": "BeeAgent_06"
+        },
+        {
+          "filter_arpu_segment": "LOW",
+          "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+          "target_tariff": "tariff_9",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_07"
+        }
+      ],
+      "repeat_count": 2,
+      "seconds": 5.961441041999933
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 160,
+      "policy": "baseline",
+      "violations": [],
+      "net": 726231.6,
+      "forecast_net": 1186597.3918824077,
+      "cost": 39960,
+      "contacts": 1641,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04774354200162634
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 160,
+      "policy": "fixed",
+      "violations": [],
+      "net": 520223.4,
+      "forecast_net": 922494.7456526425,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.016426958000010927
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 160,
+      "policy": "repeat",
+      "violations": [],
+      "net": 730778.0,
+      "forecast_net": 1164645.949612052,
+      "cost": 40000,
+      "contacts": 1605,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04143445800036716
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 160,
+      "policy": "revisit",
+      "violations": [],
+      "net": 590260.0,
+      "forecast_net": 864236.8688957421,
+      "cost": 24800,
+      "contacts": 1250,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03835737500048708
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 161,
+      "policy": "baseline",
+      "violations": [],
+      "net": 606762.0,
+      "forecast_net": 925887.8507319813,
+      "cost": 39960,
+      "contacts": 1800,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04348829199989268
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 161,
+      "policy": "fixed",
+      "violations": [],
+      "net": 384473.30000000005,
+      "forecast_net": 785524.5045052394,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.028747500000463333
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 161,
+      "policy": "repeat",
+      "violations": [],
+      "net": 597304.4,
+      "forecast_net": 1050008.2161136342,
+      "cost": 40000,
+      "contacts": 1770,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03728208299980906
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 161,
+      "policy": "revisit",
+      "violations": [],
+      "net": 436876.0,
+      "forecast_net": 636511.1443118403,
+      "cost": 18200,
+      "contacts": 1250,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.0449136669994914
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 162,
+      "policy": "baseline",
+      "violations": [],
+      "net": 604411.2000000001,
+      "forecast_net": 1036885.9278952149,
+      "cost": 39960,
+      "contacts": 1800,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04310379200069292
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 162,
+      "policy": "fixed",
+      "violations": [],
+      "net": 520644.6,
+      "forecast_net": 653915.1241487563,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.016634999999951106
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 162,
+      "policy": "repeat",
+      "violations": [],
+      "net": 594356.0,
+      "forecast_net": 1147273.6309649078,
+      "cost": 40000,
+      "contacts": 1770,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.038504666999870096
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 162,
+      "policy": "revisit",
+      "violations": [],
+      "net": 590260.0,
+      "forecast_net": 670106.4610765046,
+      "cost": 24800,
+      "contacts": 1250,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03872520900040399
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 163,
+      "policy": "baseline",
+      "violations": [],
+      "net": 663854.4,
+      "forecast_net": 1058463.8733940453,
+      "cost": 39960,
+      "contacts": 1776,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04681608399914694
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 163,
+      "policy": "fixed",
+      "violations": [],
+      "net": 520363.80000000005,
+      "forecast_net": 764507.4164748378,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.017014875000313623
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 163,
+      "policy": "repeat",
+      "violations": [],
+      "net": 659285.6000000001,
+      "forecast_net": 1186407.9858034188,
+      "cost": 40000,
+      "contacts": 1740,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04239504099859914
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 163,
+      "policy": "revisit",
+      "violations": [],
+      "net": 590260.0,
+      "forecast_net": 704525.5661063233,
+      "cost": 24800,
+      "contacts": 1250,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03893462500127498
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 164,
+      "policy": "baseline",
+      "violations": [],
+      "net": 663667.2000000001,
+      "forecast_net": 1282447.9028662846,
+      "cost": 39960,
+      "contacts": 1776,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04597733300033724
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 164,
+      "policy": "fixed",
+      "violations": [],
+      "net": 499780.70000000007,
+      "forecast_net": 1268133.3415050243,
+      "cost": 39880,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.023782165999364224
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 164,
+      "policy": "repeat",
+      "violations": [],
+      "net": 596976.8,
+      "forecast_net": 1243722.458004479,
+      "cost": 40000,
+      "contacts": 1770,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.037871917000302346
+    },
+    {
+      "split": "heldout",
+      "family": "history_correct",
+      "seed": 164,
+      "policy": "revisit",
+      "violations": [],
+      "net": 730242.8,
+      "forecast_net": 1085342.5690020164,
+      "cost": 39880,
+      "contacts": 1603,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04560962499999732
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 160,
+      "policy": "baseline",
+      "violations": [],
+      "net": -120657.28000000001,
+      "forecast_net": 781196.8765348004,
+      "cost": 40000,
+      "contacts": 1216,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04432749999978114
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 160,
+      "policy": "fixed",
+      "violations": [],
+      "net": 795036.3840000001,
+      "forecast_net": 721637.5749879254,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "d",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.0163361659997463
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 160,
+      "policy": "repeat",
+      "violations": [],
+      "net": -120007.55200000001,
+      "forecast_net": 807669.0064446067,
+      "cost": 40000,
+      "contacts": 1170,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03540120899924659
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 160,
+      "policy": "revisit",
+      "violations": [],
+      "net": -66636.8,
+      "forecast_net": 186250.591180406,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.030452417000560672
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 161,
+      "policy": "baseline",
+      "violations": [],
+      "net": -103359.168,
+      "forecast_net": 540020.431521745,
+      "cost": 39960,
+      "contacts": 606,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.029367125000135275
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 161,
+      "policy": "fixed",
+      "violations": [],
+      "net": 1118903.0400000003,
+      "forecast_net": 950152.7461815655,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "d",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.016727000000173575
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 161,
+      "policy": "repeat",
+      "violations": [],
+      "net": -110812.288,
+      "forecast_net": 705737.5730542665,
+      "cost": 40000,
+      "contacts": 870,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.029505291999157635
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 161,
+      "policy": "revisit",
+      "violations": [],
+      "net": -53748.80000000001,
+      "forecast_net": 85480.88843232777,
+      "cost": 6200,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "a",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02946154199889861
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 162,
+      "policy": "baseline",
+      "violations": [],
+      "net": -111655.872,
+      "forecast_net": 631164.807368448,
+      "cost": 39960,
+      "contacts": 906,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03601012499893841
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 162,
+      "policy": "fixed",
+      "violations": [],
+      "net": 467659.8320000001,
+      "forecast_net": 954061.9930431314,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "d",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "d",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.026323624999349704
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 162,
+      "policy": "repeat",
+      "violations": [],
+      "net": -118929.28000000001,
+      "forecast_net": 789347.2457729283,
+      "cost": 40000,
+      "contacts": 1170,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.037276625000231434
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 162,
+      "policy": "revisit",
+      "violations": [],
+      "net": -66636.8,
+      "forecast_net": 200138.25712703084,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.032034541998655186
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 163,
+      "policy": "baseline",
+      "violations": [],
+      "net": -103359.168,
+      "forecast_net": 590408.2988586415,
+      "cost": 39960,
+      "contacts": 606,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.030874125000991626
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 163,
+      "policy": "fixed",
+      "violations": [],
+      "net": 1119745.4400000002,
+      "forecast_net": 894154.9007206187,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "d",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.018879917000958812
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 163,
+      "policy": "repeat",
+      "violations": [],
+      "net": -110812.288,
+      "forecast_net": 750532.0253730133,
+      "cost": 40000,
+      "contacts": 870,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03287741699932667
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 163,
+      "policy": "revisit",
+      "violations": [],
+      "net": -66636.8,
+      "forecast_net": 268691.8551625789,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "a",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.029196958001193707
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 164,
+      "policy": "baseline",
+      "violations": [],
+      "net": -125075.008,
+      "forecast_net": 854809.2212832309,
+      "cost": 39880,
+      "contacts": 1798,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04722749999928055
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 164,
+      "policy": "fixed",
+      "violations": [],
+      "net": 794062.944,
+      "forecast_net": 844099.4164513352,
+      "cost": 18000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "d",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.017131500000687083
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 164,
+      "policy": "repeat",
+      "violations": [],
+      "net": -127710.97600000001,
+      "forecast_net": 899976.8221659637,
+      "cost": 40000,
+      "contacts": 1470,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03702762499960954
+    },
+    {
+      "split": "heldout",
+      "family": "shifted",
+      "seed": 164,
+      "policy": "revisit",
+      "violations": [],
+      "net": -87924.8,
+      "forecast_net": 306896.15757491556,
+      "cost": 18200,
+      "contacts": 950,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03615091699975892
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 160,
+      "policy": "baseline",
+      "violations": [],
+      "net": 8570.240000000005,
+      "forecast_net": 865810.5269234531,
+      "cost": 39880,
+      "contacts": 1798,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.0480760829996143
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 160,
+      "policy": "fixed",
+      "violations": [],
+      "net": -764.2623999999923,
+      "forecast_net": 898948.3906802789,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.023584624999784864
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 160,
+      "policy": "repeat",
+      "violations": [],
+      "net": 10905.728000000003,
+      "forecast_net": 900972.68175197,
+      "cost": 40000,
+      "contacts": 1770,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03759708399957162
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 160,
+      "policy": "revisit",
+      "violations": [],
+      "net": 27116.800000000003,
+      "forecast_net": 367473.5294180739,
+      "cost": 18200,
+      "contacts": 1250,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03843104199950176
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 161,
+      "policy": "baseline",
+      "violations": [],
+      "net": 999.6800000000076,
+      "forecast_net": 630774.8318468985,
+      "cost": 40000,
+      "contacts": 916,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03799950000029639
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 161,
+      "policy": "fixed",
+      "violations": [],
+      "net": -10364.238399999995,
+      "forecast_net": 766518.8834893834,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "d",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02291791599964199
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 161,
+      "policy": "repeat",
+      "violations": [],
+      "net": 4754.912000000004,
+      "forecast_net": 796178.7605573453,
+      "cost": 40000,
+      "contacts": 1170,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03458258299906447
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 161,
+      "policy": "revisit",
+      "violations": [],
+      "net": 1496.5120000000006,
+      "forecast_net": 182365.68141270042,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "a",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.030163917001118534
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 162,
+      "policy": "baseline",
+      "violations": [],
+      "net": 512.9600000000064,
+      "forecast_net": 689612.705874991,
+      "cost": 40000,
+      "contacts": 916,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03995270800078288
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 162,
+      "policy": "fixed",
+      "violations": [],
+      "net": -2253.1935999999914,
+      "forecast_net": 763517.6391605452,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.023582458999953815
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 162,
+      "policy": "repeat",
+      "violations": [],
+      "net": 4182.080000000002,
+      "forecast_net": 847383.8626430592,
+      "cost": 40000,
+      "contacts": 1170,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03687279099904117
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 162,
+      "policy": "revisit",
+      "violations": [],
+      "net": 7756.48,
+      "forecast_net": 260402.1638643134,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03171070800090092
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 163,
+      "policy": "baseline",
+      "violations": [],
+      "net": 7637.216000000008,
+      "forecast_net": 717730.3297383001,
+      "cost": 40000,
+      "contacts": 1516,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04778920799981279
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 163,
+      "policy": "fixed",
+      "violations": [],
+      "net": -1745.5935999999929,
+      "forecast_net": 803141.6203749758,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "d",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.023758916999213398
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 163,
+      "policy": "repeat",
+      "violations": [],
+      "net": 6664.352000000006,
+      "forecast_net": 856330.9571503869,
+      "cost": 40000,
+      "contacts": 1470,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "HIGH",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03804258399941318
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 163,
+      "policy": "revisit",
+      "violations": [],
+      "net": 13886.080000000002,
+      "forecast_net": 433083.8161496328,
+      "cost": 18200,
+      "contacts": 950,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03782925000086834
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 164,
+      "policy": "baseline",
+      "violations": [],
+      "net": 11422.016000000003,
+      "forecast_net": 940700.8170173123,
+      "cost": 39880,
+      "contacts": 1798,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.046866708999004913
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 164,
+      "policy": "fixed",
+      "violations": [],
+      "net": -882.7599999999948,
+      "forecast_net": 987155.7644534067,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02305675000025076
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 164,
+      "policy": "repeat",
+      "violations": [],
+      "net": 9011.264000000003,
+      "forecast_net": 968392.5093475232,
+      "cost": 40000,
+      "contacts": 1470,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_arpu_segment": "MID",
+          "filter_current_tariff": "a;b",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.037015875001088716
+    },
+    {
+      "split": "heldout",
+      "family": "weakened",
+      "seed": 164,
+      "policy": "revisit",
+      "violations": [],
+      "net": 18275.200000000004,
+      "forecast_net": 400043.9972949705,
+      "cost": 18200,
+      "contacts": 950,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03689400000075693
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 160,
+      "policy": "baseline",
+      "violations": [],
+      "net": 440324.0,
+      "forecast_net": 676899.5162815897,
+      "cost": 39880,
+      "contacts": 1198,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.036946208998415386
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 160,
+      "policy": "fixed",
+      "violations": [],
+      "net": 387790.88,
+      "forecast_net": 891951.1046754348,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.0225259159997222
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 160,
+      "policy": "repeat",
+      "violations": [],
+      "net": 423449.60000000003,
+      "forecast_net": 660268.480363393,
+      "cost": 40000,
+      "contacts": 870,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02991012500024226
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 160,
+      "policy": "revisit",
+      "violations": [],
+      "net": 206270.5,
+      "forecast_net": -59038.7837293447,
+      "cost": 5000,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.030229707999751554
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 161,
+      "policy": "baseline",
+      "violations": [],
+      "net": 441082.4,
+      "forecast_net": 525940.342481271,
+      "cost": 40000,
+      "contacts": 1216,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.04615779200139514
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 161,
+      "policy": "fixed",
+      "violations": [],
+      "net": 330447.02,
+      "forecast_net": 687972.2437168927,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "d",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02344062500014843
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 161,
+      "policy": "repeat",
+      "violations": [],
+      "net": 449196.80000000005,
+      "forecast_net": 709807.0391328258,
+      "cost": 40000,
+      "contacts": 1470,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_04"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.040112082999257836
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 161,
+      "policy": "revisit",
+      "violations": [],
+      "net": 170500.0,
+      "forecast_net": -133657.2458472077,
+      "cost": 5000,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "a",
+          "channel": "push",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.030184290999386576
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 162,
+      "policy": "baseline",
+      "violations": [],
+      "net": 426477.2,
+      "forecast_net": 539720.9229884509,
+      "cost": 40000,
+      "contacts": 916,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.036421957998754806
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 162,
+      "policy": "fixed",
+      "violations": [],
+      "net": 380940.44000000006,
+      "forecast_net": 749361.327339778,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.022639291999439592
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 162,
+      "policy": "repeat",
+      "violations": [],
+      "net": 418676.0,
+      "forecast_net": 662867.736472951,
+      "cost": 40000,
+      "contacts": 870,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.028992292000111775
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 162,
+      "policy": "revisit",
+      "violations": [],
+      "net": 210160.0,
+      "forecast_net": -24509.312809729876,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.028427625000404078
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 163,
+      "policy": "baseline",
+      "violations": [],
+      "net": 432680.0,
+      "forecast_net": 551920.2335726062,
+      "cost": 40000,
+      "contacts": 916,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.035938459001044976
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 163,
+      "policy": "fixed",
+      "violations": [],
+      "net": 385392.56000000006,
+      "forecast_net": 847056.8742881555,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.022787042000345537
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 163,
+      "policy": "repeat",
+      "violations": [],
+      "net": 425836.4,
+      "forecast_net": 666263.9681397363,
+      "cost": 40000,
+      "contacts": 870,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02914966699972865
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 163,
+      "policy": "revisit",
+      "violations": [],
+      "net": 210160.0,
+      "forecast_net": 21704.60210248051,
+      "cost": 11600,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "digital_ads",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.027748499998779153
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 164,
+      "policy": "baseline",
+      "violations": [],
+      "net": 441915.2,
+      "forecast_net": 664158.4311430394,
+      "cost": 39880,
+      "contacts": 1198,
+      "pilot_cost": 7000.0,
+      "pilot_contacts": 400,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "sms",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.03669304100003501
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 164,
+      "policy": "fixed",
+      "violations": [],
+      "net": 414605.66000000003,
+      "forecast_net": 741197.9428124469,
+      "cost": 40000,
+      "contacts": 1800,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 1200,
+      "pilot_count": 12,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        },
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "b",
+          "channel": "push",
+          "campaign_name": "BeeAgent_03"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02317333300015889
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 164,
+      "policy": "repeat",
+      "violations": [],
+      "net": 425040.80000000005,
+      "forecast_net": 672960.038169865,
+      "cost": 40000,
+      "contacts": 870,
+      "pilot_cost": 4800.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "call",
+          "campaign_name": "BeeAgent_01"
+        },
+        {
+          "filter_current_tariff": "b",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_02"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.029879917001380818
+    },
+    {
+      "split": "heldout",
+      "family": "adverse",
+      "seed": 164,
+      "policy": "revisit",
+      "violations": [],
+      "net": 282820.0,
+      "forecast_net": -117733.97410281375,
+      "cost": 5000,
+      "contacts": 650,
+      "pilot_cost": 5000.0,
+      "pilot_contacts": 350,
+      "pilot_count": 4,
+      "plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "c",
+          "channel": "push",
+          "campaign_name": "BeeAgent_01"
+        }
+      ],
+      "repeat_count": 0,
+      "seconds": 0.02836412500073493
+    }
+  ]
+}

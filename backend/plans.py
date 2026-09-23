@@ -3,6 +3,7 @@ import csv
 import io
 import json
 import uuid
+from backend.identity import compatible, verified_measurement
 from datetime import datetime, timezone
 
 CHANNEL_LABELS={'push':'Push','sms':'SMS','digital_ads':'Реклама','call':'Звонки'}
@@ -21,16 +22,20 @@ class PlanService:
         if plan_id==run_id:
             return dict({k:record[k] for k in ['plan','forecast','audit','passports','cautious_net']},
                 plan_id=run_id,run_id=run_id,base_plan_id=None,data_version=record['knowledge']['snapshot_id'],
-                new_pilots=0,measurement=record['official'],source='Проверка на данных кейса')
+                new_pilots=0,measurement=verified_measurement(record,run_id,record['plan']),
+                identity=record.get('identity'),archived=not compatible(record),created_at=record.get('created_at'),
+                measurement_binding=record.get('measurement_binding'),source='Проверка на данных кейса')
         if not isinstance(plan_id,str) or len(plan_id)!=36 or any(c not in '0123456789abcdef-' for c in plan_id):
             raise ValueError('Некорректная версия плана')
         file=self.directory/(plan_id+'.json')
         if not file.exists():raise ValueError('Версия плана не найдена')
         plan=json.loads(file.read_text())
-        if plan['run_id']!=run_id or plan['data_version']!=record['knowledge']['snapshot_id']:
+        if plan['run_id']!=run_id or plan['data_version']!=record['knowledge']['snapshot_id'] or plan.get('identity')!=record.get('identity'):
             raise ValueError('Версия относится к другому набору наблюдений')
         for i,campaign in enumerate(plan['plan']):campaign['campaign_name']=f'BeeAgent_{i+1:02d}'
         for i,detail in enumerate(plan['forecast']['details']):detail['campaign']['campaign_name']=f'BeeAgent_{i+1:02d}'
+        plan['archived']=not compatible(record)
+        plan['measurement']=None
         return plan
 
     def active_id(self,run_id):
@@ -38,7 +43,9 @@ class PlanService:
         return file.read_text().strip() if file.exists() else run_id
 
     def propose(self,run_id,base_plan_id,constraints,repair_plan=None):
-        base=self.get(run_id,base_plan_id);engine=self.restore(self.load_run(run_id))
+        base=self.get(run_id,base_plan_id);record=self.load_run(run_id)
+        if not compatible(record):raise ValueError('Архивный запуск: версия движка или данных изменилась. Рассчитайте новый план.')
+        engine=self.restore(record)
         if not isinstance(constraints,dict) or set(constraints)-{'budget','contacts','channels','max_campaigns','risk'}:
             raise ValueError('Неизвестное ограничение')
         combined={**base['forecast']['constraints'],**constraints}
@@ -47,7 +54,7 @@ class PlanService:
         result=self.bundle(engine,plan,combined)
         result.update(plan_id=str(uuid.uuid4()),run_id=run_id,base_plan_id=base['plan_id'],
             data_version=base['data_version'],snapshot_id=base['data_version'],new_pilots=0,
-            measurement=None,source='Прогноз изменённого плана',prior_forecast=base['forecast'],
+            measurement=None,identity=record['identity'],archived=False,source='Прогноз изменённого плана',prior_forecast=base['forecast'],
             delta={k:result['forecast'][k]-base['forecast'][k] for k in METRIC_LABELS},
             created_at=datetime.now(timezone.utc).isoformat())
         if repair_plan is not None:result['before_audit']=engine.audit(repair_plan,combined)
@@ -57,6 +64,7 @@ class PlanService:
 
     def apply(self,run_id,plan_id,expected_active):
         result=self.get(run_id,plan_id)
+        if result.get('archived'):raise ValueError('Архивная версия доступна для чтения и экспорта. Рассчитайте новый план.')
         if self.active_id(run_id)!=expected_active:
             raise ValueError('Активный план изменился. Откройте запуск заново и сравните версии.')
         self.directory.joinpath(run_id+'.active').write_text(result['plan_id'])
@@ -76,6 +84,7 @@ class PlanService:
 
     def context(self,run_id,plan_id):
         bundle=self.get(run_id,plan_id)
+        if bundle.get('archived'):raise ValueError('Архивный запуск: новый расчёт нужен для работы ассистента.')
         metrics=[dict(metric_id=f'{plan_id}:{key}',label=label,value=bundle['forecast'][key],
                     unit='у.е.' if key in ['net','cost'] else 'контактов' if key=='contacts' else 'клиентов',
                     source='Расчёт движка',plan_id=plan_id) for key,label in METRIC_LABELS.items()]
@@ -97,14 +106,16 @@ class PlanService:
             campaigns.append(dict(index=i,campaign=detail['campaign'],contacts=detail['contacts'],
                 cost=detail['cost'],marginal_net=detail['marginal_net'],unpiloted_cells=uncertainty,
                 uncertainty_scale=detail['uncertainty_scale'],evidence_id=ev['evidence_id']))
-        return dict(run_id=run_id,plan_id=plan_id,data_version=bundle['data_version'],
+        return dict(run_id=run_id,plan_id=plan_id,data_version=bundle['data_version'],identity=bundle.get('identity'),
             constraints=bundle['forecast']['constraints'],metrics=metrics,evidence=evidence,campaigns=campaigns,
             measurement={k:bundle['measurement'][k] for k in ['net_arpu_gain','total_cost','total_contacts','unique_customers_targeted']} if bundle['measurement'] else None)
 
     def campaign_evidence(self,run_id,plan_id,index):
         bundle=self.get(run_id,plan_id)
         if type(index)!=int or not 0<=index<len(bundle['plan']):raise ValueError('Кампания не найдена')
-        engine=self.restore(self.load_run(run_id));context=self.context(run_id,plan_id)
+        record=self.load_run(run_id)
+        if not compatible(record):raise ValueError('Архивный запуск: новый расчёт нужен для сравнения каналов.')
+        engine=self.restore(record);context=self.context(run_id,plan_id)
         context['campaigns']=[context['campaigns'][index]]
         context['passport']=bundle['passports'][index]
         chosen=bundle['plan'][index]

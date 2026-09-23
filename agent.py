@@ -18,6 +18,7 @@ FILTERS = {
     'filter_data_segment': ('data_segment', ('NON_USER', 'LITE', 'HEAVY')),
     'filter_call_segment': ('call_segment', ('LOW', 'MEDIUM', 'HIGH')),
 }
+ALGORITHM_VERSION = 'beeagent-repeat-3'
 NOISE = 0.804
 MAX_CAMPAIGNS = 10
 CAMPAIGN_CAP = 5000
@@ -366,13 +367,65 @@ class Engine:
                         plan, best = trial, value
         return [dict(x, campaign_name=f'BeeAgent_{i + 1:02d}') for i, x in enumerate(plan)]
 
-    def next_pilot(self, budget, contacts):
+    def next_pilot(self,budget,contacts):
+        # Research cannot consume the contacts reserved for final execution.
+        remaining=min(contacts,int(self.total_contacts*.20)-self.spent_contacts)
+        if remaining<=10:return None
+        if len(self.log)>=4 and sum(p.get('repeat_validation',False) for p in self.log)<6:
+            plan=self.solve(improve=False);details=self.forecast(plan)['details']
+            total=sum(max(0,d['marginal_net']) for d in details)
+            options=[]
+            for detail in details:
+                campaign=detail['campaign'];indices=self.audience(campaign)[:detail['contacts']]
+                for cell in sorted(set(self.cell_keys[indices])-{''}):
+                    key=self.state_key(cell,campaign['target_tariff'],campaign['channel']);state=self.states[key]
+                    if state['pilots']!=1:continue
+                    cell_ids=indices[self.cell_keys[indices]==cell]
+                    share=len(cell_ids)/max(1,len(indices))
+                    contribution=max(0,detail['marginal_net'])*share;cost=detail['cost']*share
+                    if contribution<.10*total and cost<.10*self.total_budget:continue
+                    mu,sd=self.estimate(cell,campaign['target_tariff'],campaign['channel'])
+                    arpu=max(1,self.cells[cell]['arpu_sum']/self.cells[cell]['n'])
+                    score=mu-self.channels[campaign['channel']]['cost_per_contact']/arpu
+                    alternatives=[]
+                    for target in self.tariffs:
+                        if target==self.cells[cell]['current']:continue
+                        for channel,settings in self.channels.items():
+                            if self.state_key(cell,target,channel)==key:continue
+                            am,asd=self.estimate(cell,target,channel)
+                            alternatives.append((am-settings['cost_per_contact']/arpu,asd))
+                    alternative=max(alternatives,default=(0.,0.))
+                    if score-alternative[0]>2*math.sqrt(sd*sd+alternative[1]**2):continue
+                    channel=campaign['channel']
+                    if self.channels[channel]['conversion_multiplier']<=1:
+                        channel=min((ch for ch in self.channels if self.channels[ch]['conversion_multiplier']<=1),
+                                    key=lambda ch:(abs(self.channels[ch]['conversion_multiplier']-.65),ch))
+                    price=self.channels[channel]['cost_per_contact']
+                    n=min(180 if self.channels[channel]['conversion_multiplier']<=1 else 100,
+                          self.cells[cell]['n'],remaining-10)
+                    if price:n=min(n,int(max(0,self.total_budget*.20-self.spent_budget)//price),int(budget//price))
+                    if n<min(40,self.cells[cell]['n']):continue
+                    options.append((contribution*sd/max(abs(mu),sd,1e-12)+cost,key,
+                        dict(cell=cell,target=campaign['target_tariff'],channel=channel,key=key,
+                             requested_n=n,value=None,repeat_validation=True)))
+            if options:return sorted(options,key=lambda x:(-x[0],x[1]))[0][2]
+        choice=self._knowledge_pilot(budget,remaining)
+        if choice:
+            price=self.channels[choice['channel']]['cost_per_contact']
+            n=min(choice['requested_n'],remaining-10,self.cells[choice['cell']]['n'])
+            if price:n=min(n,int(max(0,self.total_budget*.20-self.spent_budget)//price),int(budget//price))
+            if n<=0:return None
+            choice['requested_n']=n
+        return choice
+
+    def _knowledge_pilot(self, budget, contacts):
         """One-step knowledge-gradient heuristic, not exact global VOI."""
         if contacts <= 10 or not self.cells:
             return None
         best = None
         provisional = self.solve(improve=False)
         provisional_forecast = self.forecast(provisional)
+        self.pending_decision = dict(plan=provisional, forecast_net=provisional_forecast['net'])
         marginal_values = [max(0., d['marginal_net']) / max(1, d['contacts']) for d in provisional_forecast['details'] if d['contacts']]
         reach_shadow = min(marginal_values, default=0.)
         exposure = {key: 0 for key in self.cells}
@@ -451,6 +504,11 @@ class Engine:
         return None
 
     def observe(self, choice, result, before, after):
+        decision_before = getattr(self, 'pending_decision', None)
+        if decision_before is None:
+            provisional = self.solve(improve=False)
+            decision_before = dict(plan=provisional, forecast_net=self.forecast(provisional)['net'])
+        self.pending_decision = None
         key = choice['key']
         state = self.states[key]
         prior = dict(state)
@@ -477,6 +535,18 @@ class Engine:
                              resources_before=before, resources_after=after,
                              information_value=choice.get('value'),
                              reason=('Проверка неподтверждённой гипотезы, на которую приходится существенная часть плана.' if choice.get('validation') else 'Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.')))
+
+        self.log[-1]['repeat_validation'] = bool(choice.get('repeat_validation'))
+        if choice.get('repeat_validation'):
+            self.log[-1]['reason'] = 'Повторная проверка крупного решения: преимущество перед альтернативой недостаточно определено.'
+        # Actual online decisions at this observation; never reconstructed for old logs.
+        decision_after_plan = self.solve(improve=False)
+        decision_after = dict(plan=decision_after_plan, forecast_net=self.forecast(decision_after_plan)['net'])
+        self.log[-1]['decision_change'] = dict(before=decision_before, after=decision_after,
+            selection_changed=decision_before['plan'] != decision_after_plan,
+            estimate_channel_before=prior['mean'] * transfer,
+            estimate_channel_after=state['mean'] * transfer,
+            note='Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой.')
 
     def audit(self, plan, constraints=None):
         c = self.constraints(constraints)
@@ -549,7 +619,7 @@ class Engine:
         return result
 
     def snapshot(self):
-        record = dict(version=1, profile_hash=fingerprint(self.profile), tariffs=self.tariffs, channels=self.channels,
+        record = dict(version=2, algorithm_version=ALGORITHM_VERSION, profile_hash=fingerprint(self.profile), tariffs=self.tariffs, channels=self.channels,
                       total_budget=self.total_budget, total_contacts=self.total_contacts, spent_budget=self.spent_budget,
                       spent_contacts=self.spent_contacts, prior_floor=self.prior_floor, states=self.states, pilots=self.log,
                       diagnostics=self.diagnostics, stop_reason=self.stop_reason,
@@ -562,6 +632,8 @@ class Engine:
 
     @classmethod
     def from_snapshot(cls, profile, tariffs, snapshot):
+        if snapshot.get('version') != 2 or snapshot.get('algorithm_version') != ALGORITHM_VERSION:
+            raise ValueError('Архивный снимок несовместим с текущей версией движка. Нужен новый расчёт.')
         engine = cls(profile, tariffs, snapshot['channels'], snapshot['total_budget'], snapshot['total_contacts'], prior_floor=snapshot['prior_floor'])
         if fingerprint(engine.profile) != snapshot['profile_hash']:
             raise ValueError('Снимок относится к другой версии аудитории')

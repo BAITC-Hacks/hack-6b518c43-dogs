@@ -1,0 +1,181 @@
+{
+  "scope": "Implementation parity, not new selection outcomes",
+  "results": [
+    {
+      "family": "official",
+      "seed": 100,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 20
+    },
+    {
+      "family": "official",
+      "seed": 109,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 20
+    },
+    {
+      "family": "history_correct",
+      "seed": 160,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "history_correct",
+      "seed": 161,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "history_correct",
+      "seed": 162,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "history_correct",
+      "seed": 163,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "history_correct",
+      "seed": 164,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "shifted",
+      "seed": 160,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "shifted",
+      "seed": 161,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "shifted",
+      "seed": 162,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "shifted",
+      "seed": 163,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "shifted",
+      "seed": 164,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "weakened",
+      "seed": 160,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "weakened",
+      "seed": 161,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "weakened",
+      "seed": 162,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "weakened",
+      "seed": 163,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "weakened",
+      "seed": 164,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "adverse",
+      "seed": 160,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "adverse",
+      "seed": 161,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "adverse",
+      "seed": 162,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "adverse",
+      "seed": 163,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    },
+    {
+      "family": "adverse",
+      "seed": 164,
+      "plan_identical": true,
+      "measurement_identical": true,
+      "forecast_identical": true,
+      "pilot_trace_count": 4
+    }
+  ]
+}

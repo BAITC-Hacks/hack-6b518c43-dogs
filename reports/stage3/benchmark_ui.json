@@ -1,0 +1,218 @@
+{
+  "source": "Official evaluation after policy freeze, seeds 100–109",
+  "selected": "repeat",
+  "policies": [
+    {
+      "policy": "baseline",
+      "summary": {
+        "mean_net": 2302504.1848796103,
+        "median_net": 2166867.8166780565,
+        "min_net": 1629316.3582151162,
+        "max_net": 2977465.359345805,
+        "positive_runs": 10,
+        "mean_seconds": 3.4737478915998508
+      },
+      "results": [
+        {
+          "seed": 100,
+          "net_arpu_gain": 2761424.469660028
+        },
+        {
+          "seed": 101,
+          "net_arpu_gain": 2165776.7320577027
+        },
+        {
+          "seed": 102,
+          "net_arpu_gain": 2043919.3531431258
+        },
+        {
+          "seed": 103,
+          "net_arpu_gain": 1633246.7880082303
+        },
+        {
+          "seed": 104,
+          "net_arpu_gain": 2167958.90129841
+        },
+        {
+          "seed": 105,
+          "net_arpu_gain": 2603325.0107221347
+        },
+        {
+          "seed": 106,
+          "net_arpu_gain": 2911138.843940746
+        },
+        {
+          "seed": 107,
+          "net_arpu_gain": 1629316.3582151162
+        },
+        {
+          "seed": 108,
+          "net_arpu_gain": 2131470.0324048046
+        },
+        {
+          "seed": 109,
+          "net_arpu_gain": 2977465.359345805
+        }
+      ]
+    },
+    {
+      "policy": "repeat",
+      "summary": {
+        "mean_net": 2917267.3499009456,
+        "median_net": 2835491.6366071007,
+        "min_net": 2459243.5221631033,
+        "max_net": 3496345.5496189184,
+        "positive_runs": 10,
+        "mean_seconds": 4.550495045800199
+      },
+      "results": [
+        {
+          "seed": 100,
+          "net_arpu_gain": 2620853.4199986197
+        },
+        {
+          "seed": 101,
+          "net_arpu_gain": 2883571.0679045883
+        },
+        {
+          "seed": 102,
+          "net_arpu_gain": 2922416.072120405
+        },
+        {
+          "seed": 103,
+          "net_arpu_gain": 2459243.5221631033
+        },
+        {
+          "seed": 104,
+          "net_arpu_gain": 2687017.3748067785
+        },
+        {
+          "seed": 105,
+          "net_arpu_gain": 3496345.5496189184
+        },
+        {
+          "seed": 106,
+          "net_arpu_gain": 3406121.691331069
+        },
+        {
+          "seed": 107,
+          "net_arpu_gain": 2522099.5209042234
+        },
+        {
+          "seed": 108,
+          "net_arpu_gain": 2787412.205309613
+        },
+        {
+          "seed": 109,
+          "net_arpu_gain": 3387593.0748521364
+        }
+      ]
+    },
+    {
+      "policy": "revisit",
+      "summary": {
+        "mean_net": 2851821.141916486,
+        "median_net": 2950879.7246615556,
+        "min_net": 2025050.2357509881,
+        "max_net": 3485397.2009158796,
+        "positive_runs": 10,
+        "mean_seconds": 5.183781704199828
+      },
+      "results": [
+        {
+          "seed": 100,
+          "net_arpu_gain": 2025050.2357509881
+        },
+        {
+          "seed": 101,
+          "net_arpu_gain": 2590626.4230302433
+        },
+        {
+          "seed": 102,
+          "net_arpu_gain": 3408971.06010801
+        },
+        {
+          "seed": 103,
+          "net_arpu_gain": 2039739.7865961203
+        },
+        {
+          "seed": 104,
+          "net_arpu_gain": 3097069.075979077
+        },
+        {
+          "seed": 105,
+          "net_arpu_gain": 3060478.7617610944
+        },
+        {
+          "seed": 106,
+          "net_arpu_gain": 3402113.2620873414
+        },
+        {
+          "seed": 107,
+          "net_arpu_gain": 2567484.925374082
+        },
+        {
+          "seed": 108,
+          "net_arpu_gain": 2841280.687562017
+        },
+        {
+          "seed": 109,
+          "net_arpu_gain": 3485397.2009158796
+        }
+      ]
+    },
+    {
+      "policy": "fixed",
+      "summary": {
+        "mean_net": 4285344.992434759,
+        "median_net": 4532276.782180643,
+        "min_net": 3049248.6507879123,
+        "max_net": 4984150.65255101,
+        "positive_runs": 10,
+        "mean_seconds": 0.5786511499996777
+      },
+      "results": [
+        {
+          "seed": 100,
+          "net_arpu_gain": 4334848.850526656
+        },
+        {
+          "seed": 101,
+          "net_arpu_gain": 4720260.587203594
+        },
+        {
+          "seed": 102,
+          "net_arpu_gain": 3049248.6507879123
+        },
+        {
+          "seed": 103,
+          "net_arpu_gain": 4749096.589355181
+        },
+        {
+          "seed": 104,
+          "net_arpu_gain": 4776503.581954509
+        },
+        {
+          "seed": 105,
+          "net_arpu_gain": 3130940.4278722275
+        },
+        {
+          "seed": 106,
+          "net_arpu_gain": 4984150.65255101
+        },
+        {
+          "seed": 107,
+          "net_arpu_gain": 4043847.019735208
+        },
+        {
+          "seed": 108,
+          "net_arpu_gain": 4476710.009656388
+        },
+        {
+          "seed": 109,
+          "net_arpu_gain": 4587843.554704897
+        }
+      ]
+    }
+  ]
+}

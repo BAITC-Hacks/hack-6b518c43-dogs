@@ -1,0 +1,6 @@
+campaign_name,filter_arpu_segment,filter_data_segment,filter_call_segment,filter_current_tariff,target_tariff,channel
+BeeAgent_01,HIGH,,,tariff_10,tariff_6,sms
+BeeAgent_02,MID,,,tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3,tariff_8,digital_ads
+BeeAgent_03,LOW,,,tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8,tariff_9,push
+BeeAgent_04,LOW,,,tariff_8,tariff_9,sms
+BeeAgent_05,LOW,,,tariff_13,tariff_8,sms

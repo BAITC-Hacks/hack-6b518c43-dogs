@@ -1,9 +1,8 @@
 campaign_name,filter_arpu_segment,filter_data_segment,filter_call_segment,filter_current_tariff,target_tariff,channel
-BeeAgent_01,HIGH,,,tariff_8,tariff_14,sms
-BeeAgent_02,LOW,,,tariff_8,tariff_9,sms
-BeeAgent_03,HIGH,,,tariff_10,tariff_18,digital_ads
-BeeAgent_04,MID,,,tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3,tariff_8,push
-BeeAgent_05,LOW,,,tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8,tariff_9,push
-BeeAgent_06,LOW,,,tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9,tariff_13,push
-BeeAgent_07,MID,,,tariff_1,tariff_9,push
-BeeAgent_08,LOW,,,tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9,tariff_8,push
+BeeAgent_01,HIGH,,,tariff_10,tariff_6,digital_ads
+BeeAgent_02,LOW,,,tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8,tariff_9,sms
+BeeAgent_03,MID,,,tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3,tariff_8,sms
+BeeAgent_04,LOW,,,tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9,tariff_8,push
+BeeAgent_05,LOW,,,tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9,tariff_13,push
+BeeAgent_06,MID,,,tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3,tariff_8,push
+BeeAgent_07,MID,,,tariff_1;tariff_16,tariff_9,push

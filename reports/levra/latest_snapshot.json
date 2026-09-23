@@ -1,6 +1,7 @@
 {
   "knowledge": {
-    "version": 1,
+    "version": 2,
+    "algorithm_version": "beeagent-repeat-3",
     "profile_hash": "9a1812de4c73eb11c5a075dc17e6cff24fda951c942efcdb8e8123d01a88b20b",
     "tariffs": [
       "tariff_1",
@@ -45,8 +46,8 @@
     },
     "total_budget": 100000.0,
     "total_contacts": 15000,
-    "spent_budget": 19840.0,
-    "spent_contacts": 2860,
+    "spent_budget": 20000.0,
+    "spent_contacts": 2080,
     "prior_floor": 0.24,
     "states": {
       "tariff_1|HIGH|tariff_10|linear": {
@@ -2366,10 +2367,10 @@
           "package_context": -0.3888888888888889,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.09660088173986106,
-        "variance": 0.01197554559264886,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.08339257093298237,
+        "variance": 0.00411002174493572,
+        "samples": 280,
+        "pilots": 2
       },
       "tariff_10|HIGH|tariff_14|call": {
         "prior": {
@@ -2438,10 +2439,10 @@
           "package_context": 0.08333333333333333,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.006592519802765862,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": 0.032729924591283446,
+        "variance": 0.019024545294013775,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_10|HIGH|tariff_16|call": {
         "prior": {
@@ -2510,9 +2511,9 @@
           "package_context": -0.1111111111111111,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.11510820164607506,
-        "variance": 0.01197554559264886,
-        "samples": 180,
+        "mean": -0.012505537341347234,
+        "variance": 0.019024545294013775,
+        "samples": 100,
         "pilots": 1
       },
       "tariff_10|HIGH|tariff_18|call": {
@@ -2546,9 +2547,9 @@
           "package_context": -0.3611111111111111,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.022030687096448343,
-        "variance": 0.01197554559264886,
-        "samples": 180,
+        "mean": 0.03858118161598182,
+        "variance": 0.01706573736733724,
+        "samples": 40,
         "pilots": 1
       },
       "tariff_10|HIGH|tariff_19|call": {
@@ -2618,9 +2619,9 @@
           "package_context": 0.02777777777777778,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.010196545982627965,
-        "variance": 0.01197554559264886,
-        "samples": 180,
+        "mean": 0.04841366330955836,
+        "variance": 0.01706573736733724,
+        "samples": 40,
         "pilots": 1
       },
       "tariff_10|HIGH|tariff_20|call": {
@@ -2690,10 +2691,10 @@
           "package_context": -0.16666666666666666,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.004853690308635775,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": 0.05308041813806352,
+        "variance": 0.019024545294013775,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_10|HIGH|tariff_3|call": {
         "prior": {
@@ -2762,10 +2763,10 @@
           "package_context": -0.2222222222222222,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.00439019516500786,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": -0.030211075186161465,
+        "variance": 0.019024545294013775,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_10|HIGH|tariff_5|call": {
         "prior": {
@@ -2798,10 +2799,10 @@
           "package_context": -0.2222222222222222,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.00439019516500786,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": 0.1363014588924055,
+        "variance": 0.019024545294013775,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_10|HIGH|tariff_6|call": {
         "prior": {
@@ -2834,10 +2835,10 @@
           "package_context": -0.2222222222222222,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.00439019516500786,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": -0.05000123857160897,
+        "variance": 0.019024545294013775,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_10|HIGH|tariff_7|call": {
         "prior": {
@@ -2906,7 +2907,7 @@
           "package_context": 0.02777777777777778,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.059240019747112196,
+        "mean": -0.124303838406599,
         "variance": 0.007958044024228101,
         "samples": 100,
         "pilots": 1
@@ -4454,10 +4455,10 @@
           "package_context": 0.16666666666666666,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.0251538480084653,
-        "variance": 0.059370491803278684,
-        "samples": 0,
-        "pilots": 0
+        "mean": 0.00193928297497842,
+        "variance": 0.018012121265839336,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_11|HIGH|tariff_12|call": {
         "prior": {
@@ -4526,10 +4527,10 @@
           "package_context": -0.5,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.005683708762570809,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": 0.04042306921069515,
+        "variance": 0.019024545294013775,
+        "samples": 100,
+        "pilots": 1
       },
       "tariff_11|HIGH|tariff_14|call": {
         "prior": {
@@ -5066,10 +5067,10 @@
           "package_context": -0.25,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.012680381215811175,
-        "variance": 0.072,
-        "samples": 0,
-        "pilots": 0
+        "mean": -0.11973287838290783,
+        "variance": 0.01197554559264886,
+        "samples": 180,
+        "pilots": 1
       },
       "tariff_11|HIGH|tariff_9|call": {
         "prior": {
@@ -10178,7 +10179,7 @@
           "package_context": 0.6333333333333333,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.023419144693216848,
+        "mean": 0.15517579976745383,
         "variance": 0.016480828732972762,
         "samples": 40,
         "pilots": 1
@@ -10790,10 +10791,10 @@
           "package_context": 0.5,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.16269063488020835,
-        "variance": 0.007759537680967384,
-        "samples": 100,
-        "pilots": 1
+        "mean": 0.19349974722037985,
+        "variance": 0.004056427270223603,
+        "samples": 280,
+        "pilots": 2
       },
       "tariff_13|MID|tariff_8|call": {
         "prior": {
@@ -10826,10 +10827,10 @@
           "package_context": 0.6666666666666666,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.04483903115229857,
-        "variance": 0.016480828732972762,
-        "samples": 40,
-        "pilots": 1
+        "mean": 0.09778779672192515,
+        "variance": 0.06262325581395349,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_13|MID|tariff_9|call": {
         "prior": {
@@ -33146,10 +33147,10 @@
           "package_context": 0.6666666666666666,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.004076807471740017,
-        "variance": 0.01197554559264886,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.07810233736912085,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_4|HIGH|tariff_9|call": {
         "prior": {
@@ -41282,10 +41283,10 @@
           "package_context": -0.25,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.10147686486012683,
-        "variance": 0.007602389801006727,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.003035083770574277,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_14|call": {
         "prior": {
@@ -41426,10 +41427,10 @@
           "package_context": 0.16666666666666666,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.03231554522902032,
-        "variance": 0.007602389801006727,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.001541800991801499,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_18|call": {
         "prior": {
@@ -41462,10 +41463,10 @@
           "package_context": -0.20833333333333334,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.044916183999020344,
-        "variance": 0.007958044024228101,
-        "samples": 100,
-        "pilots": 1
+        "mean": 0.0018248239011356894,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_19|call": {
         "prior": {
@@ -41534,10 +41535,10 @@
           "package_context": 0.35833333333333334,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.06796419517662966,
-        "variance": 0.007602389801006727,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.003185490230963307,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_20|call": {
         "prior": {
@@ -41606,10 +41607,10 @@
           "package_context": 0.08333333333333333,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.04133297790475855,
-        "variance": 0.01197554559264886,
-        "samples": 180,
-        "pilots": 1
+        "mean": -0.0005229185181984104,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_3|call": {
         "prior": {
@@ -41678,10 +41679,10 @@
           "package_context": 0.0,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.03518462464694295,
-        "variance": 0.01197554559264886,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.0,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_5|call": {
         "prior": {
@@ -41714,10 +41715,10 @@
           "package_context": 0.0,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.05318748771267825,
-        "variance": 0.01197554559264886,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.0,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_6|call": {
         "prior": {
@@ -41750,10 +41751,10 @@
           "package_context": 0.0,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.041239586510353685,
-        "variance": 0.01197554559264886,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.0,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_7|call": {
         "prior": {
@@ -41786,10 +41787,10 @@
           "package_context": 0.31666666666666665,
           "source": "historical association + pooling + context"
         },
-        "mean": -0.10819072650266424,
-        "variance": 0.007602389801006727,
-        "samples": 180,
-        "pilots": 1
+        "mean": 0.07495828999246967,
+        "variance": 0.072,
+        "samples": 0,
+        "pilots": 0
       },
       "tariff_8|HIGH|tariff_9|call": {
         "prior": {
@@ -42506,10 +42507,10 @@
           "package_context": 0.31666666666666665,
           "source": "historical association + pooling + context"
         },
-        "mean": 0.536145597263289,
-        "variance": 0.00783230110659544,
-        "samples": 100,
-        "pilots": 1
+        "mean": 0.5099309889146608,
+        "variance": 0.004076223825740616,
+        "samples": 280,
+        "pilots": 2
       },
       "tariff_8|LOW|tariff_9|call": {
         "prior": {
@@ -45470,7 +45471,94 @@
           "contacts": 14900
         },
         "information_value": 299244.1659049294,
-        "reason": "Проверка неподтверждённой гипотезы, на которую приходится существенная часть плана."
+        "reason": "Проверка неподтверждённой гипотезы, на которую приходится существенная часть плана.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2887352.105618885
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2755808.0104210563
+          },
+          "selection_changed": false,
+          "estimate_channel_before": 0.16415290357414078,
+          "estimate_channel_after": 0.1382870396481771,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
         "index": 2,
@@ -45531,7 +45619,94 @@
           "contacts": 14800
         },
         "information_value": -8340.113786032918,
-        "reason": "Проверка неподтверждённой гипотезы, на которую приходится существенная часть плана."
+        "reason": "Проверка неподтверждённой гипотезы, на которую приходится существенная часть плана.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2755808.0104210563
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2892476.9145992612
+          },
+          "selection_changed": false,
+          "estimate_channel_before": 0.3489947983248881,
+          "estimate_channel_after": 0.45572375767379564,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
         "index": 3,
@@ -45592,193 +45767,104 @@
           "contacts": 14760
         },
         "information_value": 251167.34420250478,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2892476.9145992612
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_06"
+              }
+            ],
+            "forecast_net": 2870233.5906668156
+          },
+          "selection_changed": true,
+          "estimate_channel_before": 0.19312106302840093,
+          "estimate_channel_after": 0.08115405780451368,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
         "index": 4,
-        "cell": "tariff_8|HIGH",
-        "campaign": {
-          "filter_current_tariff": "tariff_8",
-          "filter_arpu_segment": "HIGH",
-          "target_tariff": "tariff_9",
-          "channel": "sms"
-        },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 720.0,
-        "observed_ratio": -0.08437791983436692,
-        "prior": {
-          "prior": {
-            "mean": 0.07495828999246967,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 45,
-            "broad_n": 2,
-            "historical_change": 0.5517684222748989,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": -0.26455026455026454,
-            "package_context": 0.31666666666666665,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.07495828999246967,
-          "variance": 0.072,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.07495828999246967,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 45,
-            "broad_n": 2,
-            "historical_change": 0.5517684222748989,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": -0.26455026455026454,
-            "package_context": 0.31666666666666665,
-            "source": "historical association + pooling + context"
-          },
-          "mean": -0.10819072650266424,
-          "variance": 0.007602389801006727,
-          "samples": 180,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 89200.0,
-          "contacts": 14760
-        },
-        "resources_after": {
-          "budget": 88480.0,
-          "contacts": 14580
-        },
-        "information_value": 2621590.9320760816,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 5,
-        "cell": "tariff_13|MID",
-        "campaign": {
-          "filter_current_tariff": "tariff_13",
-          "filter_arpu_segment": "MID",
-          "target_tariff": "tariff_10",
-          "channel": "digital_ads"
-        },
-        "requested_n": 40,
-        "actual_n": 40,
-        "cost": 880.0,
-        "observed_ratio": -0.003972159536241679,
-        "prior": {
-          "prior": {
-            "mean": 0.10207087424243866,
-            "variance": 0.06262325581395349,
-            "n_history": 28,
-            "pooled_n": 39,
-            "broad_n": 771,
-            "historical_change": 0.41940692567280374,
-            "adoption_heuristic": 0.24336954874719513,
-            "price_context": 1.0,
-            "package_context": 0.6333333333333333,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.10207087424243866,
-          "variance": 0.06262325581395349,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.10207087424243866,
-            "variance": 0.06262325581395349,
-            "n_history": 28,
-            "pooled_n": 39,
-            "broad_n": 771,
-            "historical_change": 0.41940692567280374,
-            "adoption_heuristic": 0.24336954874719513,
-            "price_context": 1.0,
-            "package_context": 0.6333333333333333,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.023419144693216848,
-          "variance": 0.016480828732972762,
-          "samples": 40,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 88480.0,
-          "contacts": 14580
-        },
-        "resources_after": {
-          "budget": 87600.0,
-          "contacts": 14540
-        },
-        "information_value": 222761.3456860988,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 6,
-        "cell": "tariff_13|MID",
-        "campaign": {
-          "filter_current_tariff": "tariff_13",
-          "filter_arpu_segment": "MID",
-          "target_tariff": "tariff_9",
-          "channel": "digital_ads"
-        },
-        "requested_n": 40,
-        "actual_n": 40,
-        "cost": 880.0,
-        "observed_ratio": 0.02203808781696823,
-        "prior": {
-          "prior": {
-            "mean": 0.09778779672192515,
-            "variance": 0.06262325581395349,
-            "n_history": 28,
-            "pooled_n": 36,
-            "broad_n": 350,
-            "historical_change": 0.40180785651003587,
-            "adoption_heuristic": 0.24336954874719513,
-            "price_context": 0.4040404040404042,
-            "package_context": 0.6666666666666666,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.09778779672192515,
-          "variance": 0.06262325581395349,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.09778779672192515,
-            "variance": 0.06262325581395349,
-            "n_history": 28,
-            "pooled_n": 36,
-            "broad_n": 350,
-            "historical_change": 0.40180785651003587,
-            "adoption_heuristic": 0.24336954874719513,
-            "price_context": 0.4040404040404042,
-            "package_context": 0.6666666666666666,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.04483903115229857,
-          "variance": 0.016480828732972762,
-          "samples": 40,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 87600.0,
-          "contacts": 14540
-        },
-        "resources_after": {
-          "budget": 86720.0,
-          "contacts": 14500
-        },
-        "information_value": 215750.92834884496,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 7,
         "cell": "tariff_10|HIGH",
         "campaign": {
           "filter_current_tariff": "tariff_10",
@@ -45789,7 +45875,7 @@
         "requested_n": 100,
         "actual_n": 100,
         "cost": 2200.0,
-        "observed_ratio": 0.054114994524795,
+        "observed_ratio": -0.1212838350059068,
         "prior": {
           "prior": {
             "mean": 0.02363263415135385,
@@ -45821,280 +45907,602 @@
             "package_context": 0.02777777777777778,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.059240019747112196,
+          "mean": -0.124303838406599,
           "variance": 0.007958044024228101,
           "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 86720.0,
-          "contacts": 14500
+          "budget": 89200.0,
+          "contacts": 14760
         },
         "resources_after": {
-          "budget": 84520.0,
-          "contacts": 14400
+          "budget": 87000.0,
+          "contacts": 14660
         },
-        "information_value": 191118.64879869058,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 1855365.3662453855,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_06"
+              }
+            ],
+            "forecast_net": 2870233.5906668156
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2774681.323619429
+          },
+          "selection_changed": true,
+          "estimate_channel_before": 0.02008773902865077,
+          "estimate_channel_after": -0.10565826264560915,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 5,
+        "cell": "tariff_13|MID",
+        "campaign": {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_8",
+          "channel": "sms"
+        },
+        "requested_n": 180,
+        "actual_n": 180,
+        "cost": 720.0,
+        "observed_ratio": 0.147711448768178,
+        "prior": {
+          "prior": {
+            "mean": 0.19312106302840093,
+            "variance": 0.05846746987951807,
+            "n_history": 234,
+            "pooled_n": 287,
+            "broad_n": 2298,
+            "historical_change": 0.4098576130785348,
+            "adoption_heuristic": 0.4711906205128757,
+            "price_context": 0.9090909090909093,
+            "package_context": 0.5,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.16269063488020835,
+          "variance": 0.007759537680967384,
+          "samples": 100,
+          "pilots": 1
+        },
+        "posterior": {
+          "prior": {
+            "mean": 0.19312106302840093,
+            "variance": 0.05846746987951807,
+            "n_history": 234,
+            "pooled_n": 287,
+            "broad_n": 2298,
+            "historical_change": 0.4098576130785348,
+            "adoption_heuristic": 0.4711906205128757,
+            "price_context": 0.9090909090909093,
+            "package_context": 0.5,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.19349974722037985,
+          "variance": 0.004056427270223603,
+          "samples": 280,
+          "pilots": 2
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 87000.0,
+          "contacts": 14660
+        },
+        "resources_after": {
+          "budget": 86280.0,
+          "contacts": 14480
+        },
+        "information_value": null,
+        "reason": "Повторная проверка крупного решения: преимущество перед альтернативой недостаточно определено.",
+        "repeat_validation": true,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2774681.323619429
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_5",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_06"
+              }
+            ],
+            "forecast_net": 2889136.5973580983
+          },
+          "selection_changed": true,
+          "estimate_channel_before": 0.10574891267213543,
+          "estimate_channel_after": 0.1257748356932469,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 6,
+        "cell": "tariff_8|LOW",
+        "campaign": {
+          "filter_current_tariff": "tariff_8",
+          "filter_arpu_segment": "LOW",
+          "target_tariff": "tariff_9",
+          "channel": "sms"
+        },
+        "requested_n": 180,
+        "actual_n": 180,
+        "cost": 720.0,
+        "observed_ratio": 0.3129632982335646,
+        "prior": {
+          "prior": {
+            "mean": 0.41058211567633895,
+            "variance": 0.06286829268292683,
+            "n_history": 26,
+            "pooled_n": 45,
+            "broad_n": 418,
+            "historical_change": 1.271264995543992,
+            "adoption_heuristic": 0.3229713058374939,
+            "price_context": -0.26455026455026454,
+            "package_context": 0.31666666666666665,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.536145597263289,
+          "variance": 0.00783230110659544,
+          "samples": 100,
+          "pilots": 1
+        },
+        "posterior": {
+          "prior": {
+            "mean": 0.41058211567633895,
+            "variance": 0.06286829268292683,
+            "n_history": 26,
+            "pooled_n": 45,
+            "broad_n": 418,
+            "historical_change": 1.271264995543992,
+            "adoption_heuristic": 0.3229713058374939,
+            "price_context": -0.26455026455026454,
+            "package_context": 0.31666666666666665,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.5099309889146608,
+          "variance": 0.004076223825740616,
+          "samples": 280,
+          "pilots": 2
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 86280.0,
+          "contacts": 14480
+        },
+        "resources_after": {
+          "budget": 85560.0,
+          "contacts": 14300
+        },
+        "information_value": null,
+        "reason": "Повторная проверка крупного решения: преимущество перед альтернативой недостаточно определено.",
+        "repeat_validation": true,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_5",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_06"
+              }
+            ],
+            "forecast_net": 2889136.5973580983
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_5",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_06"
+              }
+            ],
+            "forecast_net": 2854844.0974167343
+          },
+          "selection_changed": true,
+          "estimate_channel_before": 0.3484946382211379,
+          "estimate_channel_after": 0.33145514279452953,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 7,
+        "cell": "tariff_13|MID",
+        "campaign": {
+          "filter_current_tariff": "tariff_13",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "tariff_10",
+          "channel": "digital_ads"
+        },
+        "requested_n": 40,
+        "actual_n": 40,
+        "cost": 880.0,
+        "observed_ratio": 0.14802192816552717,
+        "prior": {
+          "prior": {
+            "mean": 0.10207087424243866,
+            "variance": 0.06262325581395349,
+            "n_history": 28,
+            "pooled_n": 39,
+            "broad_n": 771,
+            "historical_change": 0.41940692567280374,
+            "adoption_heuristic": 0.24336954874719513,
+            "price_context": 1.0,
+            "package_context": 0.6333333333333333,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.10207087424243866,
+          "variance": 0.06262325581395349,
+          "samples": 0,
+          "pilots": 0
+        },
+        "posterior": {
+          "prior": {
+            "mean": 0.10207087424243866,
+            "variance": 0.06262325581395349,
+            "n_history": 28,
+            "pooled_n": 39,
+            "broad_n": 771,
+            "historical_change": 0.41940692567280374,
+            "adoption_heuristic": 0.24336954874719513,
+            "price_context": 1.0,
+            "package_context": 0.6333333333333333,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.15517579976745383,
+          "variance": 0.016480828732972762,
+          "samples": 40,
+          "pilots": 1
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 85560.0,
+          "contacts": 14300
+        },
+        "resources_after": {
+          "budget": 84680.0,
+          "contacts": 14260
+        },
+        "information_value": 170255.09748596503,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_5",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_13",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_06"
+              }
+            ],
+            "forecast_net": 2854844.0974167343
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2853705.0285936985
+          },
+          "selection_changed": true,
+          "estimate_channel_before": 0.08676024310607286,
+          "estimate_channel_after": 0.13189942980233574,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
         "index": 8,
-        "cell": "tariff_8|HIGH",
-        "campaign": {
-          "filter_current_tariff": "tariff_8",
-          "filter_arpu_segment": "HIGH",
-          "target_tariff": "tariff_20",
-          "channel": "sms"
-        },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 720.0,
-        "observed_ratio": 0.04914752355713572,
-        "prior": {
-          "prior": {
-            "mean": 0.003185490230963307,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.023448412698412698,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.10582010582010581,
-            "package_context": 0.35833333333333334,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.003185490230963307,
-          "variance": 0.072,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.003185490230963307,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.023448412698412698,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.10582010582010581,
-            "package_context": 0.35833333333333334,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.06796419517662966,
-          "variance": 0.007602389801006727,
-          "samples": 180,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 84520.0,
-          "contacts": 14400
-        },
-        "resources_after": {
-          "budget": 83800.0,
-          "contacts": 14220
-        },
-        "information_value": 1755496.174473023,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 9,
-        "cell": "tariff_8|HIGH",
-        "campaign": {
-          "filter_current_tariff": "tariff_8",
-          "filter_arpu_segment": "HIGH",
-          "target_tariff": "tariff_14",
-          "channel": "sms"
-        },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 720.0,
-        "observed_ratio": 0.07351389643790299,
-        "prior": {
-          "prior": {
-            "mean": 0.003035083770574277,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.02234126984126982,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.24867724867724855,
-            "package_context": -0.25,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.003035083770574277,
-          "variance": 0.072,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.003035083770574277,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.02234126984126982,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.24867724867724855,
-            "package_context": -0.25,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.10147686486012683,
-          "variance": 0.007602389801006727,
-          "samples": 180,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 83800.0,
-          "contacts": 14220
-        },
-        "resources_after": {
-          "budget": 83080.0,
-          "contacts": 14040
-        },
-        "information_value": 1732242.5649967522,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 10,
-        "cell": "tariff_8|HIGH",
-        "campaign": {
-          "filter_current_tariff": "tariff_8",
-          "filter_arpu_segment": "HIGH",
-          "target_tariff": "tariff_19",
-          "channel": "digital_ads"
-        },
-        "requested_n": 100,
-        "actual_n": 100,
-        "cost": 2200.0,
-        "observed_ratio": 0.04273021793985916,
-        "prior": {
-          "prior": {
-            "mean": 0.0018248239011356894,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.013432539682539674,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.16402116402116396,
-            "package_context": -0.20833333333333334,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.0018248239011356894,
-          "variance": 0.072,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.0018248239011356894,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.013432539682539674,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.16402116402116396,
-            "package_context": -0.20833333333333334,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.044916183999020344,
-          "variance": 0.007958044024228101,
-          "samples": 100,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 83080.0,
-          "contacts": 14040
-        },
-        "resources_after": {
-          "budget": 80880.0,
-          "contacts": 13940
-        },
-        "information_value": 1371902.4206715424,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 11,
-        "cell": "tariff_8|HIGH",
-        "campaign": {
-          "filter_current_tariff": "tariff_8",
-          "filter_arpu_segment": "HIGH",
-          "target_tariff": "tariff_18",
-          "channel": "sms"
-        },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 720.0,
-        "observed_ratio": 0.023366528978023472,
-        "prior": {
-          "prior": {
-            "mean": 0.001541800991801499,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.011349206349206348,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.05291005291005291,
-            "package_context": 0.16666666666666666,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.001541800991801499,
-          "variance": 0.072,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.001541800991801499,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 0,
-            "broad_n": 0,
-            "historical_change": 0.011349206349206348,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.05291005291005291,
-            "package_context": 0.16666666666666666,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.03231554522902032,
-          "variance": 0.007602389801006727,
-          "samples": 180,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 80880.0,
-          "contacts": 13940
-        },
-        "resources_after": {
-          "budget": 80160.0,
-          "contacts": 13760
-        },
-        "information_value": 1312113.4982156688,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 12,
         "cell": "tariff_10|HIGH",
         "campaign": {
           "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_14",
-          "channel": "push"
+          "channel": "digital_ads"
         },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 0.0,
-        "observed_ratio": -0.05775533501443614,
+        "requested_n": 100,
+        "actual_n": 100,
+        "cost": 2200.0,
+        "observed_ratio": 0.06203681352886215,
         "prior": {
           "prior": {
             "mean": -0.0018202543166593182,
@@ -46126,36 +46534,320 @@
             "package_context": -0.3888888888888889,
             "source": "historical association + pooling + context"
           },
-          "mean": -0.09660088173986106,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": 0.06471643899515334,
+          "variance": 0.007958044024228101,
+          "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 13760
+          "budget": 84680.0,
+          "contacts": 14260
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 13580
+          "budget": 82480.0,
+          "contacts": 14160
         },
-        "information_value": 1373711.4506084737,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 1441595.9899893124,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_current_tariff": "tariff_13",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              }
+            ],
+            "forecast_net": 2853705.0285936985
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "push",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3713333.470749787
+          },
+          "selection_changed": true,
+          "estimate_channel_before": -0.0015472161691604204,
+          "estimate_channel_after": 0.05500897314588033,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 13,
+        "index": 9,
+        "cell": "tariff_10|HIGH",
+        "campaign": {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "sms"
+        },
+        "requested_n": 180,
+        "actual_n": 180,
+        "cost": 720.0,
+        "observed_ratio": 0.06717119542307082,
+        "prior": {
+          "prior": {
+            "mean": -0.0018202543166593182,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 0,
+            "broad_n": 0,
+            "historical_change": -0.013172942817294291,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.012552301255230222,
+            "package_context": -0.3888888888888889,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.06471643899515334,
+          "variance": 0.007958044024228101,
+          "samples": 100,
+          "pilots": 1
+        },
+        "posterior": {
+          "prior": {
+            "mean": -0.0018202543166593182,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 0,
+            "broad_n": 0,
+            "historical_change": -0.013172942817294291,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.012552301255230222,
+            "package_context": -0.3888888888888889,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.08339257093298237,
+          "variance": 0.00411002174493572,
+          "samples": 280,
+          "pilots": 2
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 82480.0,
+          "contacts": 14160
+        },
+        "resources_after": {
+          "budget": 81760.0,
+          "contacts": 13980
+        },
+        "information_value": null,
+        "reason": "Повторная проверка крупного решения: преимущество перед альтернативой недостаточно определено.",
+        "repeat_validation": true,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "push",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3713333.470749787
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_current_tariff": "tariff_8",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_07"
+              },
+              {
+                "filter_current_tariff": "tariff_2",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_08"
+              }
+            ],
+            "forecast_net": 4020922.734450519
+          },
+          "selection_changed": true,
+          "estimate_channel_before": 0.04206568534684967,
+          "estimate_channel_after": 0.05420517110643854,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 10,
         "cell": "tariff_10|HIGH",
         "campaign": {
           "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_20",
-          "channel": "push"
+          "channel": "digital_ads"
         },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 0.0,
-        "observed_ratio": -0.005919291653927659,
+        "requested_n": 40,
+        "actual_n": 40,
+        "cost": 880.0,
+        "observed_ratio": 0.05445487203047807,
         "prior": {
           "prior": {
             "mean": -0.0019662408327916015,
@@ -46187,36 +46879,158 @@
             "package_context": 0.02777777777777778,
             "source": "historical association + pooling + context"
           },
-          "mean": -0.010196545982627965,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": 0.04841366330955836,
+          "variance": 0.01706573736733724,
+          "samples": 40,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 13580
+          "budget": 81760.0,
+          "contacts": 13980
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 13400
+          "budget": 80880.0,
+          "contacts": 13940
         },
-        "information_value": 1372506.3032468192,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 746947.0502229172,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_current_tariff": "tariff_8",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_07"
+              },
+              {
+                "filter_current_tariff": "tariff_2",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_08"
+              }
+            ],
+            "forecast_net": 4020922.734450519
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_current_tariff": "tariff_8",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4011201.068536259
+          },
+          "selection_changed": true,
+          "estimate_channel_before": -0.0016713047078728612,
+          "estimate_channel_after": 0.041151613813124606,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 14,
+        "index": 11,
         "cell": "tariff_10|HIGH",
         "campaign": {
           "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_19",
-          "channel": "push"
+          "channel": "digital_ads"
         },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 0.0,
-        "observed_ratio": -0.012932197241318558,
+        "requested_n": 40,
+        "actual_n": 40,
+        "cost": 880.0,
+        "observed_ratio": 0.04372507863598759,
         "prior": {
           "prior": {
             "mean": -0.0028151789233034387,
@@ -46248,25 +47062,316 @@
             "package_context": -0.3611111111111111,
             "source": "historical association + pooling + context"
           },
-          "mean": -0.022030687096448343,
+          "mean": 0.03858118161598182,
+          "variance": 0.01706573736733724,
+          "samples": 40,
+          "pilots": 1
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 80880.0,
+          "contacts": 13940
+        },
+        "resources_after": {
+          "budget": 80000.0,
+          "contacts": 13900
+        },
+        "information_value": 727050.9623078746,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_current_tariff": "tariff_1",
+                "filter_arpu_segment": "MID",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_current_tariff": "tariff_8",
+                "filter_arpu_segment": "LOW",
+                "target_tariff": "tariff_9",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4011201.068536259
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3988112.552286147
+          },
+          "selection_changed": true,
+          "estimate_channel_before": -0.002392902084807923,
+          "estimate_channel_after": 0.03279400437358455,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 12,
+        "cell": "tariff_11|HIGH",
+        "campaign": {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_9",
+          "channel": "push"
+        },
+        "requested_n": 180,
+        "actual_n": 180,
+        "cost": 0.0,
+        "observed_ratio": -0.07307539746564613,
+        "prior": {
+          "prior": {
+            "mean": 0.012680381215811175,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 7,
+            "broad_n": 2,
+            "historical_change": 0.089874421899132,
+            "adoption_heuristic": 0.14108998920785984,
+            "price_context": -0.5351170568561873,
+            "package_context": -0.25,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.012680381215811175,
+          "variance": 0.072,
+          "samples": 0,
+          "pilots": 0
+        },
+        "posterior": {
+          "prior": {
+            "mean": 0.012680381215811175,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 7,
+            "broad_n": 2,
+            "historical_change": 0.089874421899132,
+            "adoption_heuristic": 0.14108998920785984,
+            "price_context": -0.5351170568561873,
+            "package_context": -0.25,
+            "source": "historical association + pooling + context"
+          },
+          "mean": -0.11973287838290783,
           "variance": 0.01197554559264886,
           "samples": 180,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 13400
+          "budget": 80000.0,
+          "contacts": 13900
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 13220
+          "budget": 80000.0,
+          "contacts": 13720
         },
-        "information_value": 1365511.8548297666,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 1074637.7600128977,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3988112.552286147
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3894568.860303946
+          },
+          "selection_changed": false,
+          "estimate_channel_before": 0.006340190607905588,
+          "estimate_channel_after": -0.059866439191453916,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 15,
+        "index": 13,
         "cell": "tariff_10|HIGH",
         "campaign": {
           "filter_current_tariff": "tariff_10",
@@ -46274,10 +47379,10 @@
           "target_tariff": "tariff_18",
           "channel": "push"
         },
-        "requested_n": 180,
-        "actual_n": 180,
+        "requested_n": 100,
+        "actual_n": 100,
         "cost": 0.0,
-        "observed_ratio": 0.06935957180939771,
+        "observed_ratio": -0.007917243867806832,
         "prior": {
           "prior": {
             "mean": -0.0032357935390905164,
@@ -46309,327 +47414,1369 @@
             "package_context": -0.1111111111111111,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.11510820164607506,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": -0.012505537341347234,
+          "variance": 0.019024545294013775,
+          "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 13220
+          "budget": 80000.0,
+          "contacts": 13720
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 13040
+          "budget": 80000.0,
+          "contacts": 13620
         },
-        "information_value": 1362055.0461288523,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 564394.436592008,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3894568.860303946
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3894568.860303946
+          },
+          "selection_changed": false,
+          "estimate_channel_before": -0.0016178967695452582,
+          "estimate_channel_after": -0.006252768670673617,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 16,
-        "cell": "tariff_4|HIGH",
+        "index": 14,
+        "cell": "tariff_10|HIGH",
         "campaign": {
-          "filter_current_tariff": "tariff_4",
-          "filter_arpu_segment": "HIGH",
-          "target_tariff": "tariff_9",
-          "channel": "push"
-        },
-        "requested_n": 180,
-        "actual_n": 180,
-        "cost": 0.0,
-        "observed_ratio": -0.010236229984550553,
-        "prior": {
-          "prior": {
-            "mean": 0.07810233736912085,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 28,
-            "broad_n": 2,
-            "historical_change": 0.5528366046651293,
-            "adoption_heuristic": 0.14127562594454093,
-            "price_context": -0.06711409395973154,
-            "package_context": 0.6666666666666666,
-            "source": "historical association + pooling + context"
-          },
-          "mean": 0.07810233736912085,
-          "variance": 0.072,
-          "samples": 0,
-          "pilots": 0
-        },
-        "posterior": {
-          "prior": {
-            "mean": 0.07810233736912085,
-            "variance": 0.072,
-            "n_history": 0,
-            "pooled_n": 28,
-            "broad_n": 2,
-            "historical_change": 0.5528366046651293,
-            "adoption_heuristic": 0.14127562594454093,
-            "price_context": -0.06711409395973154,
-            "package_context": 0.6666666666666666,
-            "source": "historical association + pooling + context"
-          },
-          "mean": -0.004076807471740017,
-          "variance": 0.01197554559264886,
-          "samples": 180,
-          "pilots": 1
-        },
-        "prior_conflict": false,
-        "resources_before": {
-          "budget": 80160.0,
-          "contacts": 13040
-        },
-        "resources_after": {
-          "budget": 80160.0,
-          "contacts": 12860
-        },
-        "information_value": 1226592.9843139013,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
-      },
-      {
-        "index": 17,
-        "cell": "tariff_8|HIGH",
-        "campaign": {
-          "filter_current_tariff": "tariff_8",
+          "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_5",
           "channel": "push"
         },
-        "requested_n": 180,
-        "actual_n": 180,
+        "requested_n": 100,
+        "actual_n": 100,
         "cost": 0.0,
-        "observed_ratio": -0.021102174102140957,
+        "observed_ratio": -0.019741934809679073,
         "prior": {
           "prior": {
-            "mean": 0.0,
+            "mean": -0.00439019516500786,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": 0.0,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.0,
-            "package_context": 0.0,
+            "historical_change": -0.031771269177126915,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.20920502092050208,
+            "package_context": -0.2222222222222222,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.0,
+          "mean": -0.00439019516500786,
           "variance": 0.072,
           "samples": 0,
           "pilots": 0
         },
         "posterior": {
           "prior": {
-            "mean": 0.0,
+            "mean": -0.00439019516500786,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": 0.0,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.0,
-            "package_context": 0.0,
+            "historical_change": -0.031771269177126915,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.20920502092050208,
+            "package_context": -0.2222222222222222,
             "source": "historical association + pooling + context"
           },
-          "mean": -0.03518462464694295,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": -0.030211075186161465,
+          "variance": 0.019024545294013775,
+          "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 12860
+          "budget": 80000.0,
+          "contacts": 13620
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 12680
+          "budget": 80000.0,
+          "contacts": 13520
         },
-        "information_value": 1221879.5257871423,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 521793.1685128413,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3894568.860303946
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3894568.860303946
+          },
+          "selection_changed": false,
+          "estimate_channel_before": -0.00219509758250393,
+          "estimate_channel_after": -0.015105537593080733,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 18,
-        "cell": "tariff_8|HIGH",
+        "index": 15,
+        "cell": "tariff_10|HIGH",
         "campaign": {
-          "filter_current_tariff": "tariff_8",
+          "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_6",
           "channel": "push"
         },
-        "requested_n": 180,
-        "actual_n": 180,
+        "requested_n": 100,
+        "actual_n": 100,
         "cost": 0.0,
-        "observed_ratio": 0.031899491241721624,
+        "observed_ratio": 0.0934133228487519,
         "prior": {
           "prior": {
-            "mean": 0.0,
+            "mean": -0.00439019516500786,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": 0.0,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.0,
-            "package_context": 0.0,
+            "historical_change": -0.031771269177126915,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.20920502092050208,
+            "package_context": -0.2222222222222222,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.0,
+          "mean": -0.00439019516500786,
           "variance": 0.072,
           "samples": 0,
           "pilots": 0
         },
         "posterior": {
           "prior": {
-            "mean": 0.0,
+            "mean": -0.00439019516500786,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": 0.0,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.0,
-            "package_context": 0.0,
+            "historical_change": -0.031771269177126915,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.20920502092050208,
+            "package_context": -0.2222222222222222,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.05318748771267825,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": 0.1363014588924055,
+          "variance": 0.019024545294013775,
+          "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 12680
+          "budget": 80000.0,
+          "contacts": 13520
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 12500
+          "budget": 80000.0,
+          "contacts": 13420
         },
-        "information_value": 1221879.5257871423,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 483785.31853147474,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_14",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 3894568.860303946
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4982483.582455458
+          },
+          "selection_changed": true,
+          "estimate_channel_before": -0.00219509758250393,
+          "estimate_channel_after": 0.06815072944620275,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 19,
-        "cell": "tariff_8|HIGH",
+        "index": 16,
+        "cell": "tariff_11|HIGH",
         "campaign": {
-          "filter_current_tariff": "tariff_8",
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_12",
+          "channel": "push"
+        },
+        "requested_n": 100,
+        "actual_n": 100,
+        "cost": 0.0,
+        "observed_ratio": -0.004085484658478727,
+        "prior": {
+          "prior": {
+            "mean": 0.0251538480084653,
+            "variance": 0.059370491803278684,
+            "n_history": 107,
+            "pooled_n": 189,
+            "broad_n": 427,
+            "historical_change": 0.07416216423798638,
+            "adoption_heuristic": 0.3391735970345553,
+            "price_context": 0.33444816053511706,
+            "package_context": 0.16666666666666666,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.0251538480084653,
+          "variance": 0.059370491803278684,
+          "samples": 0,
+          "pilots": 0
+        },
+        "posterior": {
+          "prior": {
+            "mean": 0.0251538480084653,
+            "variance": 0.059370491803278684,
+            "n_history": 107,
+            "pooled_n": 189,
+            "broad_n": 427,
+            "historical_change": 0.07416216423798638,
+            "adoption_heuristic": 0.3391735970345553,
+            "price_context": 0.33444816053511706,
+            "package_context": 0.16666666666666666,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.00193928297497842,
+          "variance": 0.018012121265839336,
+          "samples": 100,
+          "pilots": 1
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 80000.0,
+          "contacts": 13420
+        },
+        "resources_after": {
+          "budget": 80000.0,
+          "contacts": 13320
+        },
+        "information_value": 773851.0779531761,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4982483.582455458
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "selection_changed": false,
+          "estimate_channel_before": 0.01257692400423265,
+          "estimate_channel_after": 0.00096964148748921,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 17,
+        "cell": "tariff_10|HIGH",
+        "campaign": {
+          "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_7",
           "channel": "push"
         },
-        "requested_n": 180,
-        "actual_n": 180,
+        "requested_n": 100,
+        "actual_n": 100,
         "cost": 0.0,
-        "observed_ratio": 0.024733671118398567,
+        "observed_ratio": -0.033190538239893784,
         "prior": {
           "prior": {
-            "mean": 0.0,
+            "mean": -0.00439019516500786,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": 0.0,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.0,
-            "package_context": 0.0,
+            "historical_change": -0.031771269177126915,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.20920502092050208,
+            "package_context": -0.2222222222222222,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.0,
+          "mean": -0.00439019516500786,
           "variance": 0.072,
           "samples": 0,
           "pilots": 0
         },
         "posterior": {
           "prior": {
-            "mean": 0.0,
+            "mean": -0.00439019516500786,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": 0.0,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": 0.0,
-            "package_context": 0.0,
+            "historical_change": -0.031771269177126915,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.20920502092050208,
+            "package_context": -0.2222222222222222,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.041239586510353685,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": -0.05000123857160897,
+          "variance": 0.019024545294013775,
+          "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 12500
+          "budget": 80000.0,
+          "contacts": 13320
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 12320
+          "budget": 80000.0,
+          "contacts": 13220
         },
-        "information_value": 1221879.5257871423,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 231319.76975489588,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "selection_changed": false,
+          "estimate_channel_before": -0.00219509758250393,
+          "estimate_channel_after": -0.025000619285804486,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       },
       {
-        "index": 20,
-        "cell": "tariff_8|HIGH",
+        "index": 18,
+        "cell": "tariff_10|HIGH",
         "campaign": {
-          "filter_current_tariff": "tariff_8",
+          "filter_current_tariff": "tariff_10",
           "filter_arpu_segment": "HIGH",
           "target_tariff": "tariff_3",
           "channel": "push"
         },
-        "requested_n": 180,
-        "actual_n": 180,
+        "requested_n": 100,
+        "actual_n": 100,
         "cost": 0.0,
-        "observed_ratio": 0.024841847153327136,
+        "observed_ratio": 0.03694285758172109,
         "prior": {
           "prior": {
-            "mean": -0.0005229185181984104,
+            "mean": -0.004853690308635775,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": -0.003849206349206348,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": -0.05291005291005291,
-            "package_context": 0.08333333333333333,
+            "historical_change": -0.0351255230125523,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.2510460251046025,
+            "package_context": -0.16666666666666666,
             "source": "historical association + pooling + context"
           },
-          "mean": -0.0005229185181984104,
+          "mean": -0.004853690308635775,
           "variance": 0.072,
           "samples": 0,
           "pilots": 0
         },
         "posterior": {
           "prior": {
-            "mean": -0.0005229185181984104,
+            "mean": -0.004853690308635775,
             "variance": 0.072,
             "n_history": 0,
             "pooled_n": 0,
             "broad_n": 0,
-            "historical_change": -0.003849206349206348,
-            "adoption_heuristic": 0.13585099648041182,
-            "price_context": -0.05291005291005291,
-            "package_context": 0.08333333333333333,
+            "historical_change": -0.0351255230125523,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.2510460251046025,
+            "package_context": -0.16666666666666666,
             "source": "historical association + pooling + context"
           },
-          "mean": 0.04133297790475855,
-          "variance": 0.01197554559264886,
-          "samples": 180,
+          "mean": 0.05308041813806352,
+          "variance": 0.019024545294013775,
+          "samples": 100,
           "pilots": 1
         },
         "prior_conflict": false,
         "resources_before": {
-          "budget": 80160.0,
-          "contacts": 12320
+          "budget": 80000.0,
+          "contacts": 13220
         },
         "resources_after": {
-          "budget": 80160.0,
-          "contacts": 12140
+          "budget": 80000.0,
+          "contacts": 13120
         },
-        "information_value": 1217583.676156993,
-        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории."
+        "information_value": 203774.60457922023,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "selection_changed": false,
+          "estimate_channel_before": -0.0024268451543178874,
+          "estimate_channel_after": 0.02654020906903176,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 19,
+        "cell": "tariff_10|HIGH",
+        "campaign": {
+          "filter_current_tariff": "tariff_10",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_16",
+          "channel": "push"
+        },
+        "requested_n": 100,
+        "actual_n": 100,
+        "cost": 0.0,
+        "observed_ratio": 0.02342570041103722,
+        "prior": {
+          "prior": {
+            "mean": -0.006592519802765862,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 0,
+            "broad_n": 0,
+            "historical_change": -0.04770920502092049,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.41841004184100417,
+            "package_context": 0.08333333333333333,
+            "source": "historical association + pooling + context"
+          },
+          "mean": -0.006592519802765862,
+          "variance": 0.072,
+          "samples": 0,
+          "pilots": 0
+        },
+        "posterior": {
+          "prior": {
+            "mean": -0.006592519802765862,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 0,
+            "broad_n": 0,
+            "historical_change": -0.04770920502092049,
+            "adoption_heuristic": 0.13818129645788568,
+            "price_context": -0.41841004184100417,
+            "package_context": 0.08333333333333333,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.032729924591283446,
+          "variance": 0.019024545294013775,
+          "samples": 100,
+          "pilots": 1
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 80000.0,
+          "contacts": 13120
+        },
+        "resources_after": {
+          "budget": 80000.0,
+          "contacts": 13020
+        },
+        "information_value": 173973.80378660327,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "selection_changed": false,
+          "estimate_channel_before": -0.003296259901382931,
+          "estimate_channel_after": 0.016364962295641723,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
+      },
+      {
+        "index": 20,
+        "cell": "tariff_11|HIGH",
+        "campaign": {
+          "filter_current_tariff": "tariff_11",
+          "filter_arpu_segment": "HIGH",
+          "target_tariff": "tariff_14",
+          "channel": "push"
+        },
+        "requested_n": 100,
+        "actual_n": 100,
+        "cost": 0.0,
+        "observed_ratio": 0.02849046765822721,
+        "prior": {
+          "prior": {
+            "mean": -0.005683708762570809,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 0,
+            "broad_n": 0,
+            "historical_change": -0.04028428093645485,
+            "adoption_heuristic": 0.14108998920785984,
+            "price_context": -0.21070234113712383,
+            "package_context": -0.5,
+            "source": "historical association + pooling + context"
+          },
+          "mean": -0.005683708762570809,
+          "variance": 0.072,
+          "samples": 0,
+          "pilots": 0
+        },
+        "posterior": {
+          "prior": {
+            "mean": -0.005683708762570809,
+            "variance": 0.072,
+            "n_history": 0,
+            "pooled_n": 0,
+            "broad_n": 0,
+            "historical_change": -0.04028428093645485,
+            "adoption_heuristic": 0.14108998920785984,
+            "price_context": -0.21070234113712383,
+            "package_context": -0.5,
+            "source": "historical association + pooling + context"
+          },
+          "mean": 0.04042306921069515,
+          "variance": 0.019024545294013775,
+          "samples": 100,
+          "pilots": 1
+        },
+        "prior_conflict": false,
+        "resources_before": {
+          "budget": 80000.0,
+          "contacts": 13020
+        },
+        "resources_after": {
+          "budget": 80000.0,
+          "contacts": 12920
+        },
+        "information_value": 562847.4542510924,
+        "reason": "Уменьшение неопределённости может изменить выбор тарифа/канала на этой аудитории.",
+        "repeat_validation": false,
+        "decision_change": {
+          "before": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 4989053.640420939
+          },
+          "after": {
+            "plan": [
+              {
+                "filter_current_tariff": "tariff_10",
+                "filter_arpu_segment": "HIGH",
+                "target_tariff": "tariff_6",
+                "channel": "digital_ads",
+                "campaign_name": "BeeAgent_01"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
+                "target_tariff": "tariff_9",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_02"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "sms",
+                "campaign_name": "BeeAgent_03"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_04"
+              },
+              {
+                "filter_arpu_segment": "LOW",
+                "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+                "target_tariff": "tariff_13",
+                "channel": "push",
+                "campaign_name": "BeeAgent_05"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+                "target_tariff": "tariff_8",
+                "channel": "push",
+                "campaign_name": "BeeAgent_06"
+              },
+              {
+                "filter_arpu_segment": "MID",
+                "filter_current_tariff": "tariff_1;tariff_16",
+                "target_tariff": "tariff_9",
+                "channel": "push",
+                "campaign_name": "BeeAgent_07"
+              }
+            ],
+            "forecast_net": 5011924.825165093
+          },
+          "selection_changed": false,
+          "estimate_channel_before": -0.0028418543812854043,
+          "estimate_channel_after": 0.020211534605347574,
+          "note": "Предварительный план до и после реального наблюдения; изменение прогноза не является измеренной выгодой."
+        }
       }
     ],
     "diagnostics": {
@@ -46655,146 +48802,85 @@
       "Pilot inclusion is independent uniform sampling; no sampled IDs are available.",
       "Greedy + bounded local search is not a global optimum; risk penalty is a hyperparameter."
     ],
-    "snapshot_id": "9a1b1c87b2d6307e"
+    "snapshot_id": "47cd7abe3062cd3c"
   },
   "manifest": {
-    "snapshot_id": "9a1b1c87b2d6307e",
+    "snapshot_id": "47cd7abe3062cd3c",
     "plan": [
-      {
-        "filter_current_tariff": "tariff_8",
-        "filter_arpu_segment": "HIGH",
-        "target_tariff": "tariff_14",
-        "channel": "sms",
-        "campaign_name": "BeeAgent_01"
-      },
-      {
-        "filter_current_tariff": "tariff_8",
-        "filter_arpu_segment": "LOW",
-        "target_tariff": "tariff_9",
-        "channel": "sms",
-        "campaign_name": "BeeAgent_02"
-      },
       {
         "filter_current_tariff": "tariff_10",
         "filter_arpu_segment": "HIGH",
-        "target_tariff": "tariff_18",
+        "target_tariff": "tariff_6",
         "channel": "digital_ads",
-        "campaign_name": "BeeAgent_03"
-      },
-      {
-        "filter_arpu_segment": "MID",
-        "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
-        "target_tariff": "tariff_8",
-        "channel": "push",
-        "campaign_name": "BeeAgent_04"
+        "campaign_name": "BeeAgent_01"
       },
       {
         "filter_arpu_segment": "LOW",
         "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
         "target_tariff": "tariff_9",
-        "channel": "push",
-        "campaign_name": "BeeAgent_05"
+        "channel": "sms",
+        "campaign_name": "BeeAgent_02"
       },
       {
-        "filter_arpu_segment": "LOW",
-        "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
-        "target_tariff": "tariff_13",
-        "channel": "push",
-        "campaign_name": "BeeAgent_06"
-      },
-      {
-        "filter_current_tariff": "tariff_1",
         "filter_arpu_segment": "MID",
-        "target_tariff": "tariff_9",
-        "channel": "push",
-        "campaign_name": "BeeAgent_07"
+        "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+        "target_tariff": "tariff_8",
+        "channel": "sms",
+        "campaign_name": "BeeAgent_03"
       },
       {
         "filter_arpu_segment": "LOW",
         "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
         "target_tariff": "tariff_8",
         "channel": "push",
-        "campaign_name": "BeeAgent_08"
+        "campaign_name": "BeeAgent_04"
+      },
+      {
+        "filter_arpu_segment": "LOW",
+        "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
+        "target_tariff": "tariff_13",
+        "channel": "push",
+        "campaign_name": "BeeAgent_05"
+      },
+      {
+        "filter_arpu_segment": "MID",
+        "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+        "target_tariff": "tariff_8",
+        "channel": "push",
+        "campaign_name": "BeeAgent_06"
+      },
+      {
+        "filter_arpu_segment": "MID",
+        "filter_current_tariff": "tariff_1;tariff_16",
+        "target_tariff": "tariff_9",
+        "channel": "push",
+        "campaign_name": "BeeAgent_07"
       }
     ],
     "forecast": {
       "source": "Forecast",
-      "net": 6432029.391746799,
-      "gross": 6532023.391746799,
-      "cost": 99994.0,
-      "contacts": 15000,
-      "final_unique": 11354,
-      "estimated_unique": 11595.995006485602,
+      "net": 5011924.825165093,
+      "gross": 5111924.825165093,
+      "cost": 100000.0,
+      "contacts": 10988,
+      "final_unique": 6877,
+      "estimated_unique": 7229.5059802624155,
       "pilot_overlap": "probabilistic: independent uniform samples; IDs unknown",
       "details": [
         {
           "campaign": {
-            "filter_current_tariff": "tariff_8",
-            "filter_arpu_segment": "HIGH",
-            "target_tariff": "tariff_14",
-            "channel": "sms",
-            "campaign_name": "BeeAgent_01"
-          },
-          "audience": 4726,
-          "contacts": 4726,
-          "cost": 18904.0,
-          "marginal_net": 2225979.546853827,
-          "gross_increment": 2244883.546853827,
-          "uncertainty_scale": 2096286.0301836058,
-          "final_overlap": 0,
-          "truncated": false,
-          "campaign_capped": false
-        },
-        {
-          "campaign": {
-            "filter_current_tariff": "tariff_8",
-            "filter_arpu_segment": "LOW",
-            "target_tariff": "tariff_9",
-            "channel": "sms",
-            "campaign_name": "BeeAgent_02"
-          },
-          "audience": 457,
-          "contacts": 457,
-          "cost": 1828.0,
-          "marginal_net": 355418.02094846126,
-          "gross_increment": 357246.02094846126,
-          "uncertainty_scale": 75487.89721126291,
-          "final_overlap": 0,
-          "truncated": false,
-          "campaign_capped": false
-        },
-        {
-          "campaign": {
             "filter_current_tariff": "tariff_10",
             "filter_arpu_segment": "HIGH",
-            "target_tariff": "tariff_18",
+            "target_tariff": "tariff_6",
             "channel": "digital_ads",
-            "campaign_name": "BeeAgent_03"
+            "campaign_name": "BeeAgent_01"
           },
           "audience": 2950,
-          "contacts": 2701,
-          "cost": 59422.0,
-          "marginal_net": 2069348.6140949214,
-          "gross_increment": 2128770.6140949214,
-          "uncertainty_scale": 2063947.6207597058,
-          "final_overlap": 0,
-          "truncated": true,
-          "campaign_capped": false
-        },
-        {
-          "campaign": {
-            "filter_arpu_segment": "MID",
-            "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
-            "target_tariff": "tariff_8",
-            "channel": "push",
-            "campaign_name": "BeeAgent_04"
-          },
-          "audience": 1605,
-          "contacts": 1605,
-          "cost": 0.0,
-          "marginal_net": 591679.8424810716,
-          "gross_increment": 591679.8424810716,
-          "uncertainty_scale": 541630.1992027552,
+          "contacts": 2950,
+          "cost": 64900.0,
+          "marginal_net": 2591219.834698793,
+          "gross_increment": 2656119.834698793,
+          "uncertainty_scale": 2836111.9056867408,
           "final_overlap": 0,
           "truncated": false,
           "campaign_capped": false
@@ -46804,16 +48890,52 @@
             "filter_arpu_segment": "LOW",
             "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
             "target_tariff": "tariff_9",
-            "channel": "push",
-            "campaign_name": "BeeAgent_05"
+            "channel": "sms",
+            "campaign_name": "BeeAgent_02"
           },
           "audience": 2183,
           "contacts": 2183,
+          "cost": 8732.0,
+          "marginal_net": 1080313.629671073,
+          "gross_increment": 1089045.629671073,
+          "uncertainty_scale": 880894.1150892137,
+          "final_overlap": 0,
+          "truncated": false,
+          "campaign_capped": false
+        },
+        {
+          "campaign": {
+            "filter_arpu_segment": "MID",
+            "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+            "target_tariff": "tariff_8",
+            "channel": "sms",
+            "campaign_name": "BeeAgent_03"
+          },
+          "audience": 1605,
+          "contacts": 1592,
+          "cost": 6368.0,
+          "marginal_net": 748368.9818010414,
+          "gross_increment": 754736.9818010414,
+          "uncertainty_scale": 620720.1938444101,
+          "final_overlap": 0,
+          "truncated": true,
+          "campaign_capped": false
+        },
+        {
+          "campaign": {
+            "filter_arpu_segment": "LOW",
+            "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+            "target_tariff": "tariff_8",
+            "channel": "push",
+            "campaign_name": "BeeAgent_04"
+          },
+          "audience": 383,
+          "contacts": 383,
           "cost": 0.0,
-          "marginal_net": 679305.1205708602,
-          "gross_increment": 679305.1205708602,
-          "uncertainty_scale": 693787.7052221992,
-          "final_overlap": 457,
+          "marginal_net": 19503.81624358417,
+          "gross_increment": 19503.81624358417,
+          "uncertainty_scale": 147045.931385144,
+          "final_overlap": 332,
           "truncated": false,
           "campaign_capped": false
         },
@@ -46823,52 +48945,52 @@
             "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
             "target_tariff": "tariff_13",
             "channel": "push",
-            "campaign_name": "BeeAgent_06"
+            "campaign_name": "BeeAgent_05"
           },
           "audience": 153,
           "contacts": 153,
           "cost": 0.0,
-          "marginal_net": 55346.12994741139,
-          "gross_increment": 55346.12994741139,
+          "marginal_net": 35646.26060309356,
+          "gross_increment": 35646.26060309356,
           "uncertainty_scale": 59137.802762617124,
-          "final_overlap": 14,
+          "final_overlap": 65,
           "truncated": false,
           "campaign_capped": false
         },
         {
           "campaign": {
-            "filter_current_tariff": "tariff_1",
             "filter_arpu_segment": "MID",
+            "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+            "target_tariff": "tariff_8",
+            "channel": "push",
+            "campaign_name": "BeeAgent_06"
+          },
+          "audience": 1605,
+          "contacts": 1605,
+          "cost": 0.0,
+          "marginal_net": 4946.427788923585,
+          "gross_increment": 4946.427788923585,
+          "uncertainty_scale": 480627.8547562584,
+          "final_overlap": 1592,
+          "truncated": false,
+          "campaign_capped": false
+        },
+        {
+          "campaign": {
+            "filter_arpu_segment": "MID",
+            "filter_current_tariff": "tariff_1;tariff_16",
             "target_tariff": "tariff_9",
             "channel": "push",
             "campaign_name": "BeeAgent_07"
           },
-          "audience": 32,
-          "contacts": 32,
+          "audience": 42,
+          "contacts": 42,
           "cost": 0.0,
-          "marginal_net": 2815.4806650734236,
-          "gross_increment": 2815.4806650734236,
-          "uncertainty_scale": 20686.20677735496,
-          "final_overlap": 32,
+          "marginal_net": 89.51941787872042,
+          "gross_increment": 89.51941787872042,
+          "uncertainty_scale": 26631.2096093436,
+          "final_overlap": 42,
           "truncated": false,
-          "campaign_capped": false
-        },
-        {
-          "campaign": {
-            "filter_arpu_segment": "LOW",
-            "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
-            "target_tariff": "tariff_8",
-            "channel": "push",
-            "campaign_name": "BeeAgent_08"
-          },
-          "audience": 383,
-          "contacts": 283,
-          "cost": 0.0,
-          "marginal_net": 11287.000200208015,
-          "gross_increment": 11287.000200208015,
-          "uncertainty_scale": 106201.11549105984,
-          "final_overlap": 283,
-          "truncated": true,
           "campaign_capped": false
         }
       ],
@@ -46900,47 +49022,9 @@
           "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
         },
         {
-          "code": "truncation",
-          "severity": "warning",
-          "index": 2,
-          "message": "Кампания усечена остатком бюджета или контактов"
-        },
-        {
-          "code": "uncertain_sign",
-          "severity": "warning",
-          "index": 2,
-          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
-        },
-        {
           "code": "unpiloted",
           "severity": "warning",
-          "index": 3,
-          "message": "Есть исторические гипотезы без пилотного подтверждения",
-          "cells": [
-            "tariff_12|MID",
-            "tariff_15|MID",
-            "tariff_16|MID",
-            "tariff_17|MID",
-            "tariff_1|MID",
-            "tariff_3|MID"
-          ]
-        },
-        {
-          "code": "uncertain_sign",
-          "severity": "warning",
-          "index": 3,
-          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
-        },
-        {
-          "code": "overlap",
-          "severity": "warning",
-          "index": 4,
-          "message": "Повторных финальных контактов: 457"
-        },
-        {
-          "code": "unpiloted",
-          "severity": "warning",
-          "index": 4,
+          "index": 1,
           "message": "Есть исторические гипотезы без пилотного подтверждения",
           "cells": [
             "tariff_10|LOW",
@@ -46961,72 +49045,45 @@
         {
           "code": "uncertain_sign",
           "severity": "warning",
-          "index": 4,
+          "index": 1,
           "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
-        },
-        {
-          "code": "overlap",
-          "severity": "warning",
-          "index": 5,
-          "message": "Повторных финальных контактов: 14"
-        },
-        {
-          "code": "unpiloted",
-          "severity": "warning",
-          "index": 5,
-          "message": "Есть исторические гипотезы без пилотного подтверждения",
-          "cells": [
-            "tariff_19|LOW",
-            "tariff_20|LOW",
-            "tariff_2|LOW",
-            "tariff_5|LOW",
-            "tariff_6|LOW",
-            "tariff_9|LOW"
-          ]
-        },
-        {
-          "code": "uncertain_sign",
-          "severity": "warning",
-          "index": 5,
-          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
-        },
-        {
-          "code": "overlap",
-          "severity": "warning",
-          "index": 6,
-          "message": "Повторных финальных контактов: 32"
-        },
-        {
-          "code": "unpiloted",
-          "severity": "warning",
-          "index": 6,
-          "message": "Есть исторические гипотезы без пилотного подтверждения",
-          "cells": [
-            "tariff_1|MID"
-          ]
-        },
-        {
-          "code": "uncertain_sign",
-          "severity": "warning",
-          "index": 6,
-          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
-        },
-        {
-          "code": "overlap",
-          "severity": "warning",
-          "index": 7,
-          "message": "Повторных финальных контактов: 283"
         },
         {
           "code": "truncation",
           "severity": "warning",
-          "index": 7,
+          "index": 2,
           "message": "Кампания усечена остатком бюджета или контактов"
         },
         {
           "code": "unpiloted",
           "severity": "warning",
-          "index": 7,
+          "index": 2,
+          "message": "Есть исторические гипотезы без пилотного подтверждения",
+          "cells": [
+            "tariff_12|MID",
+            "tariff_15|MID",
+            "tariff_16|MID",
+            "tariff_17|MID",
+            "tariff_1|MID",
+            "tariff_3|MID"
+          ]
+        },
+        {
+          "code": "uncertain_sign",
+          "severity": "warning",
+          "index": 2,
+          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
+        },
+        {
+          "code": "overlap",
+          "severity": "warning",
+          "index": 3,
+          "message": "Повторных финальных контактов: 332"
+        },
+        {
+          "code": "unpiloted",
+          "severity": "warning",
+          "index": 3,
           "message": "Есть исторические гипотезы без пилотного подтверждения",
           "cells": [
             "tariff_13|LOW",
@@ -47040,88 +49097,108 @@
         {
           "code": "uncertain_sign",
           "severity": "warning",
-          "index": 7,
+          "index": 3,
+          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
+        },
+        {
+          "code": "overlap",
+          "severity": "warning",
+          "index": 4,
+          "message": "Повторных финальных контактов: 65"
+        },
+        {
+          "code": "unpiloted",
+          "severity": "warning",
+          "index": 4,
+          "message": "Есть исторические гипотезы без пилотного подтверждения",
+          "cells": [
+            "tariff_19|LOW",
+            "tariff_20|LOW",
+            "tariff_2|LOW",
+            "tariff_5|LOW",
+            "tariff_6|LOW",
+            "tariff_9|LOW"
+          ]
+        },
+        {
+          "code": "uncertain_sign",
+          "severity": "warning",
+          "index": 4,
+          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
+        },
+        {
+          "code": "overlap",
+          "severity": "warning",
+          "index": 5,
+          "message": "Повторных финальных контактов: 1592"
+        },
+        {
+          "code": "unpiloted",
+          "severity": "warning",
+          "index": 5,
+          "message": "Есть исторические гипотезы без пилотного подтверждения",
+          "cells": [
+            "tariff_12|MID",
+            "tariff_15|MID",
+            "tariff_16|MID",
+            "tariff_17|MID",
+            "tariff_1|MID",
+            "tariff_3|MID"
+          ]
+        },
+        {
+          "code": "uncertain_sign",
+          "severity": "warning",
+          "index": 5,
+          "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
+        },
+        {
+          "code": "overlap",
+          "severity": "warning",
+          "index": 6,
+          "message": "Повторных финальных контактов: 42"
+        },
+        {
+          "code": "unpiloted",
+          "severity": "warning",
+          "index": 6,
+          "message": "Есть исторические гипотезы без пилотного подтверждения",
+          "cells": [
+            "tariff_16|MID",
+            "tariff_1|MID"
+          ]
+        },
+        {
+          "code": "uncertain_sign",
+          "severity": "warning",
+          "index": 6,
           "message": "Более четверти контактов зависят от оценки, интервал которой включает ноль"
         }
       ],
       "forecast": {
         "source": "Forecast",
-        "net": 6432029.391746799,
-        "gross": 6532023.391746799,
-        "cost": 99994.0,
-        "contacts": 15000,
-        "final_unique": 11354,
-        "estimated_unique": 11595.995006485602,
+        "net": 5011924.825165093,
+        "gross": 5111924.825165093,
+        "cost": 100000.0,
+        "contacts": 10988,
+        "final_unique": 6877,
+        "estimated_unique": 7229.5059802624155,
         "pilot_overlap": "probabilistic: independent uniform samples; IDs unknown",
         "details": [
           {
             "campaign": {
-              "filter_current_tariff": "tariff_8",
-              "filter_arpu_segment": "HIGH",
-              "target_tariff": "tariff_14",
-              "channel": "sms",
-              "campaign_name": "BeeAgent_01"
-            },
-            "audience": 4726,
-            "contacts": 4726,
-            "cost": 18904.0,
-            "marginal_net": 2225979.546853827,
-            "gross_increment": 2244883.546853827,
-            "uncertainty_scale": 2096286.0301836058,
-            "final_overlap": 0,
-            "truncated": false,
-            "campaign_capped": false
-          },
-          {
-            "campaign": {
-              "filter_current_tariff": "tariff_8",
-              "filter_arpu_segment": "LOW",
-              "target_tariff": "tariff_9",
-              "channel": "sms",
-              "campaign_name": "BeeAgent_02"
-            },
-            "audience": 457,
-            "contacts": 457,
-            "cost": 1828.0,
-            "marginal_net": 355418.02094846126,
-            "gross_increment": 357246.02094846126,
-            "uncertainty_scale": 75487.89721126291,
-            "final_overlap": 0,
-            "truncated": false,
-            "campaign_capped": false
-          },
-          {
-            "campaign": {
               "filter_current_tariff": "tariff_10",
               "filter_arpu_segment": "HIGH",
-              "target_tariff": "tariff_18",
+              "target_tariff": "tariff_6",
               "channel": "digital_ads",
-              "campaign_name": "BeeAgent_03"
+              "campaign_name": "BeeAgent_01"
             },
             "audience": 2950,
-            "contacts": 2701,
-            "cost": 59422.0,
-            "marginal_net": 2069348.6140949214,
-            "gross_increment": 2128770.6140949214,
-            "uncertainty_scale": 2063947.6207597058,
-            "final_overlap": 0,
-            "truncated": true,
-            "campaign_capped": false
-          },
-          {
-            "campaign": {
-              "filter_arpu_segment": "MID",
-              "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
-              "target_tariff": "tariff_8",
-              "channel": "push",
-              "campaign_name": "BeeAgent_04"
-            },
-            "audience": 1605,
-            "contacts": 1605,
-            "cost": 0.0,
-            "marginal_net": 591679.8424810716,
-            "gross_increment": 591679.8424810716,
-            "uncertainty_scale": 541630.1992027552,
+            "contacts": 2950,
+            "cost": 64900.0,
+            "marginal_net": 2591219.834698793,
+            "gross_increment": 2656119.834698793,
+            "uncertainty_scale": 2836111.9056867408,
             "final_overlap": 0,
             "truncated": false,
             "campaign_capped": false
@@ -47131,16 +49208,52 @@
               "filter_arpu_segment": "LOW",
               "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
               "target_tariff": "tariff_9",
-              "channel": "push",
-              "campaign_name": "BeeAgent_05"
+              "channel": "sms",
+              "campaign_name": "BeeAgent_02"
             },
             "audience": 2183,
             "contacts": 2183,
+            "cost": 8732.0,
+            "marginal_net": 1080313.629671073,
+            "gross_increment": 1089045.629671073,
+            "uncertainty_scale": 880894.1150892137,
+            "final_overlap": 0,
+            "truncated": false,
+            "campaign_capped": false
+          },
+          {
+            "campaign": {
+              "filter_arpu_segment": "MID",
+              "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+              "target_tariff": "tariff_8",
+              "channel": "sms",
+              "campaign_name": "BeeAgent_03"
+            },
+            "audience": 1605,
+            "contacts": 1592,
+            "cost": 6368.0,
+            "marginal_net": 748368.9818010414,
+            "gross_increment": 754736.9818010414,
+            "uncertainty_scale": 620720.1938444101,
+            "final_overlap": 0,
+            "truncated": true,
+            "campaign_capped": false
+          },
+          {
+            "campaign": {
+              "filter_arpu_segment": "LOW",
+              "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
+              "target_tariff": "tariff_8",
+              "channel": "push",
+              "campaign_name": "BeeAgent_04"
+            },
+            "audience": 383,
+            "contacts": 383,
             "cost": 0.0,
-            "marginal_net": 679305.1205708602,
-            "gross_increment": 679305.1205708602,
-            "uncertainty_scale": 693787.7052221992,
-            "final_overlap": 457,
+            "marginal_net": 19503.81624358417,
+            "gross_increment": 19503.81624358417,
+            "uncertainty_scale": 147045.931385144,
+            "final_overlap": 332,
             "truncated": false,
             "campaign_capped": false
           },
@@ -47150,52 +49263,52 @@
               "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
               "target_tariff": "tariff_13",
               "channel": "push",
-              "campaign_name": "BeeAgent_06"
+              "campaign_name": "BeeAgent_05"
             },
             "audience": 153,
             "contacts": 153,
             "cost": 0.0,
-            "marginal_net": 55346.12994741139,
-            "gross_increment": 55346.12994741139,
+            "marginal_net": 35646.26060309356,
+            "gross_increment": 35646.26060309356,
             "uncertainty_scale": 59137.802762617124,
-            "final_overlap": 14,
+            "final_overlap": 65,
             "truncated": false,
             "campaign_capped": false
           },
           {
             "campaign": {
-              "filter_current_tariff": "tariff_1",
               "filter_arpu_segment": "MID",
+              "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
+              "target_tariff": "tariff_8",
+              "channel": "push",
+              "campaign_name": "BeeAgent_06"
+            },
+            "audience": 1605,
+            "contacts": 1605,
+            "cost": 0.0,
+            "marginal_net": 4946.427788923585,
+            "gross_increment": 4946.427788923585,
+            "uncertainty_scale": 480627.8547562584,
+            "final_overlap": 1592,
+            "truncated": false,
+            "campaign_capped": false
+          },
+          {
+            "campaign": {
+              "filter_arpu_segment": "MID",
+              "filter_current_tariff": "tariff_1;tariff_16",
               "target_tariff": "tariff_9",
               "channel": "push",
               "campaign_name": "BeeAgent_07"
             },
-            "audience": 32,
-            "contacts": 32,
+            "audience": 42,
+            "contacts": 42,
             "cost": 0.0,
-            "marginal_net": 2815.4806650734236,
-            "gross_increment": 2815.4806650734236,
-            "uncertainty_scale": 20686.20677735496,
-            "final_overlap": 32,
+            "marginal_net": 89.51941787872042,
+            "gross_increment": 89.51941787872042,
+            "uncertainty_scale": 26631.2096093436,
+            "final_overlap": 42,
             "truncated": false,
-            "campaign_capped": false
-          },
-          {
-            "campaign": {
-              "filter_arpu_segment": "LOW",
-              "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
-              "target_tariff": "tariff_8",
-              "channel": "push",
-              "campaign_name": "BeeAgent_08"
-            },
-            "audience": 383,
-            "contacts": 283,
-            "cost": 0.0,
-            "marginal_net": 11287.000200208015,
-            "gross_increment": 11287.000200208015,
-            "uncertainty_scale": 106201.11549105984,
-            "final_overlap": 283,
-            "truncated": true,
             "campaign_capped": false
           }
         ],

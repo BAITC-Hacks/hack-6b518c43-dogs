@@ -1,0 +1,20 @@
+{
+  "run_id": "392fd749-dd7d-4ac1-a34c-2e26a712782c",
+  "identity": {
+    "algorithm_version": "beeagent-repeat-3",
+    "engine_sha256": "54fa8cb5cd0045d2d0b8bc62a5d2f1bf6e5e6136f1668e27750aa410e2e1958a",
+    "data_fingerprint": "b543c6118f83cebaf217bfa9698a6930176357fb4bb6eaae21e5b664488695ab"
+  },
+  "source": "Диагностика сохранённого прогона 42 после возврата плана",
+  "forecast_net": 5011924.825165093,
+  "measured_net": 2658548.4886584375,
+  "forecast_error": 2353376.3365066554,
+  "relative_error": 0.8852109888333168,
+  "pilot_forecast_net": 531836.3549407059,
+  "pilot_cost": 20000.0,
+  "pilot_contacts": 2080,
+  "final_contacts": 8908,
+  "forecast_unique": 7229.5059802624155,
+  "measured_unique": 7229,
+  "cost_and_contacts_exact_for_every_final_campaign": true
+}

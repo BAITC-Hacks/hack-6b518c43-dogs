@@ -23,6 +23,7 @@ from local_eval import evaluate_agent
 from dotenv import load_dotenv
 load_dotenv(ROOT/'.env', override=False)
 from backend.plans import PlanService
+from backend.identity import runtime_identity,binding,compatible
 from backend.assistant import Assistant
 
 RUNS = Path(os.getenv('BEEAGENT_STORAGE_DIR',str(ROOT/'reports/runs'))).resolve()
@@ -63,6 +64,7 @@ def load_run(run_id):
 
 
 def restore(record):
+    if not compatible(record):raise ValueError('Архивный запуск: версия движка или данных изменилась. Рассчитайте новый план.')
     return Engine.from_snapshot(pd.read_csv(ROOT/'customer_profile.csv'), pd.read_csv(ROOT/'data/dict_tariff.csv'), record['knowledge'])
 
 
@@ -81,8 +83,9 @@ def execute(run_id, seed):
         if result is None:raise RuntimeError('Официальный оценщик не вернул результат')
         record = dict(run_id=run_id, seed=seed, source='Official mock', status='completed',
                       created_at=datetime.now(timezone.utc).isoformat(), seconds=time.perf_counter()-started,
-                      official=clean(result), knowledge=agent.snapshot,
+                      official=clean(result), knowledge=agent.snapshot, identity=runtime_identity(),
                       **plan_bundle(agent.engine, agent.plan))
+        record['measurement_binding']=binding(record,run_id,record['plan'])
         save(RUNS/(run_id+'.json'),record)
         with LOCK:JOBS[run_id] = {'status':'completed','run_id':run_id}
     except Exception as error:
@@ -142,7 +145,7 @@ class Handler(BaseHTTPRequestHandler):
                     records.append(summary(json.loads(file.read_text())))
                 return self.respond(sorted(records,key=lambda x:x['created_at'],reverse=True))
             if path=='/api/benchmarks':
-                file=ROOT/'reports/levra/comparison.json'
+                file=ROOT/'reports/stage3/benchmark_ui.json'
                 return self.respond(json.loads(file.read_text()) if file.exists() else {'status':'not_run'})
             if path.startswith('/api/runs/'):
                 run_id=safe_id(path.rsplit('/',1)[1])
@@ -153,7 +156,7 @@ class Handler(BaseHTTPRequestHandler):
                 # Knowledge stays in local artifacts; UI sees evidence, not customer data.
                 record['knowledge_summary']={k:record['knowledge'][k] for k in ['snapshot_id','diagnostics','stop_reason','assumptions','spent_budget','spent_contacts']}
                 record['pilots']=record['knowledge']['pilots']
-                record.update(plan_id=run_id,data_version=record['knowledge']['snapshot_id'],measurement=record['official'])
+                record.update(PLANS.get(run_id,run_id))
                 record['active_bundle']=PLANS.get(run_id,PLANS.active_id(run_id))
                 del record['knowledge']
                 return self.respond(record)

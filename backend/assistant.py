@@ -12,7 +12,7 @@ from pathlib import Path
 from jsonschema import validate, ValidationError
 
 UNAVAILABLE='AI-ассистент временно недоступен. Изменить условия можно вручную'
-VERSION='beeagent-tools-2'
+VERSION='beeagent-tools-3'
 
 def object_schema(properties):
     return dict(type='object',properties=properties,required=list(properties),additionalProperties=False)
@@ -81,22 +81,37 @@ class Assistant:
     def __init__(self,service,path,client_factory=None,timeout=40):
         self.service=service;self.ledger=Ledger(path);self.factory=client_factory;self.timeout=timeout
         self.gate=threading.Lock()
+        self.request_state=threading.local()
     def configuration(self):
         model=os.getenv('OPENAI_MODEL','gpt-6-sol')
         defaults=(2,.2,10,2.5) if model=='gpt-6-sol' else (None,None,None,None)
         rates=tuple(float(os.getenv(k,str(default))) if os.getenv(k) or default is not None else None for k,default in zip(
             ['BEEAGENT_INPUT_USD_PER_MILLION','BEEAGENT_CACHED_USD_PER_MILLION','BEEAGENT_OUTPUT_USD_PER_MILLION','BEEAGENT_CACHE_WRITE_USD_PER_MILLION'],defaults))
         if any(r is None or r<0 or not r<float('inf') for r in rates):raise ValueError('model_prices_missing')
-        limit=float(os.getenv('BEEAGENT_AI_BUDGET_USD','5'));max_calls=int(os.getenv('BEEAGENT_AI_MAX_CALLS','100'))
+        limit=float(os.getenv('BEEAGENT_AI_BUDGET_USD','3'));max_calls=int(os.getenv('BEEAGENT_AI_MAX_CALLS','100'))
         if not math.isfinite(limit) or limit<0 or max_calls<0:raise ValueError('invalid_limits')
         return model,rates,limit,max_calls
     def status(self):
         try:model,rates,limit,max_calls=self.configuration();configured=True
         except (ValueError,TypeError):model=os.getenv('OPENAI_MODEL','gpt-6-sol');limit=0;max_calls=0;configured=False
         return dict(available=bool(os.getenv('OPENAI_API_KEY')) and configured,model=model,
+            key_configured=bool(os.getenv('OPENAI_API_KEY')),configuration_valid=configured,
             **self.ledger.stats(),limit_usd=limit,max_calls=max_calls,
             note='Локальная оценка расходов, не баланс аккаунта. Неопределённые вызовы учитываются по резерву.')
     def ask(self,run_id,base_plan_id,prompt,campaign_index=0,cancel=None):
+        started=time.perf_counter();before=self.ledger.stats()
+        self.request_state.network_attempts=0
+        result=self._ask(run_id,base_plan_id,prompt,campaign_index,cancel)
+        after=self.ledger.stats()
+        usage={k:after[k]-before[k] for k in before}
+        # Busy requests did not acquire the single action gate; don't attribute another call.
+        if result.get('reason')=='busy':usage={k:0 for k in usage}
+        result.update(network_call=bool(self.request_state.network_attempts),
+            network_attempts=self.request_state.network_attempts,
+            usage=usage,seconds=time.perf_counter()-started,model=os.getenv('OPENAI_MODEL','gpt-6-sol'))
+        return result
+
+    def _ask(self,run_id,base_plan_id,prompt,campaign_index=0,cancel=None):
         if not isinstance(prompt,str) or not 1<=len(prompt.strip())<=2000:raise ValueError('Запрос должен содержать от 1 до 2000 символов')
         if type(campaign_index)!=int or not 0<=campaign_index<=9:raise ValueError('Некорректная кампания')
         base=self.service.context(run_id,base_plan_id)
@@ -132,7 +147,10 @@ class Assistant:
         inputs=[dict(role='user',content=json.dumps(dict(request=prompt,run_id=run_id,base_plan_id=base_id,
             data_version=base['data_version'],selected_campaign_index=index),ensure_ascii=False))]
         async def invoke(request):
-            task=asyncio.create_task(client.responses.create(**request))
+            async def send():
+                if self.factory is None:self.request_state.network_attempts+=1
+                return await client.responses.create(**request)
+            task=asyncio.create_task(send())
             try:
                 while not task.done():
                     if cancel and cancel.is_set():raise asyncio.CancelledError()
@@ -199,12 +217,15 @@ class Assistant:
                             result=self.service.context(run_id,arguments['plan_id']) if item.name=='get_plan_summary' else self.service.campaign_evidence(run_id,arguments['plan_id'],arguments['campaign_index'])
                         for metric in result['metrics']:metrics[metric['metric_id']]=metric
                         for fact in result['evidence']:evidence[fact['evidence_id']]=fact
-                        trace.append(dict(tool=item.name,plan_id=result.get('plan_id',base_id),data_version=base['data_version']))
+                        trace.append(dict(tool=item.name,parameters=arguments,validated_constraints=result.get('constraints'),
+                            plan_id=result.get('plan_id',base_id),data_version=base['data_version']))
                         inputs.append(dict(type='function_call_output',call_id=item.call_id,output=json.dumps(result,ensure_ascii=False,allow_nan=False)))
                     continue
                 answer=json.loads(response.output_text);validate(answer,ANSWER)
                 if any(len(answer[k])!=len(set(answer[k])) for k in ['metric_ids','evidence_ids']):raise ValueError('duplicate_references')
                 if not trace or any(ref not in metrics for ref in answer['metric_ids']) or any(ref not in evidence for ref in answer['evidence_ids']):raise ValueError('ungrounded_reference')
+                if answer['topic']=='scenario' and not proposals:raise ValueError('scenario_without_tool')
+                if answer['topic']=='campaign' and not any(t['tool']=='get_campaign_evidence' for t in trace):raise ValueError('campaign_without_tool')
                 result=dict(status='completed',model=model,run_id=run_id,base_plan_id=base_id,data_version=base['data_version'],
                     topic=answer['topic'],metrics=[metrics[ref] for ref in answer['metric_ids']],
                     evidence=[evidence[ref] for ref in answer['evidence_ids']],tool_trace=trace,

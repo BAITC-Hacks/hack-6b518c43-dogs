@@ -1,0 +1,11 @@
+{
+  "registered_at": "2026-09-23T10:42:59.971011+00:00",
+  "baseline_commit": "eb782330fb71796dc8cadc7a27eee6a64ff8e516",
+  "sha256": {
+    "docs/STAGE3_VALIDATION_PROTOCOL.md": "a9b9958b7a79a8e60592c81ea1f3bde9abb00b6dba7248706e797c311f9e9be5",
+    "tools/stage3_variants.py": "f5a9043c492efd05d7b379bdcc4db7ef6b04c5cf95536c6fbdb26cb592a047df",
+    "tools/stage3_worlds.py": "b59e865bbe2cea42c0ab1efbe746f58231ced509146525e67578b50f752eeeeb",
+    "reports/stage3/baseline/agent.py": "bef4f21e44c45a3b9d401498fd3196d50111fc6f4a15ba81b8947961ab1ef377",
+    "reports/stage3/baseline/submission.csv": "9e6b58079f5abf7b3fa83afe05d6c1b057bf8b3a17981455aedc486cc39a2d77"
+  }
+}

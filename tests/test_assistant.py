@@ -12,6 +12,7 @@ import pandas as pd
 from agent import Engine
 from backend.assistant import Assistant, Ledger, TOOLS, ANSWER
 from backend.plans import PlanService
+from backend.identity import runtime_identity,binding
 from backend.server import plan_bundle,save
 
 class Output(NS):
@@ -72,6 +73,8 @@ class AssistantTests(unittest.TestCase):
         e.observe(dict(cell='a|MID',target='b',channel='sms',key=key,requested_n=10),dict(n_customers=10,cost=40,observed_lift_ratio=.2),dict(budget=10000,contacts=1000),dict(budget=9960,contacts=990))
         self.id='12345678-1234-1234-1234-123456789abc'
         self.record=dict(run_id=self.id,knowledge=e.snapshot(),official=dict(net_arpu_gain=100,total_cost=40,total_contacts=10,unique_customers_targeted=10),**plan_bundle(e,e.solve()))
+        self.record['identity']=runtime_identity()
+        self.record['measurement_binding']=binding(self.record,self.id,self.record['plan'])
         self.service=PlanService(self.root,lambda id:self.record if id==self.id else (_ for _ in ()).throw(ValueError('unknown run')),
             lambda r:Engine.from_snapshot(p,tariffs,r['knowledge']),plan_bundle,save)
     def tearDown(self):self.env.stop();self.temp.cleanup()

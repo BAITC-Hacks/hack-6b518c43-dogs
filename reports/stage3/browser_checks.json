@@ -1,0 +1,69 @@
+{
+  "run_id": "392fd749-dd7d-4ac1-a34c-2e26a712782c",
+  "exported_plan_id": "7d420668-0443-40d5-9e45-cc1901ac55a2",
+  "export_rows": 5,
+  "download_matches_server_bytes": true,
+  "exported_sha256": "5b61d3646a7be6e5a34c48094774b4e888e79158cf28c16b3b95eb3dd7ee407f",
+  "official_submission_sha256": "f3935486bd54ebe001b9aa54c1773d51fff91387b585c57c9f9542658502197f",
+  "measured_original": 2658548.4886584375,
+  "variant_forecast": 4442117.903571544,
+  "variant_measurement": null,
+  "new_pilots": 0,
+  "ai_network_calls": 0,
+  "ai_estimated_usd": 0,
+  "checks": [
+    "Research through UI with real public pilots",
+    "Exact measured original vs forecast",
+    "Real pilot before/after plans including repeat 5",
+    "Proposal before explicit apply",
+    "No inherited measurement after apply",
+    "Saved active variant after page reload and server restart",
+    "Actual browser download equals server export",
+    "Original submission unchanged",
+    "Original plan restored with corresponding measurement",
+    "Invalid target detected and repaired to proposal; proposal rejected",
+    "Warnings grouped by type",
+    "No key fallback; three prompt actions",
+    "Mobile 390x844 without page horizontal overflow",
+    "Visible DOM has no old name, mock/live, internal tool names or right arrows"
+  ],
+  "console_errors_and_warnings": [],
+  "screenshots": {
+    "repair-proposal.png": [
+      1440,
+      900
+    ],
+    "overview-1440.png": [
+      1440,
+      900
+    ],
+    "assistant-no-api-1440.png": [
+      1440,
+      900
+    ],
+    "variant-restored.png": [
+      1440,
+      900
+    ],
+    "grouped-checks.png": [
+      1440,
+      900
+    ],
+    "repeat-pilot-evidence.png": [
+      1440,
+      1682
+    ],
+    "compare-before-apply.png": [
+      1440,
+      900
+    ],
+    "assistant-390.png": [
+      390,
+      844
+    ],
+    "overview-390.png": [
+      390,
+      844
+    ]
+  }
+}

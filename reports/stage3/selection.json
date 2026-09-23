@@ -1,0 +1,22 @@
+{
+  "selected": "repeat",
+  "decisions": [
+    {
+      "policy": "repeat",
+      "eligible": true,
+      "reasons": [],
+      "world_improvements": 0
+    },
+    {
+      "policy": "revisit",
+      "eligible": false,
+      "reasons": [
+        "history_correct: median regression exceeds 10%",
+        "adverse: median regression exceeds 10%"
+      ],
+      "world_improvements": 2
+    }
+  ],
+  "protocol": "docs/STAGE3_VALIDATION_PROTOCOL.md",
+  "caution": "Official seeds change observation noise, not hidden truth. Authored families are reported separately. No future judging guarantee."
+}
