@@ -1,0 +1,6 @@
+{
+  "organizer_files_unchanged": 16,
+  "baseline_submission_repeated_in_fresh_processes": true,
+  "baseline_agent_sha256": "4eb369b732d4756bb7861c0dccab8af09d5fe17cde0fa629981d3eea5b5eb10d",
+  "note": "Checks measure the organizer template only. LEVRA implementation has not been built yet."
+}

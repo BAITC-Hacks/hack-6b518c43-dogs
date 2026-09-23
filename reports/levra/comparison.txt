@@ -1,0 +1,4 @@
+template {"mean_net": -480836.1838287679, "median_net": -357947.7963826433, "min_net": -1019431.0606441048, "max_net": -76493.45195450934, "positive_runs": 0, "mean_seconds": 0.09355359989986027, "max_seconds": 0.10420437499942636}
+history_only {"mean_net": 3783135.6107271733, "median_net": 3783135.6107271733, "min_net": 3783135.6107271733, "max_net": 3783135.6107271733, "positive_runs": 10, "mean_seconds": 0.3535127458999341, "max_seconds": 0.36523695800042333}
+fixed_pilots {"mean_net": 4322638.50755833, "median_net": 4743189.4055768745, "min_net": 2039117.939538884, "max_net": 5175888.0997232655, "positive_runs": 10, "mean_seconds": 0.5197900250998828, "max_seconds": 0.5703450829996655}
+adaptive {"mean_net": 2456826.660924861, "median_net": 2661673.213636079, "min_net": 304998.0907764959, "max_net": 3290635.183725944, "positive_runs": 10, "mean_seconds": 3.5371977626001354, "max_seconds": 4.111162666999917}

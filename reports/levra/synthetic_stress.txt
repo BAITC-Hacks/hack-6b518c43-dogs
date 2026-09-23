@@ -1,0 +1,7 @@
+prior_overestimation default net: [61580, 94715, 85141]
+sign_flip default net: [-75449, -289608, -156240]
+rare_transition default net: [-137653, -155731, -148959]
+weak_returns default net: [-88806, -97866, -94480]
+adverse_first_pilots default net: [994211, 1006092, 1002838]
+limited_resources default net: [246480, 294128, 246480]
+call_saturation default net: [1346581, 1352113, 1351062]

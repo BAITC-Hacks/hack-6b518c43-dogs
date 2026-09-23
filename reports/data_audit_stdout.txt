@@ -1,0 +1,405 @@
+{
+  "files": {
+    "customer_profile.csv": {
+      "rows": 23441,
+      "columns": 29,
+      "column_names": [
+        "ID_NUMBER",
+        "ARPU_current",
+        "ARPU_3m_avg",
+        "ARPU_trend",
+        "current_tariff",
+        "OUT_LOC_ONNET_MIN",
+        "OUT_LOC_OFFNET_MIN",
+        "OUT_LOC_OFFNET_UNPAID_MIN",
+        "OUT_LOC_OFFNET_PAID_MIN",
+        "OUT_INTER_MIN",
+        "OUT_LOC_LAND_MIN",
+        "OUT_LOCAL_ONNET_SMS_AMT",
+        "OUT_LOCAL_OFFNET_SMS_AMT",
+        "OUT_LOCAL_LAND_PAID_SMS_AMT",
+        "OUT_INTER_SMS_AMT",
+        "DATA_VOLUME",
+        "LTE_DATA_VOLUME",
+        "TOTAL_ROAM_CALL_AMT",
+        "TOTAL_ROAM_SMS_AMT",
+        "TOTAL_ROAM_GPRS_MB",
+        "COUNT_CONTACT",
+        "AVG_TRANSACT_CONTACT",
+        "SUM_TRANSACT_CONTACT",
+        "AVG_DURATION_CONTACT",
+        "COUNT_BASE_STATION",
+        "arpu_segment",
+        "data_segment",
+        "call_segment",
+        "predicted_arpu"
+      ],
+      "unique_ids": 23441,
+      "empty_by_column": {
+        "ARPU_current": 28,
+        "ARPU_3m_avg": 5,
+        "ARPU_trend": 5,
+        "current_tariff": 95,
+        "OUT_LOC_ONNET_MIN": 110,
+        "OUT_LOC_OFFNET_MIN": 110,
+        "OUT_LOC_OFFNET_UNPAID_MIN": 110,
+        "OUT_LOC_OFFNET_PAID_MIN": 110,
+        "OUT_INTER_MIN": 110,
+        "OUT_LOC_LAND_MIN": 110,
+        "OUT_LOCAL_ONNET_SMS_AMT": 110,
+        "OUT_LOCAL_OFFNET_SMS_AMT": 110,
+        "OUT_LOCAL_LAND_PAID_SMS_AMT": 110,
+        "OUT_INTER_SMS_AMT": 110,
+        "DATA_VOLUME": 110,
+        "LTE_DATA_VOLUME": 110,
+        "TOTAL_ROAM_CALL_AMT": 110,
+        "TOTAL_ROAM_SMS_AMT": 110,
+        "TOTAL_ROAM_GPRS_MB": 110,
+        "COUNT_CONTACT": 470,
+        "AVG_TRANSACT_CONTACT": 470,
+        "SUM_TRANSACT_CONTACT": 470,
+        "AVG_DURATION_CONTACT": 470,
+        "COUNT_BASE_STATION": 162,
+        "arpu_segment": 5,
+        "data_segment": 110
+      },
+      "dates": [],
+      "sha256": "a85e9badf4cb51b1ba8c43a868498b6fa8075509f3cd8e19ef72e1c25a6dc815"
+    },
+    "data/change_tariff.csv": {
+      "rows": 14823,
+      "columns": 6,
+      "column_names": [
+        "TIME_KEY",
+        "AVG_ARPU_PREV_3M",
+        "AVG_ARPU_NEXT_3M",
+        "ID_NUMBER",
+        "tariff_plan_code_from",
+        "tariff_plan_code_to"
+      ],
+      "unique_ids": 14817,
+      "empty_by_column": {},
+      "dates": [
+        "2026-10-01 00:00:00.0"
+      ],
+      "sha256": "c52d7dad11fccc7425afe6d36a44a1fa03c8cc148be2039ce264d0c5c100f230"
+    },
+    "data/arpu_monthly.csv": {
+      "rows": 78798,
+      "columns": 3,
+      "column_names": [
+        "ARPU_1M",
+        "TIME_KEY",
+        "ID_NUMBER"
+      ],
+      "unique_ids": 14991,
+      "empty_by_column": {},
+      "dates": [
+        "2026-04-01",
+        "2026-05-01",
+        "2026-06-01",
+        "2026-07-01",
+        "2026-08-01",
+        "2026-09-01"
+      ],
+      "sha256": "83d96b61c38a8bf7cdf5f07bc4f17f7f2f39885559c496fc28c266cef8ad3c4a"
+    },
+    "data/traffic.csv": {
+      "rows": 75736,
+      "columns": 30,
+      "column_names": [
+        "DEVICE_ID",
+        "time_key",
+        "OUT_LOC_ONNET_MIN",
+        "OUT_LOC_OFFNET_MIN",
+        "OUT_LOC_OFFNET_UNPAID_MIN",
+        "OUT_LOC_OFFNET_PAID_MIN",
+        "OUT_INTER_MIN",
+        "OUT_LOC_LAND_MIN",
+        "OUT_LOCAL_ONNET_SMS_AMT",
+        "OUT_LOCAL_OFFNET_SMS_AMT",
+        "OUT_LOCAL_LAND_PAID_SMS_AMT",
+        "OUT_INTER_SMS_AMT",
+        "DATA_VOLUME",
+        "LTE_DATA_VOLUME",
+        "TOTAL_ROAM_CALL_AMT",
+        "TOTAL_ROAM_SMS_AMT",
+        "TOTAL_ROAM_GPRS_MB",
+        "COUNT_CONTACT",
+        "AVG_TRANSACT_CONTACT",
+        "SUM_TRANSACT_CONTACT",
+        "AVG_DURATION_CONTACT",
+        "COUNT_BASE_STATION",
+        "FIRST_DISP_DIAG",
+        "OS_1",
+        "OS_2",
+        "OS_3",
+        "OS_4",
+        "date_issue_device",
+        "ID_NUMBER",
+        "tariff_plan_code"
+      ],
+      "unique_ids": 14875,
+      "empty_by_column": {
+        "DEVICE_ID": 2697,
+        "COUNT_CONTACT": 3987,
+        "AVG_TRANSACT_CONTACT": 3987,
+        "SUM_TRANSACT_CONTACT": 3987,
+        "AVG_DURATION_CONTACT": 3987,
+        "COUNT_BASE_STATION": 2251,
+        "FIRST_DISP_DIAG": 6302,
+        "OS_1": 6027,
+        "OS_2": 6027,
+        "OS_3": 6027,
+        "OS_4": 6027,
+        "tariff_plan_code": 16725
+      },
+      "dates": [
+        "2026-04-01",
+        "2026-05-01",
+        "2026-06-01",
+        "2026-07-01",
+        "2026-08-01",
+        "2026-09-01"
+      ],
+      "sha256": "cb0a3f8827d8be6989b65dc5bf0b7c901047cf64e485f4ee74e3c24787ee846c"
+    },
+    "data/dict_tariff.csv": {
+      "rows": 21,
+      "columns": 5,
+      "column_names": [
+        "Data_in_PKG",
+        "Min_another_operator_in_PKG",
+        "Min_another_operator_and_city_in_PKG",
+        "price_tariff",
+        "tariff_plan_code"
+      ],
+      "unique_ids": null,
+      "empty_by_column": {},
+      "dates": [],
+      "sha256": "a34d81dacffbb937ddd542e87d421afcea4842379acfbad55b8d59bdf710f4be"
+    },
+    "tariff_dictionary.csv": {
+      "rows": 21,
+      "columns": 6,
+      "column_names": [
+        "Data_in_PKG",
+        "Min_another_operator_in_PKG",
+        "Min_another_operator_and_city_in_PKG",
+        "price_tariff",
+        "tariff_plan_code",
+        "description"
+      ],
+      "unique_ids": null,
+      "empty_by_column": {},
+      "dates": [],
+      "sha256": "d3e6588f5d8e8e51202b4a77b2d4c0243080965a82d8e1d9411149220dd9df1c"
+    },
+    "feature_dictionary.csv": {
+      "rows": 38,
+      "columns": 3,
+      "column_names": [
+        "feature",
+        "unit",
+        "description"
+      ],
+      "unique_ids": null,
+      "empty_by_column": {},
+      "dates": [],
+      "sha256": "80bb9dddea7a054c3ef6569805013efbe313c7918a9d72d06203d1534e8f5c21"
+    }
+  },
+  "exact_duplicate_rows": {
+    "customer_profile.csv": 0,
+    "data/change_tariff.csv": 6,
+    "data/arpu_monthly.csv": 84,
+    "data/traffic.csv": 0,
+    "data/dict_tariff.csv": 0,
+    "tariff_dictionary.csv": 0,
+    "feature_dictionary.csv": 0
+  },
+  "profile": {
+    "total": 23441,
+    "duplicate_ids": 0,
+    "baseline_sum": 150641084.24626842,
+    "segments": {
+      "arpu_segment": {
+        "HIGH": 13918,
+        "MID": 6780,
+        "LOW": 2738,
+        "": 5
+      },
+      "data_segment": {
+        "LITE": 10253,
+        "HEAVY": 11735,
+        "NON_USER": 1343,
+        "": 110
+      },
+      "call_segment": {
+        "MEDIUM": 8309,
+        "LOW": 10716,
+        "HIGH": 4416
+      },
+      "current_tariff": {
+        "tariff_11": 2484,
+        "tariff_10": 3965,
+        "tariff_12": 1272,
+        "tariff_4": 3634,
+        "tariff_14": 1949,
+        "tariff_8": 6904,
+        "tariff_1": 83,
+        "tariff_18": 67,
+        "tariff_13": 1789,
+        "tariff_6": 119,
+        "tariff_7": 153,
+        "tariff_15": 108,
+        "tariff_3": 170,
+        "tariff_9": 127,
+        "tariff_5": 245,
+        "tariff_21": 30,
+        "tariff_16": 20,
+        "": 95,
+        "tariff_20": 50,
+        "tariff_19": 74,
+        "tariff_17": 67,
+        "tariff_2": 36
+      },
+      "ARPU_trend": {
+        "GROWING": 15127,
+        "STABLE": 3376,
+        "DECLINING": 4933,
+        "": 5
+      }
+    },
+    "high_arpu_users": 13918,
+    "high_arpu_baseline_share": 0.736615042320516,
+    "cells": 70,
+    "top_cells_by_baseline": [
+      {
+        "current_tariff": "tariff_8",
+        "arpu_segment": "HIGH",
+        "n": 4726,
+        "predicted_arpu_sum": 36988107.97242949,
+        "predicted_arpu_mean": 7826.514594250844
+      },
+      {
+        "current_tariff": "tariff_10",
+        "arpu_segment": "HIGH",
+        "n": 2950,
+        "predicted_arpu_sum": 24190636.44091341,
+        "predicted_arpu_mean": 8200.21574268251
+      },
+      {
+        "current_tariff": "tariff_4",
+        "arpu_segment": "HIGH",
+        "n": 2108,
+        "predicted_arpu_sum": 15794121.77170824,
+        "predicted_arpu_mean": 7492.467633637685
+      },
+      {
+        "current_tariff": "tariff_11",
+        "arpu_segment": "HIGH",
+        "n": 1633,
+        "predicted_arpu_sum": 14175708.002870273,
+        "predicted_arpu_mean": 8680.776486754607
+      },
+      {
+        "current_tariff": "tariff_8",
+        "arpu_segment": "MID",
+        "n": 1720,
+        "predicted_arpu_sum": 8024489.894817886,
+        "predicted_arpu_mean": 4665.401101638306
+      },
+      {
+        "current_tariff": "tariff_14",
+        "arpu_segment": "HIGH",
+        "n": 963,
+        "predicted_arpu_sum": 7609558.492534343,
+        "predicted_arpu_mean": 7901.929898789556
+      },
+      {
+        "current_tariff": "tariff_4",
+        "arpu_segment": "MID",
+        "n": 1227,
+        "predicted_arpu_sum": 5840537.244104053,
+        "predicted_arpu_mean": 4760.014053874534
+      },
+      {
+        "current_tariff": "tariff_12",
+        "arpu_segment": "HIGH",
+        "n": 567,
+        "predicted_arpu_sum": 5244797.051878841,
+        "predicted_arpu_mean": 9250.0829839133
+      },
+      {
+        "current_tariff": "tariff_13",
+        "arpu_segment": "MID",
+        "n": 1022,
+        "predicted_arpu_sum": 5000571.23814045,
+        "predicted_arpu_mean": 4892.926847495548
+      },
+      {
+        "current_tariff": "tariff_13",
+        "arpu_segment": "HIGH",
+        "n": 516,
+        "predicted_arpu_sum": 3712751.1737852106,
+        "predicted_arpu_mean": 7195.254212762035
+      },
+      {
+        "current_tariff": "tariff_14",
+        "arpu_segment": "MID",
+        "n": 755,
+        "predicted_arpu_sum": 3686020.025355763,
+        "predicted_arpu_mean": 4882.14572894803
+      },
+      {
+        "current_tariff": "tariff_10",
+        "arpu_segment": "MID",
+        "n": 645,
+        "predicted_arpu_sum": 3003700.1472749137,
+        "predicted_arpu_mean": 4656.899453139401
+      },
+      {
+        "current_tariff": "tariff_11",
+        "arpu_segment": "MID",
+        "n": 464,
+        "predicted_arpu_sum": 2059004.3405840572,
+        "predicted_arpu_mean": 4437.50935470702
+      },
+      {
+        "current_tariff": "tariff_12",
+        "arpu_segment": "MID",
+        "n": 342,
+        "predicted_arpu_sum": 1503059.9061305257,
+        "predicted_arpu_mean": 4394.912006229607
+      },
+      {
+        "current_tariff": "tariff_8",
+        "arpu_segment": "LOW",
+        "n": 457,
+        "predicted_arpu_sum": 1312258.1647560755,
+        "predicted_arpu_mean": 2871.4620672999463
+      }
+    ],
+    "nonfinite_predicted_arpu": 0,
+    "negative_predicted_arpu": 0,
+    "lte_exceeds_data_volume": 13337
+  },
+  "overlaps": {
+    "profile_history": 0,
+    "profile_traffic": 0,
+    "profile_arpu": 0,
+    "history_traffic": 14727,
+    "history_arpu": 14817
+  },
+  "history": {
+    "rows": 14823,
+    "negative_before_after_changes": 6597,
+    "prev_arpu_below_100": 2118,
+    "observed_transition_cells": 451,
+    "cells_below_10_observations": 208,
+    "cells_below_30_observations": 347,
+    "same_tariff_rows": 0,
+    "clipped_ratio_mean": 0.23147513288327937
+  }
+}

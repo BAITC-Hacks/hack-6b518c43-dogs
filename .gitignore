@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+frontend/dist/
+frontend/*.tsbuildinfo
+reports/runs/
+reports/levra/benchmark_last_snapshot.json

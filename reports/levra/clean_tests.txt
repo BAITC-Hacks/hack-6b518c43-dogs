@@ -1,0 +1,15 @@
+test_audit_and_repair (test_engine.EngineTests.test_audit_and_repair) ... ok
+test_negative_best_and_repeated_contact_cost (test_engine.EngineTests.test_negative_best_and_repeated_contact_cost) ... ok
+test_no_forbidden_runtime_imports_or_attributes (test_engine.EngineTests.test_no_forbidden_runtime_imports_or_attributes) ... ok
+test_observations_change_decision_and_new_act_resets (test_engine.EngineTests.test_observations_change_decision_and_new_act_resets) ... ok
+test_order_money_contact_caps (test_engine.EngineTests.test_order_money_contact_caps) ... ok
+test_pilot_overlap_expectation_and_sunk_cost (test_engine.EngineTests.test_pilot_overlap_expectation_and_sunk_cost) ... ok
+test_precision_uses_actual_n_and_repeated_observations (test_engine.EngineTests.test_precision_uses_actual_n_and_repeated_observations) ... ok
+test_saturation_independent_from_linear_update (test_engine.EngineTests.test_saturation_independent_from_linear_update) ... ok
+test_snapshot_replay_and_passports (test_engine.EngineTests.test_snapshot_replay_and_passports) ... ok
+test_validation_missing_and_small_groups (test_engine.EngineTests.test_validation_missing_and_small_groups) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.179s
+
+OK

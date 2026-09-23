@@ -1,0 +1,8 @@
+{
+  "source": "Real browser and live local API",
+  "url": "http://127.0.0.1:8765/",
+  "screenshots": ["desktop.png", "mobile.png"],
+  "mobile": {"viewport_width": 390, "document_width": 390, "horizontal_page_overflow": false},
+  "verified": ["official simulation start", "saved run replay", "what-if budget 40000 and four campaigns without calls", "new pilots zero", "decision passport", "invalid channel detected", "same-engine repair"],
+  "fixed": "Budget input step changed to 1 so nonzero sunk costs do not invalidate round budgets."
+}

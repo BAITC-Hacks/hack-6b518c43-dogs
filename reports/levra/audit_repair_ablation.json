@@ -1,0 +1,110 @@
+{
+  "source": "Custom synthetic stress / forecast audit ablation",
+  "scope": "Fixed authored corruptions, not official or hidden effects.",
+  "results": [
+    {
+      "case": "duplicate",
+      "without_repair": {
+        "valid": true,
+        "findings": [
+          {
+            "code": "overlap",
+            "severity": "warning",
+            "index": 1,
+            "message": "Повторных финальных контактов: 200"
+          }
+        ],
+        "forecast_net": 50400.0
+      },
+      "with_repair": {
+        "valid": true,
+        "findings": [],
+        "forecast_net": 51200.0
+      },
+      "repaired_plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "sms",
+          "campaign_name": "LEVRA_01"
+        }
+      ]
+    },
+    {
+      "case": "resource_order",
+      "without_repair": {
+        "valid": true,
+        "findings": [
+          {
+            "code": "requested_resources",
+            "severity": "warning",
+            "message": "Полная аудитория не помещается в лимиты; порядок меняет фактический охват"
+          },
+          {
+            "code": "truncation",
+            "severity": "warning",
+            "index": 0,
+            "message": "Кампания усечена остатком бюджета или контактов"
+          },
+          {
+            "code": "overlap",
+            "severity": "warning",
+            "index": 1,
+            "message": "Повторных финальных контактов: 6"
+          },
+          {
+            "code": "truncation",
+            "severity": "warning",
+            "index": 1,
+            "message": "Кампания усечена остатком бюджета или контактов"
+          }
+        ],
+        "forecast_net": 2440.0
+      },
+      "with_repair": {
+        "valid": true,
+        "findings": [],
+        "forecast_net": 51200.0
+      },
+      "repaired_plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "sms",
+          "campaign_name": "LEVRA_01"
+        }
+      ]
+    },
+    {
+      "case": "invalid_filter",
+      "without_repair": {
+        "valid": false,
+        "findings": [
+          {
+            "code": "invalid_campaign",
+            "severity": "error",
+            "index": 0,
+            "message": "Недопустимый filter_arpu_segment"
+          }
+        ],
+        "forecast_net": 0.0
+      },
+      "with_repair": {
+        "valid": true,
+        "findings": [],
+        "forecast_net": 51200.0
+      },
+      "repaired_plan": [
+        {
+          "filter_current_tariff": "a",
+          "filter_arpu_segment": "MID",
+          "target_tariff": "b",
+          "channel": "sms",
+          "campaign_name": "LEVRA_01"
+        }
+      ]
+    }
+  ]
+}
