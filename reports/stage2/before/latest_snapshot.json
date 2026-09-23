@@ -46665,56 +46665,56 @@
         "filter_arpu_segment": "HIGH",
         "target_tariff": "tariff_14",
         "channel": "sms",
-        "campaign_name": "BeeAgent_01"
+        "campaign_name": "LEVRA_01"
       },
       {
         "filter_current_tariff": "tariff_8",
         "filter_arpu_segment": "LOW",
         "target_tariff": "tariff_9",
         "channel": "sms",
-        "campaign_name": "BeeAgent_02"
+        "campaign_name": "LEVRA_02"
       },
       {
         "filter_current_tariff": "tariff_10",
         "filter_arpu_segment": "HIGH",
         "target_tariff": "tariff_18",
         "channel": "digital_ads",
-        "campaign_name": "BeeAgent_03"
+        "campaign_name": "LEVRA_03"
       },
       {
         "filter_arpu_segment": "MID",
         "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
         "target_tariff": "tariff_8",
         "channel": "push",
-        "campaign_name": "BeeAgent_04"
+        "campaign_name": "LEVRA_04"
       },
       {
         "filter_arpu_segment": "LOW",
         "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
         "target_tariff": "tariff_9",
         "channel": "push",
-        "campaign_name": "BeeAgent_05"
+        "campaign_name": "LEVRA_05"
       },
       {
         "filter_arpu_segment": "LOW",
         "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
         "target_tariff": "tariff_13",
         "channel": "push",
-        "campaign_name": "BeeAgent_06"
+        "campaign_name": "LEVRA_06"
       },
       {
         "filter_current_tariff": "tariff_1",
         "filter_arpu_segment": "MID",
         "target_tariff": "tariff_9",
         "channel": "push",
-        "campaign_name": "BeeAgent_07"
+        "campaign_name": "LEVRA_07"
       },
       {
         "filter_arpu_segment": "LOW",
         "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
         "target_tariff": "tariff_8",
         "channel": "push",
-        "campaign_name": "BeeAgent_08"
+        "campaign_name": "LEVRA_08"
       }
     ],
     "forecast": {
@@ -46733,7 +46733,7 @@
             "filter_arpu_segment": "HIGH",
             "target_tariff": "tariff_14",
             "channel": "sms",
-            "campaign_name": "BeeAgent_01"
+            "campaign_name": "LEVRA_01"
           },
           "audience": 4726,
           "contacts": 4726,
@@ -46751,7 +46751,7 @@
             "filter_arpu_segment": "LOW",
             "target_tariff": "tariff_9",
             "channel": "sms",
-            "campaign_name": "BeeAgent_02"
+            "campaign_name": "LEVRA_02"
           },
           "audience": 457,
           "contacts": 457,
@@ -46769,7 +46769,7 @@
             "filter_arpu_segment": "HIGH",
             "target_tariff": "tariff_18",
             "channel": "digital_ads",
-            "campaign_name": "BeeAgent_03"
+            "campaign_name": "LEVRA_03"
           },
           "audience": 2950,
           "contacts": 2701,
@@ -46787,7 +46787,7 @@
             "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
             "target_tariff": "tariff_8",
             "channel": "push",
-            "campaign_name": "BeeAgent_04"
+            "campaign_name": "LEVRA_04"
           },
           "audience": 1605,
           "contacts": 1605,
@@ -46805,7 +46805,7 @@
             "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
             "target_tariff": "tariff_9",
             "channel": "push",
-            "campaign_name": "BeeAgent_05"
+            "campaign_name": "LEVRA_05"
           },
           "audience": 2183,
           "contacts": 2183,
@@ -46823,7 +46823,7 @@
             "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
             "target_tariff": "tariff_13",
             "channel": "push",
-            "campaign_name": "BeeAgent_06"
+            "campaign_name": "LEVRA_06"
           },
           "audience": 153,
           "contacts": 153,
@@ -46841,7 +46841,7 @@
             "filter_arpu_segment": "MID",
             "target_tariff": "tariff_9",
             "channel": "push",
-            "campaign_name": "BeeAgent_07"
+            "campaign_name": "LEVRA_07"
           },
           "audience": 32,
           "contacts": 32,
@@ -46859,7 +46859,7 @@
             "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
             "target_tariff": "tariff_8",
             "channel": "push",
-            "campaign_name": "BeeAgent_08"
+            "campaign_name": "LEVRA_08"
           },
           "audience": 383,
           "contacts": 283,
@@ -47060,7 +47060,7 @@
               "filter_arpu_segment": "HIGH",
               "target_tariff": "tariff_14",
               "channel": "sms",
-              "campaign_name": "BeeAgent_01"
+              "campaign_name": "LEVRA_01"
             },
             "audience": 4726,
             "contacts": 4726,
@@ -47078,7 +47078,7 @@
               "filter_arpu_segment": "LOW",
               "target_tariff": "tariff_9",
               "channel": "sms",
-              "campaign_name": "BeeAgent_02"
+              "campaign_name": "LEVRA_02"
             },
             "audience": 457,
             "contacts": 457,
@@ -47096,7 +47096,7 @@
               "filter_arpu_segment": "HIGH",
               "target_tariff": "tariff_18",
               "channel": "digital_ads",
-              "campaign_name": "BeeAgent_03"
+              "campaign_name": "LEVRA_03"
             },
             "audience": 2950,
             "contacts": 2701,
@@ -47114,7 +47114,7 @@
               "filter_current_tariff": "tariff_1;tariff_12;tariff_13;tariff_15;tariff_16;tariff_17;tariff_3",
               "target_tariff": "tariff_8",
               "channel": "push",
-              "campaign_name": "BeeAgent_04"
+              "campaign_name": "LEVRA_04"
             },
             "audience": 1605,
             "contacts": 1605,
@@ -47132,7 +47132,7 @@
               "filter_current_tariff": "tariff_1;tariff_10;tariff_11;tariff_13;tariff_14;tariff_15;tariff_16;tariff_17;tariff_18;tariff_19;tariff_3;tariff_4;tariff_7;tariff_8",
               "target_tariff": "tariff_9",
               "channel": "push",
-              "campaign_name": "BeeAgent_05"
+              "campaign_name": "LEVRA_05"
             },
             "audience": 2183,
             "contacts": 2183,
@@ -47150,7 +47150,7 @@
               "filter_current_tariff": "tariff_19;tariff_2;tariff_20;tariff_5;tariff_6;tariff_9",
               "target_tariff": "tariff_13",
               "channel": "push",
-              "campaign_name": "BeeAgent_06"
+              "campaign_name": "LEVRA_06"
             },
             "audience": 153,
             "contacts": 153,
@@ -47168,7 +47168,7 @@
               "filter_arpu_segment": "MID",
               "target_tariff": "tariff_9",
               "channel": "push",
-              "campaign_name": "BeeAgent_07"
+              "campaign_name": "LEVRA_07"
             },
             "audience": 32,
             "contacts": 32,
@@ -47186,7 +47186,7 @@
               "filter_current_tariff": "tariff_1;tariff_13;tariff_15;tariff_16;tariff_18;tariff_9",
               "target_tariff": "tariff_8",
               "channel": "push",
-              "campaign_name": "BeeAgent_08"
+              "campaign_name": "LEVRA_08"
             },
             "audience": 383,
             "contacts": 283,

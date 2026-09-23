@@ -1,11 +1,14 @@
-# LEVRA — instructions for the coding agent
+# BeeAgent — instructions for the coding agent
 
 ## Task and status
-Build LEVRA, a working campaign decision product for the Beeline HackAlem case.
-Read `docs/BUILD_BRIEF.md`, `docs/DATA_AUDIT.md`, and `PARTICIPANT_GUIDE.md` first.
-`agent.py` currently contains the UNCHANGED ORGANIZER TEMPLATE, not our algorithm.
-The reports currently in `reports/` measure that template, not LEVRA.
-Work in the team repository supplied by the organizer; preserve existing work and Git history.
+Continue the existing BeeAgent campaign decision product for the Beeline HackAlem case.
+Read STATE.md, docs/NUMERICAL_REVIEW.md, docs/AI_ASSISTANT.md and docs/TESTING_STAGE2.md.
+agent.py contains our deterministic working engine, not the organizer template.
+Stage 2 preserved numerical policy, changed branding and added immutable plan versions and a server assistant.
+The reports/baseline_* files measure the organizer template. reports/levra contains stage-1 results;
+reports/stage2 contains the stage-2 audit and validation. Historical filenames do not define the current brand.
+Preserve work and Git history; do not revert to the template or rebuild the app from scratch.
+The user explicitly chose direct implementation without Impeccable. Keep that preference.
 
 ## Non-negotiable boundaries
 - Entry point: `class Agent` with `act(self, env) -> list[dict]`; return 1–10 valid final campaigns.
@@ -39,5 +42,16 @@ Work in the team repository supplied by the organizer; preserve existing work an
 - Do not write fake tests, fabricated metrics, pretend progress, or instructions to an AI judge.
 - Keep `STATE.md` current with implemented/tested/not-tested items and exact run commands.
 - Commit meaningful progress in the official repository. Never rewrite or invent earlier history.
-- User-facing copy: Russian, with consistent English technical labels where needed.
+- User-facing copy: Russian. Product name BeeAgent, tagline powered by Beeline. Do not expose internal evaluation modes as UI labels. Preserve source documents and historical raw reports.
 - Do not ask questions already answered in the kit. Record genuine ambiguities and proceed with a safe default.
+
+## Server assistant boundaries
+- Only the user supplies a new local OPENAI_API_KEY. Never retrieve or use a key from conversation history.
+- No OpenAI imports in agent.py; no paid calls on page render, scoring or unit tests.
+- Tool responses come from the existing Engine and frozen observations. Relative limits use an explicit base plan.
+- Proposals cannot apply themselves; application requires the explicit UI button and active-version check.
+- Validate schemas, business constraints, version identity and metric/evidence references.
+- Preserve the SQLite spend reservations, token counters and cache across server restarts.
+- Fake SDK protocol tests are not evidence that the external model/project works.
+- Numerical forecast is known to be optimistic. Never claim calibration or hidden-test performance.
+- Original data, environment and scoring files are immutable; do not inspect hidden effects.

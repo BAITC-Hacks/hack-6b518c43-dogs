@@ -1,0 +1,47 @@
+=== Результат команды: local ===
+Статус: PASS
+Baseline ARPU (без кампаний):      150,641,084
+Прирост ARPU (gross):                2,534,326
+Затраты на коммуникацию:                99,994
+ЧИСТЫЙ РЕЗУЛЬТАТ (net):              2,434,332   (+1.616% к baseline)
+ARPU после кампаний:               153,075,416
+
+Кампаний: 28  |  контактов: 15,000  |  уникальных абонентов: 11,603 (49.5%)
+Средний чистый прирост на абонента: 209.8
+ROI (gross lift / затраты): 25.34
+Risk score (% абонентов с отрицательным эффектом): 25.4%
+Бюджет: 99,994 из 100,000 у.е. (100.0%)
+
+По кампаниям (gross, до дедупликации между кампаниями):
+  - pilot_1 [digital_ads]: контактов=100  cost=2,200  gross_lift=107,722  negative=0
+  - pilot_2 [digital_ads]: контактов=100  cost=2,200  gross_lift=120,530  negative=0
+  - pilot_3 [call]: контактов=40  cost=6,400  gross_lift=52,575  negative=0
+  - pilot_4 [sms]: контактов=180  cost=720  gross_lift=-8,908  negative=180
+  - pilot_5 [digital_ads]: контактов=40  cost=880  gross_lift=6,629  negative=0
+  - pilot_6 [digital_ads]: контактов=40  cost=880  gross_lift=4,865  negative=0
+  - pilot_7 [digital_ads]: контактов=100  cost=2,200  gross_lift=-12,661  negative=100
+  - pilot_8 [sms]: контактов=180  cost=720  gross_lift=3,673  negative=0
+  - pilot_9 [sms]: контактов=180  cost=720  gross_lift=8,366  negative=0
+  - pilot_10 [digital_ads]: контактов=100  cost=2,200  gross_lift=3,723  negative=0
+  - pilot_11 [sms]: контактов=180  cost=720  gross_lift=1,771  negative=0
+  - pilot_12 [push]: контактов=180  cost=0  gross_lift=-427  negative=180
+  - pilot_13 [push]: контактов=180  cost=0  gross_lift=-4,380  negative=180
+  - pilot_14 [push]: контактов=180  cost=0  gross_lift=-2,701  negative=180
+  - pilot_15 [push]: контактов=180  cost=0  gross_lift=-5,822  negative=180
+  - pilot_16 [push]: контактов=180  cost=0  gross_lift=-1,276  negative=180
+  - pilot_17 [push]: контактов=180  cost=0  gross_lift=0  negative=0
+  - pilot_18 [push]: контактов=180  cost=0  gross_lift=0  negative=0
+  - pilot_19 [push]: контактов=180  cost=0  gross_lift=0  negative=0
+  - pilot_20 [push]: контактов=180  cost=0  gross_lift=-1,443  negative=180
+  - LEVRA_01 [sms]: контактов=4,726  cost=18,904  gross_lift=220,528  negative=0
+  - LEVRA_02 [sms]: контактов=457  cost=1,828  gross_lift=412,010  negative=0
+  - LEVRA_03 [digital_ads]: контактов=2,701  cost=59,422  gross_lift=-147,232  negative=2701  [обрезано денежным бюджетом канала]
+  - LEVRA_04 [push]: контактов=1,605  cost=0  gross_lift=986,168  negative=0
+  - LEVRA_05 [push]: контактов=2,183  cost=0  gross_lift=1,101,152  negative=0
+  - LEVRA_06 [push]: контактов=153  cost=0  gross_lift=76,015  negative=0
+  - LEVRA_07 [push]: контактов=32  cost=0  gross_lift=9,410  negative=0
+  - LEVRA_08 [push]: контактов=283  cost=0  gross_lift=217,966  negative=0  [обрезано общим лимитом охвата]
+
+Пилотов проведено: 20 из 20
+Осталось бюджета: 80,160 из 100,000
+Осталось охвата:  12,140 из 15,000

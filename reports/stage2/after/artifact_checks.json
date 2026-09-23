@@ -1,0 +1,51 @@
+{
+  "secret_pattern_hits": 0,
+  "scanned_files": 71,
+  "logo_sha256": "8c4ee5cf7b8019856d27a22d5decec9bc6e60902cd5bead4abfbbff6c083df18",
+  "screenshots": {
+    "invalid-plan-390.png": [
+      390,
+      844
+    ],
+    "overview-1440.png": [
+      1440,
+      900
+    ],
+    "assistant-no-api-1440.png": [
+      1440,
+      900
+    ],
+    "repair-comparison-1440.png": [
+      1440,
+      1948
+    ],
+    "assistant-cancel.png": [
+      1440,
+      900
+    ],
+    "first-run-empty-1280.png": [
+      1280,
+      720
+    ],
+    "first-run-loading.png": [
+      1280,
+      720
+    ],
+    "assistant-390.png": [
+      390,
+      844
+    ],
+    "cancel-wait.png": [
+      1079,
+      890
+    ],
+    "overview-390.png": [
+      390,
+      844
+    ],
+    "campaigns-1280.png": [
+      1280,
+      800
+    ]
+  }
+}

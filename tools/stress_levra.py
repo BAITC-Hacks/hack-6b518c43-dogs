@@ -44,6 +44,9 @@ def world(scenario,seed):
         if scenario=='sign_flip':delta=-delta
         if scenario=='rare_transition':delta=1.2 if target=='d' else -.08
         if scenario=='weak_returns':delta=-.04
+        if scenario=='stage2_magnitude':delta*=.2
+        if scenario=='stage2_negative_shift':delta-=.5
+        if scenario=='stage2_best_switch':delta=.7 if target=='d' else -.15
         if scenario=='call_saturation':conversion=.98;delta=.45 if target=='c' else -.1
         if segment=='HIGH':delta*=.8
         return delta*min(1.,conversion*CHANNELS[channel]['conversion_multiplier'])

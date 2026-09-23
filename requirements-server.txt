@@ -1,0 +1,4 @@
+# Optional web assistant dependencies. The competition agent needs requirements.txt only.
+openai==2.54.0
+python-dotenv==1.2.3
+jsonschema==4.26.0

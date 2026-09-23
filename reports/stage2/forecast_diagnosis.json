@@ -1,0 +1,445 @@
+{
+  "source": "Диагностика сохранённого прогона 42 после возврата плана",
+  "forecast_net": 6432029.391746799,
+  "measured_net": 2434331.795569111,
+  "forecast_error": 3997697.5961776883,
+  "relative_error": 1.6422155777836707,
+  "pilot_forecast_net": 440849.63598496525,
+  "pilot_cost": 19840.0,
+  "pilot_contacts": 2860,
+  "final_contacts": 12140,
+  "forecast_unique": 11595.995006485602,
+  "measured_unique": 11603,
+  "cost_and_contacts_exact_for_every_final_campaign": true,
+  "rows": [
+    {
+      "index": 1,
+      "contacts": 4726,
+      "cost": 18904.0,
+      "forecast_gross_before_overlap": 2439734.2021975047,
+      "measured_gross_before_overlap": 220528.23937504302,
+      "forecast_marginal_net": 2225979.546853827,
+      "unpiloted_contacts": 0,
+      "contacts_without_direct_history": 4726,
+      "cells": [
+        {
+          "cell": "tariff_8|HIGH",
+          "contacts": 4726,
+          "arpu_sum": 36988107.97242949,
+          "mean": 0.06595996215908244,
+          "sd": 0.056674594757486735,
+          "pilot_contacts": 180,
+          "historical_rows": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "contacts": 457,
+      "cost": 1828.0,
+      "forecast_gross_before_overlap": 457314.9343794029,
+      "measured_gross_before_overlap": 412009.87294001674,
+      "forecast_marginal_net": 355418.02094846126,
+      "unpiloted_contacts": 0,
+      "contacts_without_direct_history": 0,
+      "cells": [
+        {
+          "cell": "tariff_8|LOW",
+          "contacts": 457,
+          "arpu_sum": 1312258.1647560755,
+          "mean": 0.3484946382211379,
+          "sd": 0.05752518767928162,
+          "pilot_contacts": 100,
+          "historical_rows": 26
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "contacts": 2701,
+      "cost": 59422.0,
+      "forecast_gross_before_overlap": 2170987.3162813345,
+      "measured_gross_before_overlap": -147231.890126677,
+      "forecast_marginal_net": 2069348.6140949214,
+      "unpiloted_contacts": 0,
+      "contacts_without_direct_history": 2701,
+      "cells": [
+        {
+          "cell": "tariff_10|HIGH",
+          "contacts": 2701,
+          "arpu_sum": 22188711.912032146,
+          "mean": 0.0978419713991638,
+          "sd": 0.09301791059085772,
+          "pilot_contacts": 180,
+          "historical_rows": 0
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "contacts": 1605,
+      "cost": 0.0,
+      "forecast_gross_before_overlap": 655521.7827804179,
+      "measured_gross_before_overlap": 986167.7770396724,
+      "forecast_marginal_net": 591679.8424810716,
+      "unpiloted_contacts": 583,
+      "contacts_without_direct_history": 0,
+      "cells": [
+        {
+          "cell": "tariff_12|MID",
+          "contacts": 342,
+          "arpu_sum": 1503059.9061305255,
+          "mean": 0.08942534444318452,
+          "sd": 0.1223954458355797,
+          "pilot_contacts": 0,
+          "historical_rows": 78
+        },
+        {
+          "cell": "tariff_13|MID",
+          "contacts": 1022,
+          "arpu_sum": 5000571.238140449,
+          "mean": 0.08134531744010418,
+          "sd": 0.04404411901993098,
+          "pilot_contacts": 100,
+          "historical_rows": 234
+        },
+        {
+          "cell": "tariff_15|MID",
+          "contacts": 80,
+          "arpu_sum": 402182.2596318361,
+          "mean": 0.0912550105178371,
+          "sd": 0.12050569124162402,
+          "pilot_contacts": 0,
+          "historical_rows": 429
+        },
+        {
+          "cell": "tariff_16|MID",
+          "contacts": 10,
+          "arpu_sum": 47207.16015030427,
+          "mean": 0.11803068438884218,
+          "sd": 0.1237548150064802,
+          "pilot_contacts": 0,
+          "historical_rows": 44
+        },
+        {
+          "cell": "tariff_17|MID",
+          "contacts": 32,
+          "arpu_sum": 166536.6493991783,
+          "mean": 0.08964407948107908,
+          "sd": 0.12157418184031034,
+          "pilot_contacts": 0,
+          "historical_rows": 127
+        },
+        {
+          "cell": "tariff_1|MID",
+          "contacts": 32,
+          "arpu_sum": 165169.06544740364,
+          "mean": 0.1277959749699972,
+          "sd": 0.12159652250666664,
+          "pilot_contacts": 0,
+          "historical_rows": 125
+        },
+        {
+          "cell": "tariff_3|MID",
+          "contacts": 87,
+          "arpu_sum": 353907.75615506346,
+          "mean": 0.101797916091471,
+          "sd": 0.12087571095964647,
+          "pilot_contacts": 0,
+          "historical_rows": 241
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "contacts": 2183,
+      "cost": 0.0,
+      "forecast_gross_before_overlap": 1031085.8393242471,
+      "measured_gross_before_overlap": 1101151.5021681667,
+      "forecast_marginal_net": 679305.1205708602,
+      "unpiloted_contacts": 1726,
+      "contacts_without_direct_history": 0,
+      "cells": [
+        {
+          "cell": "tariff_10|LOW",
+          "contacts": 370,
+          "arpu_sum": 972233.5682257856,
+          "mean": 0.12804339217554223,
+          "sd": 0.12941339222413004,
+          "pilot_contacts": 0,
+          "historical_rows": 8
+        },
+        {
+          "cell": "tariff_11|LOW",
+          "contacts": 387,
+          "arpu_sum": 1067637.79615389,
+          "mean": 0.09878955607168785,
+          "sd": 0.13130919717657974,
+          "pilot_contacts": 0,
+          "historical_rows": 4
+        },
+        {
+          "cell": "tariff_13|LOW",
+          "contacts": 251,
+          "arpu_sum": 756421.0833960543,
+          "mean": 0.10351288836972626,
+          "sd": 0.12941339222413004,
+          "pilot_contacts": 0,
+          "historical_rows": 8
+        },
+        {
+          "cell": "tariff_14|LOW",
+          "contacts": 231,
+          "arpu_sum": 721988.3024613424,
+          "mean": 0.1578932668290021,
+          "sd": 0.12609520212918493,
+          "pilot_contacts": 0,
+          "historical_rows": 21
+        },
+        {
+          "cell": "tariff_15|LOW",
+          "contacts": 14,
+          "arpu_sum": 43367.06010503618,
+          "mean": 0.12131016406627003,
+          "sd": 0.1264445937718084,
+          "pilot_contacts": 0,
+          "historical_rows": 19
+        },
+        {
+          "cell": "tariff_16|LOW",
+          "contacts": 8,
+          "arpu_sum": 21006.127868354895,
+          "mean": 0.18221775253347966,
+          "sd": 0.12181553427311273,
+          "pilot_contacts": 0,
+          "historical_rows": 108
+        },
+        {
+          "cell": "tariff_17|LOW",
+          "contacts": 8,
+          "arpu_sum": 23317.104493311017,
+          "mean": 0.1270443646781081,
+          "sd": 0.13130919717657974,
+          "pilot_contacts": 0,
+          "historical_rows": 4
+        },
+        {
+          "cell": "tariff_18|LOW",
+          "contacts": 19,
+          "arpu_sum": 60062.980205548956,
+          "mean": 0.15942865786517663,
+          "sd": 0.12778329870750493,
+          "pilot_contacts": 0,
+          "historical_rows": 13
+        },
+        {
+          "cell": "tariff_19|LOW",
+          "contacts": 14,
+          "arpu_sum": 40738.45038262726,
+          "mean": 0.10080622956278207,
+          "sd": 0.12806248474865697,
+          "pilot_contacts": 0,
+          "historical_rows": 12
+        },
+        {
+          "cell": "tariff_1|LOW",
+          "contacts": 40,
+          "arpu_sum": 132219.59089506813,
+          "mean": 0.2607369188627968,
+          "sd": 0.12232129822725069,
+          "pilot_contacts": 0,
+          "historical_rows": 81
+        },
+        {
+          "cell": "tariff_3|LOW",
+          "contacts": 56,
+          "arpu_sum": 160544.44723558158,
+          "mean": 0.1064080234902523,
+          "sd": 0.12479548486815643,
+          "pilot_contacts": 0,
+          "historical_rows": 31
+        },
+        {
+          "cell": "tariff_4|LOW",
+          "contacts": 299,
+          "arpu_sum": 857563.179026669,
+          "mean": 0.191585969065451,
+          "sd": 0.12683650893965823,
+          "pilot_contacts": 0,
+          "historical_rows": 17
+        },
+        {
+          "cell": "tariff_7|LOW",
+          "contacts": 29,
+          "arpu_sum": 93486.11254736516,
+          "mean": 0.16538306434608605,
+          "sd": 0.12626502739419632,
+          "pilot_contacts": 0,
+          "historical_rows": 20
+        },
+        {
+          "cell": "tariff_8|LOW",
+          "contacts": 457,
+          "arpu_sum": 1312258.1647560755,
+          "mean": 0.2680727986316445,
+          "sd": 0.04425014436867817,
+          "pilot_contacts": 100,
+          "historical_rows": 26
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "contacts": 153,
+      "cost": 0.0,
+      "forecast_gross_before_overlap": 59452.81952871452,
+      "measured_gross_before_overlap": 76014.96052938886,
+      "forecast_marginal_net": 55346.12994741139,
+      "unpiloted_contacts": 153,
+      "contacts_without_direct_history": 0,
+      "cells": [
+        {
+          "cell": "tariff_19|LOW",
+          "contacts": 14,
+          "arpu_sum": 40738.45038262726,
+          "mean": 0.1111771947586272,
+          "sd": 0.12941339222413004,
+          "pilot_contacts": 0,
+          "historical_rows": 8
+        },
+        {
+          "cell": "tariff_20|LOW",
+          "contacts": 5,
+          "arpu_sum": 18274.493795633207,
+          "mean": 0.09781561948970409,
+          "sd": 0.1307669683062202,
+          "pilot_contacts": 0,
+          "historical_rows": 5
+        },
+        {
+          "cell": "tariff_2|LOW",
+          "contacts": 9,
+          "arpu_sum": 23951.38715991484,
+          "mean": 0.14240696055222557,
+          "sd": 0.12727922061357855,
+          "pilot_contacts": 0,
+          "historical_rows": 15
+        },
+        {
+          "cell": "tariff_5|LOW",
+          "contacts": 44,
+          "arpu_sum": 132153.6839166647,
+          "mean": 0.1251258349056735,
+          "sd": 0.12433351732100144,
+          "pilot_contacts": 0,
+          "historical_rows": 36
+        },
+        {
+          "cell": "tariff_6|LOW",
+          "contacts": 30,
+          "arpu_sum": 97039.6091558815,
+          "mean": 0.14336460657914266,
+          "sd": 0.12425160577820127,
+          "pilot_contacts": 0,
+          "historical_rows": 37
+        },
+        {
+          "cell": "tariff_9|LOW",
+          "contacts": 51,
+          "arpu_sum": 157453.03508879975,
+          "mean": 0.12243252270364278,
+          "sd": 0.12663476472266072,
+          "pilot_contacts": 0,
+          "historical_rows": 18
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "contacts": 32,
+      "cost": 0.0,
+      "forecast_gross_before_overlap": 23923.422418807648,
+      "measured_gross_before_overlap": 9410.11933165693,
+      "forecast_marginal_net": 2815.4806650734236,
+      "unpiloted_contacts": 32,
+      "contacts_without_direct_history": 0,
+      "cells": [
+        {
+          "cell": "tariff_1|MID",
+          "contacts": 32,
+          "arpu_sum": 165169.06544740364,
+          "mean": 0.14484202810014574,
+          "sd": 0.12524262168173536,
+          "pilot_contacts": 0,
+          "historical_rows": 27
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "contacts": 283,
+      "cost": 0.0,
+      "forecast_gross_before_overlap": 109381.30365777678,
+      "measured_gross_before_overlap": 217966.05786702764,
+      "forecast_marginal_net": 11287.000200208015,
+      "unpiloted_contacts": 283,
+      "contacts_without_direct_history": 0,
+      "cells": [
+        {
+          "cell": "tariff_13|LOW",
+          "contacts": 176,
+          "arpu_sum": 516798.7281802069,
+          "mean": 0.124456323965358,
+          "sd": 0.12626502739419632,
+          "pilot_contacts": 0,
+          "historical_rows": 20
+        },
+        {
+          "cell": "tariff_15|LOW",
+          "contacts": 13,
+          "arpu_sum": 40322.380132137216,
+          "mean": 0.12770988166653974,
+          "sd": 0.12609520212918493,
+          "pilot_contacts": 0,
+          "historical_rows": 21
+        },
+        {
+          "cell": "tariff_16|LOW",
+          "contacts": 5,
+          "arpu_sum": 13482.49069442777,
+          "mean": 0.15470060717719522,
+          "sd": 0.12549900398011132,
+          "pilot_contacts": 0,
+          "historical_rows": 25
+        },
+        {
+          "cell": "tariff_18|LOW",
+          "contacts": 16,
+          "arpu_sum": 49743.48816413175,
+          "mean": 0.11607300014873992,
+          "sd": 0.12752281743091015,
+          "pilot_contacts": 0,
+          "historical_rows": 14
+        },
+        {
+          "cell": "tariff_1|LOW",
+          "contacts": 27,
+          "arpu_sum": 82236.61210864609,
+          "mean": 0.17463408823353557,
+          "sd": 0.12258836395328958,
+          "pilot_contacts": 0,
+          "historical_rows": 71
+        },
+        {
+          "cell": "tariff_9|LOW",
+          "contacts": 46,
+          "arpu_sum": 142825.7646051986,
+          "mean": 0.12387069091799015,
+          "sd": 0.12425160577820127,
+          "pilot_contacts": 0,
+          "historical_rows": 37
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-"""BeeAgent: deterministic offline campaign decisions using only the public interface.
+"""LEVRA: deterministic offline campaign decisions using only the public interface.
 
 History is an association, not causal uplift or measured offer conversion.
 No organizer module is imported by this file. UI and test harnesses reuse Engine.
@@ -364,7 +364,7 @@ class Engine:
                     value = self.forecast(trial, c, c['risk'])['net']
                     if value > best + 1e-6:
                         plan, best = trial, value
-        return [dict(x, campaign_name=f'BeeAgent_{i + 1:02d}') for i, x in enumerate(plan)]
+        return [dict(x, campaign_name=f'LEVRA_{i + 1:02d}') for i, x in enumerate(plan)]
 
     def next_pilot(self, budget, contacts):
         """One-step knowledge-gradient heuristic, not exact global VOI."""
