@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "section": "Пилоты",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "Сценарии",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "Методика",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "План",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "Пилоты",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "Сценарии",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "Методика",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "План",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "Пилоты",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    },
+    {
+      "section": "Сценарии",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    },
+    {
+      "section": "Методика",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    },
+    {
+      "section": "План",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    }
+  ]
+}

@@ -25,6 +25,8 @@ load_dotenv(ROOT/'.env', override=False)
 from backend.plans import PlanService
 from backend.identity import runtime_identity,binding,compatible
 from backend.assistant import Assistant
+from backend.presentation import activity
+from backend.local_config import configure_mini
 
 RUNS = Path(os.getenv('BEEAGENT_STORAGE_DIR',str(ROOT/'reports/runs'))).resolve()
 RUNS.mkdir(parents=True, exist_ok=True)
@@ -81,7 +83,7 @@ def execute(run_id, seed):
         agent = Agent(report_path=RUNS/(run_id+'.knowledge.json'))
         result = evaluate_agent(agent, seed=seed, verbose=False)
         if result is None:raise RuntimeError('Официальный оценщик не вернул результат')
-        record = dict(run_id=run_id, seed=seed, source='Official mock', status='completed',
+        record = dict(run_id=run_id, seed=seed, source='Проверка на данных кейса', status='completed',
                       created_at=datetime.now(timezone.utc).isoformat(), seconds=time.perf_counter()-started,
                       official=clean(result), knowledge=agent.snapshot, identity=runtime_identity(),
                       **plan_bundle(agent.engine, agent.plan))
@@ -125,11 +127,25 @@ class Handler(BaseHTTPRequestHandler):
             if not self.valid_host():return self.respond({'error':'Недопустимый адрес'},403)
             path=self.path.split('?')[0]
             if path=='/api/assistant/status':return self.respond(ASSISTANT.status())
+            if path=='/api/tariffs':return self.respond(clean(pd.read_csv(ROOT/'data/dict_tariff.csv').to_dict('records')))
             if path.startswith('/api/assistant/jobs/'):
                 with LOCK:job=AI_JOBS.get(safe_id(path.rsplit('/',1)[1]))
                 if not job:raise FileNotFoundError('Запрос не найден')
                 return self.respond({k:v for k,v in job.items() if k!='cancel'})
             parts=path.strip('/').split('/')
+            if len(parts)==4 and parts[:2]==['api','runs'] and parts[3]=='versions':
+                run_id=parts[2]
+                original=PLANS.get(run_id,run_id)
+                versions=[original]
+                for file in PLANS.directory.glob('*.json'):
+                    if file.name.endswith('.saved.json'):continue
+                    value=json.loads(file.read_text())
+                    if value.get('run_id')==run_id:
+                        versions.append(PLANS.get(run_id,value['plan_id']))
+                return self.respond([dict(plan_id=v['plan_id'],base_plan_id=v.get('base_plan_id'),
+                    created_at=v.get('created_at'),campaigns=len(v['plan']),net=v['forecast']['net'],
+                    cost=v['forecast']['cost'],saved=(PLANS.directory/(v['plan_id']+'.saved.json')).exists())
+                    for v in sorted(versions,key=lambda x:x.get('created_at',''),reverse=True)])
             if len(parts) in [5,6] and parts[:2]==['api','runs'] and parts[3]=='plans':
                 plan=PLANS.get(parts[2],parts[4])
                 if len(parts)==6 and parts[5]=='export':
@@ -156,6 +172,7 @@ class Handler(BaseHTTPRequestHandler):
                 # Knowledge stays in local artifacts; UI sees evidence, not customer data.
                 record['knowledge_summary']={k:record['knowledge'][k] for k in ['snapshot_id','diagnostics','stop_reason','assumptions','spent_budget','spent_contacts']}
                 record['pilots']=record['knowledge']['pilots']
+                record['activity']=activity(record['knowledge'])
                 record.update(PLANS.get(run_id,run_id))
                 record['active_bundle']=PLANS.get(run_id,PLANS.active_id(run_id))
                 del record['knowledge']
@@ -191,6 +208,15 @@ class Handler(BaseHTTPRequestHandler):
             body=json.loads(self.rfile.read(size) or b'{}')
             if not isinstance(body,dict):raise ValueError('Ожидался объект запроса')
             path=self.path.split('?')[0]
+            if path=='/api/assistant/configure':
+                if self.headers.get('Content-Type','').split(';')[0]!='application/json':
+                    raise ValueError('Нужен локальный запрос настроек.')
+                if set(body)!={'api_key'}:raise ValueError('Некорректные поля настроек.')
+                with LOCK:
+                    if any(j['status']=='running' for j in AI_JOBS.values()):
+                        return self.respond({'error':'Дождитесь завершения запроса ассистента.'},409)
+                    configure_mini(ROOT,body['api_key'])
+                return self.respond({'configured':True,'status':ASSISTANT.status()})
             if path=='/api/assistant':
                 if set(body)-{'run_id','base_plan_id','prompt','campaign_index'}:raise ValueError('Неизвестное поле запроса')
                 safe_id(body.get('base_plan_id'))
@@ -215,7 +241,7 @@ class Handler(BaseHTTPRequestHandler):
                 if type(seed)!=int or seed<0 or seed>2**32-1:raise ValueError('Номер прогона должен быть целым неотрицательным числом')
                 with LOCK:
                     if any(j['status']=='running' for j in JOBS.values()):return self.respond({'error':'Исследование уже выполняется'},409)
-                    run_id=str(uuid.uuid4());JOBS[run_id]={'run_id':run_id,'status':'running','source':'Official mock','seed':seed}
+                    run_id=str(uuid.uuid4());JOBS[run_id]={'run_id':run_id,'status':'running','source':'Проверка на данных кейса','seed':seed}
                 threading.Thread(target=execute,args=(run_id,seed),daemon=True).start()
                 return self.respond(JOBS[run_id],202)
             parts=path.strip('/').split('/')

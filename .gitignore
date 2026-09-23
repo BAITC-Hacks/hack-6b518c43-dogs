@@ -11,3 +11,5 @@ frontend/dist/
 frontend/*.tsbuildinfo
 reports/runs/
 reports/levra/benchmark_last_snapshot.json
+
+.beeagent-config-*

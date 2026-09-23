@@ -1,9 +1,11 @@
 """Immutable plan versions shared by manual UI and the assistant's tools."""
 import csv
+from copy import deepcopy
 import io
 import json
 import uuid
 from backend.identity import compatible, verified_measurement
+from backend.presentation import evidence_summary
 from datetime import datetime, timezone
 
 CHANNEL_LABELS={'push':'Push','sms':'SMS','digital_ads':'Реклама','call':'Звонки'}
@@ -17,7 +19,9 @@ class PlanService:
         self.directory=root/'plans';self.directory.mkdir(parents=True,exist_ok=True)
 
     def get(self,run_id,plan_id=None):
-        record=self.load_run(run_id)
+        record=deepcopy(self.load_run(run_id))
+        for passport in record['passports']:
+            passport['summary']=evidence_summary(passport,record['knowledge']['pilots'])
         plan_id=plan_id or run_id
         if plan_id==run_id:
             return dict({k:record[k] for k in ['plan','forecast','audit','passports','cautious_net']},
@@ -36,6 +40,8 @@ class PlanService:
         for i,detail in enumerate(plan['forecast']['details']):detail['campaign']['campaign_name']=f'BeeAgent_{i+1:02d}'
         plan['archived']=not compatible(record)
         plan['measurement']=None
+        for passport in plan['passports']:
+            passport['summary']=evidence_summary(passport,record['knowledge']['pilots'])
         return plan
 
     def active_id(self,run_id):
@@ -52,6 +58,8 @@ class PlanService:
         before=engine.snapshot()
         plan=engine.solve(combined)
         result=self.bundle(engine,plan,combined)
+        for passport in result['passports']:
+            passport['summary']=evidence_summary(passport,record['knowledge']['pilots'])
         result.update(plan_id=str(uuid.uuid4()),run_id=run_id,base_plan_id=base['plan_id'],
             data_version=base['data_version'],snapshot_id=base['data_version'],new_pilots=0,
             measurement=None,identity=record['identity'],archived=False,source='Прогноз изменённого плана',prior_forecast=base['forecast'],
@@ -105,6 +113,7 @@ class PlanService:
             evidence.append(ev)
             campaigns.append(dict(index=i,campaign=detail['campaign'],contacts=detail['contacts'],
                 cost=detail['cost'],marginal_net=detail['marginal_net'],unpiloted_cells=uncertainty,
+                evidence_summary=passport['summary'],
                 uncertainty_scale=detail['uncertainty_scale'],evidence_id=ev['evidence_id']))
         return dict(run_id=run_id,plan_id=plan_id,data_version=bundle['data_version'],identity=bundle.get('identity'),
             constraints=bundle['forecast']['constraints'],metrics=metrics,evidence=evidence,campaigns=campaigns,

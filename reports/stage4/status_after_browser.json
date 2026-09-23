@@ -1,0 +1,20 @@
+{
+  "8765": {
+    "model": "gpt-5.4-mini",
+    "key_configured": true,
+    "available": true,
+    "calls": 12,
+    "estimated_usd": 0.0472785,
+    "input_tokens": 47630,
+    "output_tokens": 2568
+  },
+  "8766": {
+    "model": "gpt-5.4-mini",
+    "key_configured": false,
+    "available": false,
+    "calls": 0,
+    "estimated_usd": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  }
+}

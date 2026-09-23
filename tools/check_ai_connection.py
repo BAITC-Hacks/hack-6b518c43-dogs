@@ -21,10 +21,11 @@ PROMPTS=[
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--paid-smoke',action='store_true')
+    parser.add_argument('--cases',default='0,1,2,3,4,5',help='Zero-based approved test cases; no retries of other cases')
     parser.add_argument('--url',default='http://127.0.0.1:8765');parser.add_argument('--run-id')
-    parser.add_argument('--output',default=str(ROOT/'reports/stage3/ai_integration.json'));args=parser.parse_args()
+    parser.add_argument('--output',default=str(ROOT/'reports/stage4/ai_integration.json'));args=parser.parse_args()
     if urlparse(args.url).hostname not in ['127.0.0.1','localhost']:raise SystemExit('Only the local BeeAgent server is accepted.')
-    report=dict(checked_at=datetime.now(timezone.utc).isoformat(),model=os.getenv('OPENAI_MODEL','gpt-6-sol'),
+    report=dict(checked_at=datetime.now(timezone.utc).isoformat(),model=os.getenv('OPENAI_MODEL','gpt-5.4-mini'),
         local_key_configured=bool(os.getenv('OPENAI_API_KEY','').strip()),paid_smoke_requested=args.paid_smoke,
         network_call=False,additional_estimated_budget_usd=3,actions=[],status='not_run')
     def api(path,body=None):
@@ -44,7 +45,11 @@ def main():
             if original.get('archived'):raise ValueError('Create a current-version plan before the AI smoke.')
             index=next((i for i,c in enumerate(original['plan']) if c['channel']=='sms'),0)
             before_active=original['active_bundle']['plan_id']
-            for prompt_number,prompt in enumerate(PROMPTS):
+            selected=[int(x) for x in args.cases.split(',')]
+            if len(set(selected))!=len(selected) or any(i not in range(len(PROMPTS)) for i in selected):raise ValueError('Invalid case selection')
+            report['selected_cases']=selected
+            for prompt_number in selected:
+                prompt=PROMPTS[prompt_number]
                 started=time.perf_counter();job=api('/api/assistant',dict(run_id=rid,base_plan_id=base,prompt=prompt,campaign_index=index))
                 while True:
                     data=api('/api/assistant/jobs/'+job['job_id'])
@@ -58,7 +63,7 @@ def main():
                 if result['status']=='completed' and required_tool=='propose_scenario' and not proposal:
                     validation_errors.append('No scenario version was created')
                 report['actions'].append(dict(prompt=prompt,run_id=rid,base_plan_id=base,status=result['status'],
-                    reason=result.get('reason'),network_call=result.get('network_call',False),network_attempts=result.get('network_attempts',0),cached=result.get('cached',False),
+                    reason=result.get('reason'),validation_issue=result.get('validation_issue'),network_call=result.get('network_call',False),network_attempts=result.get('network_attempts',0),cached=result.get('cached',False),
                     tool_trace=result.get('tool_trace',[]),usage=result.get('usage'),seconds=time.perf_counter()-started,
                     required_tool=required_tool,validation_errors=validation_errors,
                     proposed_plan_id=proposal['plan_id'] if proposal else None,
@@ -74,7 +79,7 @@ def main():
                     assert proposal['forecast']['constraints']['max_campaigns']==5
                 if result.get('reason') in ['authentication','permission','model_unavailable','spend_limit']:break
             report['after']=api('/api/assistant/status')
-            report['status']='passed' if len(report['actions'])==6 and all(a['status']=='completed' and not a['validation_errors'] for a in report['actions']) else 'incomplete'
+            report['status']='passed' if len(report['actions'])==len(selected) and all(a['status']=='completed' and not a['validation_errors'] for a in report['actions']) else 'incomplete'
             report['explicit_application']='Not automatic: proposals remain pending for the UI apply button.'
     except Exception as error:
         report['status']='not_run' if not report['network_call'] else 'incomplete'
@@ -84,4 +89,5 @@ def main():
     if path.exists() and json.loads(path.read_text()).get('network_call'):
         path=path.with_name(path.stem+'-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')+path.suffix)
     path.write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False,indent=2))
+    if args.paid_smoke and report['status']!='passed':raise SystemExit(1)
 if __name__=='__main__':main()

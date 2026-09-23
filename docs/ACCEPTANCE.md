@@ -1,18 +1,21 @@
 # Карта сдачи BeeAgent
 
-| Требование | Дополнительная возможность | Реализация | Проверка | Настоящий артефакт |
-|---|---|---|---|---|
-| Agent.act(env), 1–10 кампаний | Повторная проверка крупных неопределённых решений | agent.py | python local_eval.py | reports/stage3/local_eval.txt |
-| Пилоты, бюджет, контакты, порядок, пересечения | Ограничение исследовательских контактов | Engine.next_pilot / forecast / solve | python local_eval.py --runs 10 | reports/stage3/local_eval_10.txt |
-| Проверка улучшений без подгонки под 42 | Замороженный протокол, старый агент, два кандидата и компаратор | tools/validate_stage3.py; архив baseline | JSONL всех 188 исходов; select_stage3.py | development.json, heldout.json, selection.json |
-| Неизменность среды и данных | Хеши 16 защищённых файлов | tools/verify_originals.py | python tools/verify_originals.py | reports/stage3/originals.json |
-| Детерминированный submission | Свежие процессы, разный hash seed, отсутствие/наличие фиктивного ключа | make_submission.py без изменений | python tools/check_reproducibility.py | reports/stage3/reproducibility.json |
-| Честные показатели | Измерение привязано к алгоритму, данным и точному плану; несовместимые архивы блокируют пересчёт | backend/identity.py, plans.py | unittest + браузер | unit_tests.txt; screenshots/overview-1440.png |
-| Агент объясняет решения | Реальные предварительные планы до/после пилота; паспорт и сравнение канала | Engine.observe; DecisionEvidence.tsx | браузер + диагностика | decision_trace.json; repeat-pilot-evidence.png |
-| Изменение условий | Без новых пилотов, отдельная версия, сравнение и явное применение | PlanService / Engine | python tools/smoke_stage3.py | api_stage3.json; screenshots/compare-before-apply.png |
-| Сохранение и экспорт | Активная версия переживает перезапуск; CSV не подменяет submission | server.py / plans.py | HTTP + браузер | browser_checks.json; screenshots/variant-restored.png |
-| LLM вызывает настоящий движок | Четыре строгих инструмента, проверенные ссылки на показатели, предложения без авто-применения | backend/assistant.py | fake SDK protocol tests; explicit paid smoke после нового ключа | unit_tests.txt; ai_integration.json |
-| Работа без API | Все ручные функции и конкурсная стратегия автономны | agent.py, frontend/backend | чистая установка + браузер | clean_install.json; assistant-no-api-1440.png |
-| Подключение для проверяющего | Собственный локальный ключ, скрытый ввод, журнал расходов и предел $3 | configure_ai.py / check_ai_connection.py | config check без платного флага | ai_integration.json; docs/AI_ASSISTANT.md |
+Каноническая карта всех пяти must-have и пяти опциональных пунктов организаторов: [README: Проверка требований кейса](../README.md#проверка-требований-кейса).
 
-Внешний OpenAI не прошёл реальный smoke: локальный ключ отсутствует, сетевых вызовов 0. Подменные ответы не считаются доказательством внешней интеграции. Численные результаты на данных кейса, прогнозы и авторские стресс-миры имеют разные источники и не объединяются в один показатель.
+| Задача продукта | Реализация | Фактическое доказательство |
+|---|---|---|
+| Понять состав плана и его экономику | План объединяет показатели, действия агента и кампании | reports/stage4/desktop-1440.png |
+| Различить прогноз и измерение | Проверка точного плана/данных/движка; у вариантов measurement=null | tests/test_stage3.py; reports/stage4/http_checks.json |
+| Понятные тарифы | Один helper из dict_tariff.csv, реальные цена/МБ/две категории минут | tools/test_presentation.mjs; reports/stage4/presentation_tests.log |
+| Проследить пилотное решение | Настоящие предварительные планы и сопоставление направления/группы каналов | DecisionEvidence.tsx; presentation_tests.log |
+| Понять надёжность | Прозрачное консервативное правило по наблюдениям и интервалу, без процентов уверенности | backend/presentation.py; tests/test_presentation.py |
+| Изменить условия без новых пилотов | Engine из неизменяемого снимка; отдельные версии | reports/stage4/http_checks.json |
+| Сравнить и явно применить | Условия и состав кампаний; проверка активной версии | ScenarioComparison.tsx; HTTP-проверки и браузер |
+| Сохранить и выгрузить | Список версий, восстановление активной версии, CSV конкретного плана | reports/stage4/browser_checks.json |
+| Настроить AI без терминала | Локальное скрытое поле, файл 0600, GPT-5.4 mini, никакой автоматической оплаты при сохранении | tests/test_local_config.py; reports/stage4/clean_install.json |
+| Проверить сборку и лексику | TypeScript/Vite; AST исходников, bundle и серверных строк | frontend_build.log; copy_lint.json |
+| Проверить конкурсный результат | Одна команда, неизменённые официальные скрипты, заблокированная сеть | reports/stage4/verification.json |
+
+Фактический статус внешнего OpenAI: reports/stage4/ai_integration.json. Наличие настроенного ключа не равнозначно успешному запросу. Полное описание выполненных и невыполненных проверок: [TESTING_STAGE4.md](TESTING_STAGE4.md).
+
+Численная политика третьего этапа сохранена. Положительные официальные seed-проверки не доказывают устойчивость к иной среде; зафиксированы ухудшения в авторских мирах, прогноз остаётся завышенным.

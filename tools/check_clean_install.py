@@ -2,11 +2,13 @@
 
 Explicit invocation downloads pinned dependencies from PyPI/npm; never invokes OpenAI.
 """
-import hashlib,json,os,shutil,subprocess,sys,tempfile,time
+import argparse,hashlib,json,os,shutil,subprocess,sys,tempfile,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--output',default='reports/stage4/clean_install.json');args=parser.parse_args()
+    destination=ROOT/args.output;destination.parent.mkdir(parents=True,exist_ok=True)
     report={'scope':'Fresh Python venv and npm ci, empty HOME/cache, copied current source, no API key','checks':[]}
     root=Path(tempfile.mkdtemp(prefix='beeagent-clean-'));app=root/'app';app.mkdir();(root/'home').mkdir()
     report['temporary_directory']=str(root)
@@ -27,7 +29,7 @@ def main():
     def run(command,label,timeout=240):
         start=time.perf_counter();result=subprocess.run(command,cwd=app,env=env,capture_output=True,text=True,timeout=timeout)
         report['checks'].append(dict(label=label,exit_code=result.returncode,seconds=time.perf_counter()-start,output=result.stdout[-5000:]+result.stderr[-2000:]))
-        (ROOT/'reports/stage3/clean_install.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+        destination.write_text(json.dumps(report,ensure_ascii=False,indent=2))
         print(label,result.returncode,flush=True)
         if result.returncode:raise RuntimeError(label+' failed')
     try:
@@ -62,10 +64,19 @@ def main():
             variant=api('/api/runs/'+rid+'/replan',{'base_plan_id':rid,'constraints':{'budget':70000,'channels':['push','sms','digital_ads'],'max_campaigns':5}})
             assert variant['measurement'] is None and variant['new_pilots']==0
             assert api('/api/runs/'+rid)['active_bundle']['plan_id']==rid
+            # Exercise credential setup only in this disposable installation.
+            dummy='sk-'+'not-a-real-key-'*2
+            configured=api('/api/assistant/configure',{'api_key':dummy})
+            assert configured['status']['model']=='gpt-5.4-mini'
+            assert configured['status']['key_configured'] and configured['status']['calls']==0
+            assert dummy not in json.dumps(configured)
+            assert (app/'.env').stat().st_mode & 0o777 == 0o600
+            report['local_setup']=dict(isolated_dummy_only=True,model='gpt-5.4-mini',private_file=True,key_not_in_response=True,no_api_calls=True)
             report['clean_http']=dict(original_measured=True,variant_unmeasured=True,no_new_pilots=True,no_implicit_apply=True,ai_available=False,ai_calls=0)
         finally:server.terminate();server.wait(timeout=10)
         report['passed']=True
     except Exception as error:report.update(passed=False,error=type(error).__name__+': '+str(error))
-    (ROOT/'reports/stage3/clean_install.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+    destination.write_text(json.dumps(report,ensure_ascii=False,indent=2))
     print(json.dumps({k:v for k,v in report.items() if k!='checks'},indent=2))
+    if not report['passed']:raise SystemExit(1)
 if __name__=='__main__':main()

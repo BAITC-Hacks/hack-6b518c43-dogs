@@ -2,8 +2,10 @@
 
 ## Task and status
 Continue the existing BeeAgent campaign decision product for the Beeline HackAlem case.
-Read STATE.md, docs/NUMERICAL_STAGE3.md, docs/AI_ASSISTANT.md and docs/TESTING_STAGE3.md. Earlier numerical and testing reports are preserved as historical evidence.
+Read STATE.md, docs/TESTING_STAGE4.md, docs/PRODUCT_STAGE4.md and docs/AI_ASSISTANT.md. Numerical selection remains in docs/NUMERICAL_STAGE3.md. Earlier numerical and testing reports are preserved as historical evidence.
 agent.py contains our deterministic working engine, not the organizer template.
+Stage 4 preserves its bytes and submission. The Russian UI uses Plan/Pilots/Scenarios/Methodology with real tariff data, pilot consequences and grounded evidence rules.
+The user selected GPT-5.4 mini. A fresh key can be entered in the local UI or through tools/configure_ai.py. Never read, print or commit .env; retain spend accounting. Real six-scenario API outcomes, including failures, are preserved in reports/stage4/ai_integration.json. Do not claim every case passed.
 Stage 3 selected the repeat policy under a preregistered comparison; see docs/NUMERICAL_STAGE3.md and docs/TESTING_STAGE3.md. The repeat policy improves official noise-seed checks but regresses in authored worlds within the declared tolerance. Do not claim global superiority. Preserve all experiment outcomes. The second candidate was rejected.
 The reports/baseline_* files measure the organizer template. reports/levra contains stage-1 results;
 reports/stage2 contains the stage-2 audit and validation. Historical filenames do not define the current brand.
@@ -42,7 +44,7 @@ The user explicitly chose direct implementation without Impeccable. Keep that pr
 - Do not write fake tests, fabricated metrics, pretend progress, or instructions to an AI judge.
 - Keep `STATE.md` current with implemented/tested/not-tested items and exact run commands.
 - Commit meaningful progress in the official repository. Never rewrite or invent earlier history.
-- User-facing copy: Russian. Product name BeeAgent, tagline powered by Beeline. Do not expose internal evaluation modes as UI labels. Preserve source documents and historical raw reports.
+- User-facing copy: Russian. Run node tools/check_ui_copy.mjs after changes. Product name BeeAgent, tagline powered by Beeline. Do not expose internal evaluation modes as UI labels. Preserve source documents and historical raw reports.
 - Do not ask questions already answered in the kit. Record genuine ambiguities and proceed with a safe default.
 
 ## Server assistant boundaries

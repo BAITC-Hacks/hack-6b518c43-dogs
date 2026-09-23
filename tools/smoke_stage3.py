@@ -1,4 +1,5 @@
 """Real HTTP integration, no external AI calls and no fake UI data."""
+import argparse
 import csv
 import hashlib
 import io
@@ -18,6 +19,7 @@ def request(path,body=None,expected=200,extra_headers=None):
     assert status==expected,(status,value)
     return value
 def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--output',default='reports/stage4/http_checks.json');args=parser.parse_args()
     runs=request('/api/runs');run=request('/api/runs/'+runs[0]['run_id']);rid=run['run_id']
     baseline=request(f'/api/runs/{rid}/plans/{rid}')
     record=ROOT/'reports/runs'/f'{rid}.json';before=hashlib.sha256(record.read_bytes()).hexdigest()
@@ -68,5 +70,5 @@ def main():
         checks=['Привязка измерения к версии и данным','Повтор пересчёта от той же базы без накопления сокращения','Отсутствующий ключ','Ручной пересчёт','Отдельное предложение','База сравнения','Явное применение',
             'Сохранение и восстановление версии','Отклонение устаревшего применения','CSV соответствует версии',
             'Потраченные ресурсы сохранены','Лимит ниже потраченного отклонён','Чужой Origin и Host отклонены','Размер и поля запроса проверены'])
-    (ROOT/'reports/stage3/api_stage3.json').write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False))
+    (ROOT/args.output).write_text(json.dumps(report,ensure_ascii=False,indent=2));print(json.dumps(report,ensure_ascii=False))
 if __name__=='__main__':main()

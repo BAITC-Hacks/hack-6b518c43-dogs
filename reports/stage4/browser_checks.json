@@ -1,0 +1,191 @@
+{
+  "checked_at": "2026-09-23T12:24:15.079064+00:00",
+  "browser": "Codex in-app browser, macOS; actual DOM and screenshots",
+  "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+  "manual_flow": {
+    "new_research_via_ui": true,
+    "original_campaigns": 7,
+    "original_pilots": 20,
+    "budget": 70000,
+    "exclude_calls": true,
+    "max_campaigns": 5,
+    "variant_cost": 69942,
+    "variant_contacts": 9526,
+    "variant_forecast_rounded": 4442118,
+    "proposal_did_not_apply": true,
+    "explicit_apply": true,
+    "variant_unmeasured": true,
+    "no_new_pilots": true,
+    "save": true,
+    "active_version_survived_reload": true,
+    "browser_csv_download_observed": true,
+    "restored_original": true
+  },
+  "evidence": {
+    "selected_campaign": 2,
+    "qualitative_level": "limited",
+    "pilot_observations": 2,
+    "pilot_contacts": 280,
+    "history_rows": 372,
+    "repeat_observed": true,
+    "pilot9_priority_before": 3,
+    "pilot9_priority_after": 1,
+    "actual_before_after_plans_visible": true
+  },
+  "no_api_browser": {
+    "isolated_clean_copy": true,
+    "key_configured": false,
+    "calls": 0,
+    "manual_70000_no_calls_max5_variant": true,
+    "proposal_not_applied": true,
+    "unavailable_assistant_message_visible": true
+  },
+  "keyboard": {
+    "initial_dialog_focus": "assistant-prompt",
+    "shift_tab_wrap": "close button to usage summary",
+    "tab_wrap": "usage summary to close button",
+    "visible_focus": "3px rgb(124,101,0) outline",
+    "escape_closes": true,
+    "focus_returns_to": "plan-command"
+  },
+  "responsive": [
+    {
+      "section": "Пилоты",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "Сценарии",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "Методика",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "План",
+      "banned": [],
+      "body": 390,
+      "document": 390,
+      "width": 390
+    },
+    {
+      "section": "Пилоты",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "Сценарии",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "Методика",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "План",
+      "banned": [],
+      "body": 1280,
+      "document": 1280,
+      "width": 1280
+    },
+    {
+      "section": "Пилоты",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    },
+    {
+      "section": "Сценарии",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    },
+    {
+      "section": "Методика",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    },
+    {
+      "section": "План",
+      "banned": [],
+      "body": 1440,
+      "document": 1440,
+      "width": 1440
+    }
+  ],
+  "console_errors_or_warnings": [],
+  "screenshots": {
+    "before.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "connect-mini.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "mobile-390.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "no-api.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "desktop-1440.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "no-api-scenario.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "decision-evidence.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "desktop-1280.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "mobile-assistant.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "pilot-decision.png": {
+      "width": 65536,
+      "height": 4292542531
+    },
+    "scenario-before-apply.png": {
+      "width": 65536,
+      "height": 4292542531
+    }
+  },
+  "not_tested": [
+    "Safari and Firefox",
+    "physical mobile device",
+    "full screen-reader/WCAG conformance",
+    "real OpenAI response rendered in browser; six API scenarios verified by HTTP separately"
+  ],
+  "passed": true
+}

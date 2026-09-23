@@ -1,0 +1,29 @@
+create venv 0
+install Python from registry 0
+npm clean install 0
+frontend build 0
+official evaluation 0
+submission 0
+originals 0
+unit tests without key 0
+{
+  "scope": "Fresh Python venv and npm ci, empty HOME/cache, copied current source, no API key",
+  "temporary_directory": "/var/folders/2q/y8xtph2x14v9z3h4kr16t20w0000gn/T/beeagent-clean-q7w_vqq1",
+  "submission_sha256": "f3935486bd54ebe001b9aa54c1773d51fff91387b585c57c9f9542658502197f",
+  "local_setup": {
+    "isolated_dummy_only": true,
+    "model": "gpt-5.4-mini",
+    "private_file": true,
+    "key_not_in_response": true,
+    "no_api_calls": true
+  },
+  "clean_http": {
+    "original_measured": true,
+    "variant_unmeasured": true,
+    "no_new_pilots": true,
+    "no_implicit_apply": true,
+    "ai_available": false,
+    "ai_calls": 0
+  },
+  "passed": true
+}

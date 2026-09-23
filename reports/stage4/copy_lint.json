@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "scope": "Frontend JSX text and string literals; generated JS string literals; HTML; backend string literals. Only aria-live attribute is exempt.",
+  "files": 6,
+  "findings": [],
+  "english": []
+}

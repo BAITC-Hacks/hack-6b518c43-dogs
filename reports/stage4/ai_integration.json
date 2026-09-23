@@ -1,0 +1,311 @@
+{
+  "checked_at": "2026-09-23T12:13:42.564312+00:00",
+  "model": "gpt-5.4-mini",
+  "local_key_configured": true,
+  "paid_smoke_requested": true,
+  "network_call": true,
+  "additional_estimated_budget_usd": 3,
+  "actions": [
+    {
+      "prompt": "Сократи бюджет на 30%, исключи звонки и оставь максимум пять кампаний",
+      "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "status": "unavailable",
+      "reason": "invalid_response",
+      "network_call": true,
+      "network_attempts": 2,
+      "cached": false,
+      "tool_trace": [],
+      "usage": {
+        "calls": 2,
+        "estimated_usd": 0.0056955,
+        "input_tokens": 5464,
+        "output_tokens": 355,
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "seconds": 8.378946166001697,
+      "required_tool": "propose_scenario",
+      "validation_errors": [],
+      "proposed_plan_id": null,
+      "proposed_constraints": null
+    },
+    {
+      "prompt": "Почему для выбранной кампании используется SMS, а не звонок?",
+      "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "status": "completed",
+      "reason": null,
+      "network_call": true,
+      "network_attempts": 2,
+      "cached": false,
+      "tool_trace": [
+        {
+          "tool": "get_campaign_evidence",
+          "parameters": {
+            "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+            "campaign_index": 1
+          },
+          "validated_constraints": {
+            "budget": 100000.0,
+            "contacts": 15000,
+            "max_campaigns": 10,
+            "channels": [
+              "call",
+              "digital_ads",
+              "push",
+              "sms"
+            ],
+            "risk": 0.7
+          },
+          "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+          "data_version": "47cd7abe3062cd3c"
+        }
+      ],
+      "usage": {
+        "calls": 2,
+        "estimated_usd": 0.00877425,
+        "input_tokens": 10061,
+        "output_tokens": 273,
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "seconds": 4.072070041002007,
+      "required_tool": "get_campaign_evidence",
+      "validation_errors": [],
+      "proposed_plan_id": null,
+      "proposed_constraints": null
+    },
+    {
+      "prompt": "Какие решения в плане опираются на наиболее слабые данные?",
+      "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "status": "completed",
+      "reason": null,
+      "network_call": true,
+      "network_attempts": 2,
+      "cached": false,
+      "tool_trace": [
+        {
+          "tool": "get_plan_summary",
+          "parameters": {
+            "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771"
+          },
+          "validated_constraints": {
+            "budget": 100000.0,
+            "contacts": 15000,
+            "max_campaigns": 10,
+            "channels": [
+              "call",
+              "digital_ads",
+              "push",
+              "sms"
+            ],
+            "risk": 0.7
+          },
+          "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+          "data_version": "47cd7abe3062cd3c"
+        }
+      ],
+      "usage": {
+        "calls": 2,
+        "estimated_usd": 0.008303250000000002,
+        "input_tokens": 6529,
+        "output_tokens": 757,
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "seconds": 7.730540832999395,
+      "required_tool": "get_plan_summary",
+      "validation_errors": [],
+      "proposed_plan_id": null,
+      "proposed_constraints": null
+    },
+    {
+      "prompt": "От исходного лимита оставь семь десятых, убери телефонные контакты и выбери не более пяти кампаний.",
+      "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "status": "completed",
+      "reason": null,
+      "network_call": true,
+      "network_attempts": 2,
+      "cached": false,
+      "tool_trace": [
+        {
+          "tool": "propose_scenario",
+          "parameters": {
+            "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+            "budget_change_percent": -30,
+            "absolute_budget": null,
+            "excluded_channels": [
+              "call"
+            ],
+            "max_campaigns": 5
+          },
+          "validated_constraints": {
+            "budget": 70000.0,
+            "contacts": 15000,
+            "max_campaigns": 5,
+            "channels": [
+              "digital_ads",
+              "push",
+              "sms"
+            ],
+            "risk": 0.7
+          },
+          "plan_id": "606abec7-ab6b-4e47-8517-55c699bb8bf4",
+          "data_version": "47cd7abe3062cd3c"
+        }
+      ],
+      "usage": {
+        "calls": 2,
+        "estimated_usd": 0.006350999999999999,
+        "input_tokens": 5426,
+        "output_tokens": 507,
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "seconds": 6.0912127919982595,
+      "required_tool": "propose_scenario",
+      "validation_errors": [],
+      "proposed_plan_id": "606abec7-ab6b-4e47-8517-55c699bb8bf4",
+      "proposed_constraints": {
+        "budget": 70000.0,
+        "contacts": 15000,
+        "max_campaigns": 5,
+        "channels": [
+          "digital_ads",
+          "push",
+          "sms"
+        ],
+        "risk": 0.7
+      }
+    },
+    {
+      "prompt": "Объясни, почему выбранному сегменту отправляем сообщение вместо того, чтобы позвонить.",
+      "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "status": "completed",
+      "reason": null,
+      "network_call": true,
+      "network_attempts": 2,
+      "cached": false,
+      "tool_trace": [
+        {
+          "tool": "get_campaign_evidence",
+          "parameters": {
+            "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+            "campaign_index": 1
+          },
+          "validated_constraints": {
+            "budget": 100000.0,
+            "contacts": 15000,
+            "max_campaigns": 10,
+            "channels": [
+              "call",
+              "digital_ads",
+              "push",
+              "sms"
+            ],
+            "risk": 0.7
+          },
+          "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+          "data_version": "47cd7abe3062cd3c"
+        }
+      ],
+      "usage": {
+        "calls": 2,
+        "estimated_usd": 0.009000749999999998,
+        "input_tokens": 10075,
+        "output_tokens": 321,
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "seconds": 4.507168584001192,
+      "required_tool": "get_campaign_evidence",
+      "validation_errors": [],
+      "proposed_plan_id": null,
+      "proposed_constraints": null
+    },
+    {
+      "prompt": "Где в этом плане больше всего непроверенных предположений и какой выбор стоит перепроверить?",
+      "run_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "base_plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+      "status": "completed",
+      "reason": null,
+      "network_call": true,
+      "network_attempts": 2,
+      "cached": false,
+      "tool_trace": [
+        {
+          "tool": "get_campaign_evidence",
+          "parameters": {
+            "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+            "campaign_index": 1
+          },
+          "validated_constraints": {
+            "budget": 100000.0,
+            "contacts": 15000,
+            "max_campaigns": 10,
+            "channels": [
+              "call",
+              "digital_ads",
+              "push",
+              "sms"
+            ],
+            "risk": 0.7
+          },
+          "plan_id": "df0b4042-26a7-4187-b698-c6a2b6267771",
+          "data_version": "47cd7abe3062cd3c"
+        }
+      ],
+      "usage": {
+        "calls": 2,
+        "estimated_usd": 0.009153750000000002,
+        "input_tokens": 10075,
+        "output_tokens": 355,
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "seconds": 4.907120500000019,
+      "required_tool": "get_plan_summary",
+      "validation_errors": [
+        "Required real tool was not executed: get_plan_summary"
+      ],
+      "proposed_plan_id": null,
+      "proposed_constraints": null
+    }
+  ],
+  "status": "incomplete",
+  "server_status": {
+    "available": true,
+    "model": "gpt-5.4-mini",
+    "key_configured": true,
+    "configuration_valid": true,
+    "calls": 0,
+    "estimated_usd": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "limit_usd": 3.0,
+    "max_calls": 100,
+    "note": "Локальная оценка расходов, не баланс аккаунта. Неопределённые вызовы учитываются по резерву."
+  },
+  "after": {
+    "available": true,
+    "model": "gpt-5.4-mini",
+    "key_configured": true,
+    "configuration_valid": true,
+    "calls": 12,
+    "estimated_usd": 0.0472785,
+    "input_tokens": 47630,
+    "output_tokens": 2568,
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "limit_usd": 3.0,
+    "max_calls": 100,
+    "note": "Локальная оценка расходов, не баланс аккаунта. Неопределённые вызовы учитываются по резерву."
+  },
+  "explicit_application": "Not automatic: proposals remain pending for the UI apply button."
+}
